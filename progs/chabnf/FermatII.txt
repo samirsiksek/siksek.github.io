@@ -1,0 +1,1157 @@
+Magma V2.15-3     Wed May  6 2009 15:06:57 on host-57-89 [Seed = 4122879581]
+Type ? for help.  Type <Ctrl>-D to quit.
+Loading "JSearch.m"
+s= -2
+it appears that the Torsion subgroup is isomorphic to 
+Abelian Group of order 1
+computing the 2-Selmer group
+might take a very long time
+2-Selmer rank is 1
+two torsion subgroup is 
+Abelian Group of order 1
+Hence rank is at most 1
+searching for enough torsion points and for 1 independent points on J
+this could take forever!
+found 1 independent points on J and enough torsion
+basis for torsion is []
+torsion subgroup isomorphic to 
+Abelian Group of order 1
+basis for a free subgroup of finite index is [ (x - t^2 - t - 1, -t^2 - 2*t - 1,
+1) ]
+it appears that a complete list of rational points on C is [ (1 : 0 : 0), (t^2 +
+    t + 1 : t^2 + 2*t + 1 : 1), (t^2 + t + 1 : -t^2 - 2*t - 1 : 1) ]
+want to prove this using Chabauty and the Mordell--Weil sieve
+working with a subgroup A of the Mordell--Weil group isomorphic to  
+Abelian Group isomorphic to Z
+Defined on 1 generator (free)
+the basis for this subgroup is [ (x - t^2 - t - 1, -t^2 - 2*t - 1, 1) ]
+using (t^2 + t + 1 : t^2 + 2*t + 1 : 1) as base point for Abel-Jacobi map
+the image of the known rational points on C in A is [
+    A.1,
+    0,
+    2*A.1
+]
+applying the Mordell--Weil sieve
+verified saturation at 2
+verified saturation at 3
+verified saturation at 5
+verified saturation at 7
+verified saturation at 11
+verified saturation at 13
+verified saturation at 17
+verified saturation at 19
+verified saturation at 23
+verified saturation at 29
+verified saturation at 31
+verified saturation at 37
+verified saturation at 41
+verified saturation at 43
+verified saturation at 47
+verified saturation at 53
+verified saturation at 59
+verified saturation at 61
+verified saturation at 67
+verified saturation at 71
+verified saturation at 73
+getting sieving information
+121 14080 5
+17 290 9
+23 530 24
+29 900 4
+31 1375 3
+43 1850 44
+43 1850 44
+43 1850 19
+47 2210 21
+59 3600 6
+83 6890 43
+89 8100 3
+101 10496 5
+109 12100 5
+109 12100 6
+109 12100 3
+149 22500 3
+157 24650 158
+157 24650 77
+157 24650 77
+173 29930 174
+179 32400 3
+229 52900 3
+229 52900 5
+229 52900 4
+239 57600 3
+269 72900 3
+307 94250 43
+307 94250 308
+307 94250 308
+359 129600 4
+389 152100 3
+419 176400 4
+439 193600 3
+439 193600 3
+439 193600 4
+449 202500 4
+479 230400 4
+499 250000 5
+499 250000 5
+499 250000 3
+509 260100 3
+521 266321 21
+557 310250 285
+569 324900 3
+599 360000 4
+659 435600 3
+719 518400 3
+739 547600 5
+739 547600 6
+739 547600 5
+809 656100 4
+821 660176 10
+839 705600 3
+919 846400 5
+919 846400 6
+919 846400 3
+929 864900 3
+1019 1040400 3
+1049 1102500 3
+1051 1073875 59
+1109 1232100 3
+sorting sieving information
+Mordell--Weil sieve
+used 20 places for the Mordell--Weil sieve
+after the Mordell--Weil sieve W= [
+    0,
+    A.1,
+    2*A.1,
+    4989601*A.1,
+    -4989599*A.1
+]
+and L= 
+Abelian Group isomorphic to Z
+Defined on 1 generator in supergroup A:
+    L.1 = 12474000*A.1 (free)
+the index of L in A is 12474000
+using prime p= 109 for Chabauty
+there are 3 places above 109
+the structures of J(k_v) above these places are
+Abelian Group isomorphic to Z/110 + Z/110
+Defined on 2 generators
+Relations:
+    110*$.1 = 0
+    110*$.2 = 0
+Abelian Group isomorphic to Z/110 + Z/110
+Defined on 2 generators
+Relations:
+    110*$.1 = 0
+    110*$.2 = 0
+Abelian Group isomorphic to Z/110 + Z/110
+Defined on 2 generators
+Relations:
+    110*B.1 = 0
+    110*B.2 = 0
+the integrals of the basis with place P are [*
+    [ 2067796853351091496762518165408781736934623562427510591670538100203735334\
+        58586553965951517394510*109 + O(109^48), 
+        27488388988786322246775393459906607573077641966396309406751701514923681\
+        9463911400990180912109291*109 + O(109^48) ]
+*]
+the integrals of the basis with place P are [*
+    [ 195001853068928101531440126663673056768547405048305223050451028321063*109 
+    + O(109^35), 30640550608561741854141051317857016779709857208631851360103714\
+        8860318*109 + O(109^35) ]
+*]
+the integrals of the basis with place P are [*
+    [ 3562053490989579687196796942893200921553842970802481712505516079179242519\
+        7783417248088962529216*109 + O(109^48), 
+    -17763502098626213271807156718331980601169719103337241791261240858876241229\
+        7404865816724025412407*109 + O(109^48) ]
+*]
+the integration matrix is 
+[421893*109 + O(109^4) 356166*109 + O(109^4) -509350*109 + O(109^4) 516480*109 +
+    O(109^4) 336436*109 + O(109^4) -99988*109 + O(109^4)]
+the matrix E is 
+[1 + O(109^3) -60060 + O(109^3) -132423 + O(109^3) -479130 + O(109^3) 191884 + 
+    O(109^3) -577324 + O(109^3)]
+[O(109^50) 1 + O(109^3) O(109^50) O(109^50) O(109^50) O(109^50)]
+[O(109^50) O(109^50) 1 + O(109^3) O(109^50) O(109^50) O(109^50)]
+[O(109^50) O(109^50) O(109^50) 1 + O(109^3) O(109^50) O(109^50)]
+[O(109^50) O(109^50) O(109^50) O(109^50) 1 + O(109^3) O(109^50)]
+[O(109^50) O(109^50) O(109^50) O(109^50) O(109^50) 1 + O(109^3)]
+point (1 : 0 : 0)
+the leading terms matrix is 
+[O(109^5) -613049 + O(109^3) O(109^5) O(109^5) O(109^5) O(109^5)]
+[O(109^5) O(109^5) O(109^5) -147618 + O(109^3) O(109^5) O(109^5)]
+[O(109^5) O(109^5) O(109^5) O(109^5) O(109^5) 113150 + O(109^3)]
+E*Npt= 
+[O(109^5) -613049 + O(109^3) O(109^5) O(109^5) O(109^5) O(109^5)]
+[O(109^5) O(109^5) O(109^5) -147618 + O(109^3) O(109^5) O(109^5)]
+[O(109^5) O(109^5) O(109^5) O(109^5) O(109^5) 113150 + O(109^3)]
+redSubMat= 
+[ 76   0   0]
+[  0   0   0]
+[  0  77   0]
+[  0   0   0]
+[  0   0   8]
+point (t^2 + t + 1 : t^2 + 2*t + 1 : 1)
+the leading terms matrix is 
+[-351586 + O(109^3) -293139 + O(109^3) O(109^5) O(109^5) O(109^5) O(109^5)]
+[O(109^5) O(109^5) -164777 + O(109^3) -342204 + O(109^3) O(109^5) O(109^5)]
+[O(109^5) O(109^5) O(109^5) O(109^5) 516362 + O(109^3) 635344 + O(109^3)]
+E*Npt= 
+[-351586 + O(109^3) 514176 + O(109^3) 485299 + O(109^3) 617918 + O(109^3) 
+    -487298 + O(109^3) 75491 + O(109^3)]
+[O(109^5) O(109^5) -164777 + O(109^3) -342204 + O(109^3) O(109^5) O(109^5)]
+[O(109^5) O(109^5) O(109^5) O(109^5) 516362 + O(109^3) 635344 + O(109^3)]
+redSubMat= 
+[ 23   0   0]
+[ 31  31   0]
+[106  56   0]
+[ 41   0  29]
+[ 63   0  92]
+point (t^2 + t + 1 : -t^2 - 2*t - 1 : 1)
+the leading terms matrix is 
+[351586 + O(109^3) 293139 + O(109^3) O(109^5) O(109^5) O(109^5) O(109^5)]
+[O(109^5) O(109^5) 164777 + O(109^3) 342204 + O(109^3) O(109^5) O(109^5)]
+[O(109^5) O(109^5) O(109^5) O(109^5) -516362 + O(109^3) -635344 + O(109^3)]
+E*Npt= 
+[351586 + O(109^3) -514176 + O(109^3) -485299 + O(109^3) -617918 + O(109^3) 
+    487298 + O(109^3) -75491 + O(109^3)]
+[O(109^5) O(109^5) 164777 + O(109^3) 342204 + O(109^3) O(109^5) O(109^5)]
+[O(109^5) O(109^5) O(109^5) O(109^5) -516362 + O(109^3) -635344 + O(109^3)]
+redSubMat= 
+[ 86   0   0]
+[ 78  78   0]
+[  3  53   0]
+[ 68   0  80]
+[ 46   0  17]
+having applied Chabauty to the points [ (1 : 0 : 0), (t^2 + t + 1 : t^2 + 2*t + 
+    1 : 1), (t^2 + t + 1 : -t^2 - 2*t - 1 : 1) ]
+Chabauty is respectively successful at [ true, true, true ]
+after applying Chabauty with prime 109
+W has 0 elements
+succeeded in proving that the only K-rational points are [ (1 : 0 : 0), (t^2 + t
+    + 1 : t^2 + 2*t + 1 : 1), (t^2 + t + 1 : -t^2 - 2*t - 1 : 1) ]
+u/v= -1
+this solution corresponds to $K$-rational point (t^2 + t + 1 : -t^2 - 2*t - 1 : 
+1)
+############################################################
+s= -1
+it appears that the Torsion subgroup is isomorphic to 
+Abelian Group of order 1
+computing the 2-Selmer group
+might take a very long time
+2-Selmer rank is 3
+two torsion subgroup is 
+Abelian Group of order 1
+Hence rank is at most 3
+searching for enough torsion points and for 3 independent points on J
+this could take forever!
+found 3 independent points on J and enough torsion
+basis for torsion is []
+torsion subgroup isomorphic to 
+Abelian Group of order 1
+basis for a free subgroup of finite index is [ (x + t^2 + t + 1, 11*t^2 + 13*t +
+    17, 1), (x^2 + 1/2*(t^2 + t + 2)*x + 1/2*(t^2 + t + 2), (2*t^2 + 2*t + 3)*x 
+    + 2*t^2 + 3*t + 4, 2), (x^2 + 1/3*(4*t^2 + 5*t + 4)*x + 1/3*(4*t^2 + 5*t + 
+    7), (-4*t^2 - 6*t - 10)*x - 9*t^2 - 11*t - 13, 2) ]
+it appears that a complete list of rational points on C is [ (1 : 0 : 0), (-t^2 
+    - t - 1 : -11*t^2 - 13*t - 17 : 1), (1/3*(-t^2 - 2*t - 1) : 1/3*(-t^2 + t - 
+    1) : 1), (1/3*(-t^2 - 2*t - 1) : 1/3*(t^2 - t + 1) : 1), (-t^2 - t - 1 : 
+    11*t^2 + 13*t + 17 : 1) ]
+want to prove this using Chabauty and the Mordell--Weil sieve
+working with a subgroup A of the Mordell--Weil group isomorphic to  
+Abelian Group isomorphic to Z + Z + Z
+Defined on 3 generators (free)
+the basis for this subgroup is [ (x + t^2 + t + 1, 11*t^2 + 13*t + 17, 1), (x^2 
+    + 1/2*(t^2 + t + 2)*x + 1/2*(t^2 + t + 2), (2*t^2 + 2*t + 3)*x + 2*t^2 + 3*t
+    + 4, 2), (x^2 + 1/3*(4*t^2 + 5*t + 4)*x + 1/3*(4*t^2 + 5*t + 7), (-4*t^2 - 
+    6*t - 10)*x - 9*t^2 - 11*t - 13, 2) ]
+using (-t^2 - t - 1 : -11*t^2 - 13*t - 17 : 1) as base point for Abel-Jacobi map
+the image of the known rational points on C in A is [
+    A.1,
+    0,
+    A.3,
+    2*A.1 - A.3,
+    2*A.1
+]
+applying the Mordell--Weil sieve
+verified saturation at 2
+verified saturation at 3
+verified saturation at 5
+verified saturation at 7
+verified saturation at 11
+verified saturation at 13
+verified saturation at 17
+verified saturation at 19
+verified saturation at 23
+verified saturation at 29
+verified saturation at 31
+verified saturation at 37
+verified saturation at 41
+verified saturation at 43
+verified saturation at 47
+verified saturation at 53
+verified saturation at 59
+verified saturation at 61
+verified saturation at 67
+verified saturation at 71
+verified saturation at 73
+getting sieving information
+17 290 18
+23 530 24
+29 900 30
+31 880 14
+31 1375 43
+41 1331 31
+43 1850 44
+43 1850 44
+43 1850 44
+47 2210 48
+59 3600 60
+83 6890 84
+89 8100 42
+109 12100 110
+109 12100 110
+109 12100 110
+149 22500 150
+157 24650 158
+157 24650 158
+157 24650 158
+173 29930 81
+179 32400 51
+229 52900 107
+229 52900 118
+229 52900 118
+239 57600 240
+269 72900 270
+307 94250 308
+307 94250 308
+307 94250 308
+359 129600 184
+389 152100 146
+419 176400 218
+439 193600 440
+439 193600 440
+439 193600 440
+449 202500 109
+479 230400 480
+499 250000 500
+499 250000 500
+499 250000 252
+509 260100 510
+557 310250 558
+569 324900 114
+599 360000 184
+659 435600 132
+719 518400 368
+739 547600 740
+739 547600 740
+739 547600 740
+809 656100 810
+839 705600 168
+919 846400 920
+919 846400 484
+919 846400 920
+929 864900 308
+1019 1040400 172
+1021 999680 52
+1049 1102500 1050
+1051 1073875 1023
+1109 1232100 1110
+sorting sieving information
+Mordell--Weil sieve
+used 21 places for the Mordell--Weil sieve
+after the Mordell--Weil sieve W= [
+    0,
+    A.3,
+    A.1,
+    2*A.1 - A.3,
+    2*A.1,
+    A.1 + 12474000*A.3,
+    1663201*A.1 + 4158000*A.2 + 33264000*A.3,
+    1663201*A.1 + 4158000*A.2 + 20790000*A.3,
+    -1663199*A.1 - 4158000*A.2 - 20790000*A.3,
+    -1663199*A.1 - 4158000*A.2 - 33264000*A.3
+]
+and L= 
+Abelian Group isomorphic to Z + Z + Z
+Defined on 3 generators in supergroup A:
+    L.1 = 8316000*A.1 + 8316000*A.2 + 16632000*A.3
+    L.2 = 12474000*A.2
+    L.3 = 24948000*A.3 (free)
+the index of L in A is 2587950443232000000000
+using prime p= 109 for Chabauty
+there are 3 places above 109
+the structures of J(k_v) above these places are
+Abelian Group isomorphic to Z/110 + Z/110
+Defined on 2 generators
+Relations:
+    110*$.1 = 0
+    110*$.2 = 0
+Abelian Group isomorphic to Z/110 + Z/110
+Defined on 2 generators
+Relations:
+    110*$.1 = 0
+    110*$.2 = 0
+Abelian Group isomorphic to Z/110 + Z/110
+Defined on 2 generators
+Relations:
+    110*B.1 = 0
+    110*B.2 = 0
+the integrals of the basis with place P are [*
+    [ -283266247851841596327578176006242979839357761404525884807869308157034001\
+    27581318346316278097591*109 + O(109^48), 
+    -21624201956131038478376123127462068391646950488134390861910990453411598621\
+        1209315911184386789034*109 + O(109^48) ],
+    [ -156850626347007012081783948554230433896131587755357063484521213123168128\
+    409903062130314088132370*109 + O(109^48), 
+    -27356462242991638249741021376746678863560780294474207168190125409059773480\
+        2476515265311368708561*109 + O(109^48) ],
+    [ 6831417257732776927481127159592154839034761355194180812671670088614589401\
+        2819682794046827686156*109 + O(109^48), 
+        25693623946437278271997713605828108560810435231717908639355301412905531\
+        5679947453027050308611058*109 + O(109^48) ]
+*]
+the integrals of the basis with place P are [*
+    [ -57256982297879052956259051149897006056656073149909694894110846992837*109 
+    + O(109^35), 90638659977391167986753665613616722289588231288051372575630534\
+        1801468*109 + O(109^35) ],
+    [ 9912929045127206804929420392833276577800161825873962441126967968998385549\
+        3278074094492665147816*109 + O(109^48), 
+    -18866695511040663283618605495978202076883203170292149463395868182568841555\
+        0066769614660222736095*109 + O(109^48) ],
+    [ -258561627713982305922665557584802383008703790988619254416909689470242*10\
+    9 + O(109^35), 707680658452669674406026036297302248438807526951330370611039\
+        142641665*109 + O(109^35) ]
+*]
+the integrals of the basis with place P are [*
+    [ 1732560518553305082866272345569177308030663660293337785067966603524282455\
+        18627458060904176484376*109 + O(109^48), 
+        26877345373704989872767853874575684106679888930032080104168998968481696\
+        4577606998896749305090618*109 + O(109^48) ],
+    [ 717100143444022907556669987651332739575669791998298363106153153662938*109 
+    + O(109^35), 20901806917795556546021289199644656514524409963447385868523837\
+        4081760*109 + O(109^35) ],
+    [ -264154486261599946736191037654380656000626588435425029776213769598899532\
+    0546929270139493550786280841*109 + O(109^50), 
+    -33763250427611615780649827333929688710571062529950973254359355609843750233\
+        52128741589472919046850949*109 + O(109^50) ]
+*]
+the integration matrix is 
+[332723*109 + O(109^4) -248580*109 + O(109^4) -217732*109 + O(109^4) -311224*109
+    + O(109^4) -202955*109 + O(109^4) -412436*109 + O(109^4)]
+[-553163*109 + O(109^4) 102260*109 + O(109^4) -425750*109 + O(109^4) 182842*109 
+    + O(109^4) 225545*109 + O(109^4) -570795*109 + O(109^4)]
+[522401*109 + O(109^4) -567371*109 + O(109^4) -272292*109 + O(109^4) -262833*109
+    + O(109^4) 266556*109 + O(109^4) -585069*109 + O(109^4)]
+the matrix E is 
+[1 + O(109^3) -14922 + O(109^3) 280747 + O(109^3) 262874 + O(109^3) -571033 + 
+    O(109^3) 179190 + O(109^3)]
+[O(109^50) 1 + O(109^3) -508836 + O(109^3) 511949 + O(109^3) 101519 + O(109^3) 
+    -87496 + O(109^3)]
+[O(109^50) O(109^50) 1 + O(109^3) -160877 + O(109^3) -551126 + O(109^3) -183796 
+    + O(109^3)]
+[O(109^50) O(109^50) O(109^50) 1 + O(109^3) O(109^50) O(109^50)]
+[O(109^50) O(109^50) O(109^50) O(109^50) 1 + O(109^3) O(109^50)]
+[O(109^50) O(109^50) O(109^50) O(109^50) O(109^50) 1 + O(109^3)]
+point (1 : 0 : 0)
+the leading terms matrix is 
+[O(109^5) 109314 + O(109^3) O(109^5) O(109^5) O(109^5) O(109^5)]
+[O(109^5) O(109^5) O(109^5) 178186 + O(109^3) O(109^5) O(109^5)]
+[O(109^5) O(109^5) O(109^5) O(109^5) O(109^5) 360015 + O(109^3)]
+E*Npt= 
+[O(109^5) 109314 + O(109^3) -107925 + O(109^3) -190220 + O(109^3) 344465 + 
+    O(109^3) 546450 + O(109^3)]
+[O(109^5) O(109^5) O(109^5) 178186 + O(109^3) O(109^5) O(109^5)]
+[O(109^5) O(109^5) O(109^5) O(109^5) O(109^5) 360015 + O(109^3)]
+redSubMat= 
+[ 94  80   0]
+[ 25   0   0]
+[ 33   0  97]
+point (-t^2 - t - 1 : -11*t^2 - 13*t - 17 : 1)
+the leading terms matrix is 
+[247498 + O(109^3) 611889 + O(109^3) O(109^5) O(109^5) O(109^5) O(109^5)]
+[O(109^5) O(109^5) 281354 + O(109^3) 207853 + O(109^3) O(109^5) O(109^5)]
+[O(109^5) O(109^5) O(109^5) O(109^5) 507171 + O(109^3) -42724 + O(109^3)]
+E*Npt= 
+[247498 + O(109^3) -425588 + O(109^3) 556016 + O(109^3) -70857 + O(109^3) 577771
+    + O(109^3) -442569 + O(109^3)]
+[O(109^5) O(109^5) 281354 + O(109^3) -621026 + O(109^3) 87740 + O(109^3) 63215 +
+    O(109^3)]
+[O(109^5) O(109^5) O(109^5) O(109^5) 507171 + O(109^3) -42724 + O(109^3)]
+redSubMat= 
+[102  56   0]
+[ 71 104 103]
+[ 80 104   4]
+point (1/3*(-t^2 - 2*t - 1) : 1/3*(-t^2 + t - 1) : 1)
+the leading terms matrix is 
+[-415612 + O(109^3) -639145 + O(109^3) O(109^5) O(109^5) O(109^5) O(109^5)]
+[O(109^5) O(109^5) -268417 + O(109^3) -225913 + O(109^3) O(109^5) O(109^5)]
+[O(109^5) O(109^5) O(109^5) O(109^5) -611003 + O(109^3) -429968 + O(109^3)]
+E*Npt= 
+[-415612 + O(109^3) 524267 + O(109^3) -356814 + O(109^3) 391377 + O(109^3) 
+    629388 + O(109^3) 407065 + O(109^3)]
+[O(109^5) O(109^5) -268417 + O(109^3) 448820 + O(109^3) 424872 + O(109^3) 
+    -158823 + O(109^3)]
+[O(109^5) O(109^5) O(109^5) O(109^5) -611003 + O(109^3) -429968 + O(109^3)]
+redSubMat= 
+[ 67  67   0]
+[ 22  99  51]
+[ 59  99  37]
+point (1/3*(-t^2 - 2*t - 1) : 1/3*(t^2 - t + 1) : 1)
+the leading terms matrix is 
+[415612 + O(109^3) 639145 + O(109^3) O(109^5) O(109^5) O(109^5) O(109^5)]
+[O(109^5) O(109^5) 268417 + O(109^3) 225913 + O(109^3) O(109^5) O(109^5)]
+[O(109^5) O(109^5) O(109^5) O(109^5) 611003 + O(109^3) 429968 + O(109^3)]
+E*Npt= 
+[415612 + O(109^3) -524267 + O(109^3) 356814 + O(109^3) -391377 + O(109^3) 
+    -629388 + O(109^3) -407065 + O(109^3)]
+[O(109^5) O(109^5) 268417 + O(109^3) -448820 + O(109^3) -424872 + O(109^3) 
+    158823 + O(109^3)]
+[O(109^5) O(109^5) O(109^5) O(109^5) 611003 + O(109^3) 429968 + O(109^3)]
+redSubMat= 
+[ 42  42   0]
+[ 87  10  58]
+[ 50  10  72]
+point (-t^2 - t - 1 : 11*t^2 + 13*t + 17 : 1)
+the leading terms matrix is 
+[-247498 + O(109^3) -611889 + O(109^3) O(109^5) O(109^5) O(109^5) O(109^5)]
+[O(109^5) O(109^5) -281354 + O(109^3) -207853 + O(109^3) O(109^5) O(109^5)]
+[O(109^5) O(109^5) O(109^5) O(109^5) -507171 + O(109^3) 42724 + O(109^3)]
+E*Npt= 
+[-247498 + O(109^3) 425588 + O(109^3) -556016 + O(109^3) 70857 + O(109^3) 
+    -577771 + O(109^3) 442569 + O(109^3)]
+[O(109^5) O(109^5) -281354 + O(109^3) 621026 + O(109^3) -87740 + O(109^3) -63215
+    + O(109^3)]
+[O(109^5) O(109^5) O(109^5) O(109^5) -507171 + O(109^3) 42724 + O(109^3)]
+redSubMat= 
+[  7  53   0]
+[ 38   5   6]
+[ 29   5 105]
+having applied Chabauty to the points [ (1 : 0 : 0), (-t^2 - t - 1 : -11*t^2 - 
+    13*t - 17 : 1), (1/3*(-t^2 - 2*t - 1) : 1/3*(-t^2 + t - 1) : 1), (1/3*(-t^2 
+    - 2*t - 1) : 1/3*(t^2 - t + 1) : 1), (-t^2 - t - 1 : 11*t^2 + 13*t + 17 : 1)
+]
+Chabauty is respectively successful at [ true, true, true, true, true ]
+after applying Chabauty with prime 109
+W has 0 elements
+succeeded in proving that the only K-rational points are [ (1 : 0 : 0), (-t^2 - 
+    t - 1 : -11*t^2 - 13*t - 17 : 1), (1/3*(-t^2 - 2*t - 1) : 1/3*(-t^2 + t - 1)
+: 1), (1/3*(-t^2 - 2*t - 1) : 1/3*(t^2 - t + 1) : 1), (-t^2 - t - 1 : 11*t^2 + 
+    13*t + 17 : 1) ]
+u/v= 2
+this solution corresponds to $K$-rational point (-t^2 - t - 1 : -11*t^2 - 13*t -
+    17 : 1)
+############################################################
+s= 0
+it appears that the Torsion subgroup is isomorphic to 
+Abelian Group of order 1
+computing the 2-Selmer group
+might take a very long time
+2-Selmer rank is 2
+two torsion subgroup is 
+Abelian Group of order 1
+Hence rank is at most 2
+searching for enough torsion points and for 2 independent points on J
+this could take forever!
+found 2 independent points on J and enough torsion
+basis for torsion is []
+torsion subgroup isomorphic to 
+Abelian Group of order 1
+basis for a free subgroup of finite index is [ (x - 1, -3, 1), (x + 1/3*(-t^2 - 
+    2*t - 1), 1/3*(10*t^2 + 8*t + 13), 1) ]
+it appears that a complete list of rational points on C is [ (1 : 0 : 0), (1 : 
+    -3 : 1), (1/3*(t^2 + 2*t + 1) : 1/3*(-10*t^2 - 8*t - 13) : 1), (1 : 3 : 1), 
+(1/3*(t^2 + 2*t + 1) : 1/3*(10*t^2 + 8*t + 13) : 1) ]
+want to prove this using Chabauty and the Mordell--Weil sieve
+working with a subgroup A of the Mordell--Weil group isomorphic to  
+Abelian Group isomorphic to Z + Z
+Defined on 2 generators (free)
+the basis for this subgroup is [ (x - 1, -3, 1), (x + 1/3*(-t^2 - 2*t - 1), 
+    1/3*(10*t^2 + 8*t + 13), 1) ]
+using (1 : -3 : 1) as base point for Abel-Jacobi map
+the image of the known rational points on C in A is [
+    -A.1,
+    0,
+    -A.1 - A.2,
+    -2*A.1,
+    -A.1 + A.2
+]
+applying the Mordell--Weil sieve
+verified saturation at 2
+verified saturation at 3
+verified saturation at 5
+verified saturation at 7
+verified saturation at 11
+verified saturation at 13
+verified saturation at 17
+verified saturation at 19
+verified saturation at 23
+verified saturation at 29
+verified saturation at 31
+verified saturation at 37
+verified saturation at 41
+verified saturation at 43
+verified saturation at 47
+verified saturation at 53
+verified saturation at 59
+verified saturation at 61
+verified saturation at 67
+verified saturation at 71
+verified saturation at 73
+getting sieving information
+17 290 9
+23 530 24
+29 900 5
+31 1375 11
+31 1375 9
+31 1375 9
+43 1850 44
+43 1850 44
+43 1850 19
+47 2210 48
+59 3600 20
+83 6890 84
+89 8100 20
+109 12100 110
+109 12100 8
+109 12100 53
+149 22500 9
+157 24650 77
+157 24650 36
+157 24650 158
+173 29930 174
+179 32400 22
+229 52900 119
+229 52900 23
+229 52900 119
+239 57600 32
+269 72900 25
+307 94250 308
+307 94250 153
+307 94250 308
+359 129600 16
+389 152100 84
+419 176400 25
+439 193600 204
+439 193600 122
+439 193600 204
+449 202500 26
+479 230400 34
+499 250000 252
+499 250000 500
+499 250000 500
+509 260100 106
+557 310250 558
+569 324900 28
+599 360000 32
+659 435600 132
+719 518400 142
+739 547600 378
+739 547600 740
+739 547600 740
+809 656100 21
+839 705600 48
+919 846400 127
+919 846400 226
+919 846400 226
+929 864900 93
+1019 1040400 29
+1049 1102500 99
+1051 1073875 49
+1051 1073875 49
+1051 1073875 51
+1109 1232100 114
+sorting sieving information
+Mordell--Weil sieve
+used 21 places for the Mordell--Weil sieve
+after the Mordell--Weil sieve W= [
+    0,
+    -A.1 - A.2,
+    -A.1,
+    -2*A.1,
+    -A.1 + A.2,
+    -1663201*A.1 - 49896000*A.2,
+    -2494801*A.1 - 62370000*A.2,
+    4157999*A.1 + 112266000*A.2,
+    2494799*A.1 + 62370000*A.2,
+    1663199*A.1 + 49896000*A.2
+]
+and L= 
+Abelian Group isomorphic to Z + Z
+Defined on 2 generators in supergroup A:
+    L.1 = 8316000*A.1
+    L.2 = 24948000*A.2 (free)
+the index of L in A is 207467568000000
+using prime p= 31 for Chabauty
+there are 3 places above 31
+the structures of J(k_v) above these places are
+Abelian Group isomorphic to Z/5 + Z/5 + Z/55
+Defined on 3 generators
+Relations:
+    5*B.1 = 0
+    5*B.2 = 0
+    55*B.3 = 0
+Abelian Group isomorphic to Z/5 + Z/5 + Z/55
+Defined on 3 generators
+Relations:
+    5*B.1 = 0
+    5*B.2 = 0
+    55*B.3 = 0
+Abelian Group isomorphic to Z/5 + Z/5 + Z/55
+Defined on 3 generators
+Relations:
+    5*B.1 = 0
+    5*B.2 = 0
+    55*B.3 = 0
+the integrals of the basis with place P are [*
+    [ 2405654011747568533828295803078765478783187756396600849382753165031719725\
+        *31 + O(31^50), 3853300341522897064233893509433748563061280678860236032\
+        550077634512280361*31 + O(31^50) ],
+    [ -3054895218610312924372328553843810497869120720859753460026082595*31 + 
+    O(31^44), 3771255693438480061550443381496543465419553680015337103690346293*\
+        31 + O(31^44) ]
+*]
+the integrals of the basis with place P are [*
+    [ 2405654011747568533828295803078765478783187756396600849382753165031719725\
+        *31 + O(31^50), 3853300341522897064233893509433748563061280678860236032\
+        550077634512280361*31 + O(31^50) ],
+    [ -521782589599702905194605421691879264761170241160253722633690523727188003\
+    *31 + O(31^50), 26039520526323705782692347948527010281893105444504698171786\
+        95133627670703*31 + O(31^50) ]
+*]
+the integrals of the basis with place P are [*
+    [ 2405654011747568533828295803078765478783187756396600849382753165031719725\
+        *31 + O(31^50), 3853300341522897064233893509433748563061280678860236032\
+        550077634512280361*31 + O(31^50) ],
+    [ 1055302281993208308193219755798410440463514663853488548107629021*31 + 
+    O(31^44), -6524734484258354859388792784654189373646327424912293577605617036\
+    *31 + O(31^44) ]
+*]
+the integration matrix is 
+[10894*31 + O(31^4) -3341*31 + O(31^4) 10894*31 + O(31^4) -3341*31 + O(31^4) 
+    10894*31 + O(31^4) -3341*31 + O(31^4)]
+[-14085*31 + O(31^4) 6288*31 + O(31^4) 2618*31 + O(31^4) -3128*31 + O(31^4) 
+    3464*31 + O(31^4) -9842*31 + O(31^4)]
+the matrix E is 
+[1 + O(31^3) 12905 + O(31^3) -237 + O(31^3) -12261 + O(31^3) 11742 + O(31^3) 
+    1694 + O(31^3)]
+[O(31^50) 1 + O(31^3) 6997 + O(31^3) -7987 + O(31^3) 3399 + O(31^3) -3519 + 
+    O(31^3)]
+[O(31^50) O(31^50) 1 + O(31^3) O(31^50) O(31^50) O(31^50)]
+[O(31^50) O(31^50) O(31^50) 1 + O(31^3) O(31^50) O(31^50)]
+[O(31^50) O(31^50) O(31^50) O(31^50) 1 + O(31^3) O(31^50)]
+[O(31^50) O(31^50) O(31^50) O(31^50) O(31^50) 1 + O(31^3)]
+point (1 : 0 : 0)
+the leading terms matrix is 
+[O(31^5) 4965 + O(31^3) O(31^5) O(31^5) O(31^5) O(31^5)]
+[O(31^5) O(31^5) O(31^5) 4965 + O(31^3) O(31^5) O(31^5)]
+[O(31^5) O(31^5) O(31^5) O(31^5) O(31^5) 4965 + O(31^3)]
+E*Npt= 
+[O(31^5) 4965 + O(31^3) 3799 + O(31^3) -3634 + O(31^3) 14329 + O(31^3) -14309 + 
+    O(31^3)]
+[O(31^5) O(31^5) O(31^5) 4965 + O(31^3) O(31^5) O(31^5)]
+[O(31^5) O(31^5) O(31^5) O(31^5) O(31^5) 4965 + O(31^3)]
+redSubMat= 
+[17  0  0]
+[24  5  0]
+[ 7  0  0]
+[13  0  5]
+point (1 : -3 : 1)
+the leading terms matrix is 
+[9930 + O(31^3) 9930 + O(31^3) O(31^5) O(31^5) O(31^5) O(31^5)]
+[O(31^5) O(31^5) 9930 + O(31^3) 9930 + O(31^3) O(31^5) O(31^5)]
+[O(31^5) O(31^5) O(31^5) O(31^5) 9930 + O(31^3) 9930 + O(31^3)]
+E*Npt= 
+[9930 + O(31^3) -4302 + O(31^3) 7677 + O(31^3) -3181 + O(31^3) -5047 + O(31^3) 
+    -9322 + O(31^3)]
+[O(31^5) O(31^5) 9930 + O(31^3) 9930 + O(31^3) O(31^5) O(31^5)]
+[O(31^5) O(31^5) O(31^5) O(31^5) 9930 + O(31^3) 9930 + O(31^3)]
+redSubMat= 
+[20 10  0]
+[12 10  0]
+[ 6  0 10]
+[ 9  0 10]
+point (1/3*(t^2 + 2*t + 1) : 1/3*(-10*t^2 - 8*t - 13) : 1)
+the leading terms matrix is 
+[13307 + O(31^3) -14014 + O(31^3) O(31^5) O(31^5) O(31^5) O(31^5)]
+[O(31^5) O(31^5) 7623 + O(31^3) 494 + O(31^3) O(31^5) O(31^5)]
+[O(31^5) O(31^5) O(31^5) O(31^5) -705 + O(31^3) -13811 + O(31^3)]
+E*Npt= 
+[13307 + O(31^3) -2503 + O(31^3) -9690 + O(31^3) 13211 + O(31^3) -778 + O(31^3) 
+    1432 + O(31^3)]
+[O(31^5) O(31^5) 7623 + O(31^3) 494 + O(31^3) O(31^5) O(31^5)]
+[O(31^5) O(31^5) O(31^5) O(31^5) -705 + O(31^3) -13811 + O(31^3)]
+redSubMat= 
+[13 28  0]
+[ 5 29  0]
+[28  0  8]
+[ 6  0 15]
+point (1 : 3 : 1)
+the leading terms matrix is 
+[-9930 + O(31^3) -9930 + O(31^3) O(31^5) O(31^5) O(31^5) O(31^5)]
+[O(31^5) O(31^5) -9930 + O(31^3) -9930 + O(31^3) O(31^5) O(31^5)]
+[O(31^5) O(31^5) O(31^5) O(31^5) -9930 + O(31^3) -9930 + O(31^3)]
+E*Npt= 
+[-9930 + O(31^3) 4302 + O(31^3) -7677 + O(31^3) 3181 + O(31^3) 5047 + O(31^3) 
+    9322 + O(31^3)]
+[O(31^5) O(31^5) -9930 + O(31^3) -9930 + O(31^3) O(31^5) O(31^5)]
+[O(31^5) O(31^5) O(31^5) O(31^5) -9930 + O(31^3) -9930 + O(31^3)]
+redSubMat= 
+[11 21  0]
+[19 21  0]
+[25  0 21]
+[22  0 21]
+point (1/3*(t^2 + 2*t + 1) : 1/3*(10*t^2 + 8*t + 13) : 1)
+the leading terms matrix is 
+[-13307 + O(31^3) 14014 + O(31^3) O(31^5) O(31^5) O(31^5) O(31^5)]
+[O(31^5) O(31^5) -7623 + O(31^3) -494 + O(31^3) O(31^5) O(31^5)]
+[O(31^5) O(31^5) O(31^5) O(31^5) 705 + O(31^3) 13811 + O(31^3)]
+E*Npt= 
+[-13307 + O(31^3) 2503 + O(31^3) 9690 + O(31^3) -13211 + O(31^3) 778 + O(31^3) 
+    -1432 + O(31^3)]
+[O(31^5) O(31^5) -7623 + O(31^3) -494 + O(31^3) O(31^5) O(31^5)]
+[O(31^5) O(31^5) O(31^5) O(31^5) 705 + O(31^3) 13811 + O(31^3)]
+redSubMat= 
+[18  3  0]
+[26  2  0]
+[ 3  0 23]
+[25  0 16]
+having applied Chabauty to the points [ (1 : 0 : 0), (1 : -3 : 1), (1/3*(t^2 + 
+    2*t + 1) : 1/3*(-10*t^2 - 8*t - 13) : 1), (1 : 3 : 1), (1/3*(t^2 + 2*t + 1) 
+: 1/3*(10*t^2 + 8*t + 13) : 1) ]
+Chabauty is respectively successful at [ true, true, true, true, true ]
+after applying Chabauty with prime 31
+W has 0 elements
+succeeded in proving that the only K-rational points are [ (1 : 0 : 0), (1 : -3 
+: 1), (1/3*(t^2 + 2*t + 1) : 1/3*(-10*t^2 - 8*t - 13) : 1), (1 : 3 : 1), 
+(1/3*(t^2 + 2*t + 1) : 1/3*(10*t^2 + 8*t + 13) : 1) ]
+u/v= 0
+this solution corresponds to $K$-rational point (1 : -3 : 1)
+############################################################
+s= 1
+it appears that the Torsion subgroup is isomorphic to 
+Abelian Group of order 1
+computing the 2-Selmer group
+might take a very long time
+2-Selmer rank is 3
+two torsion subgroup is 
+Abelian Group of order 1
+Hence rank is at most 3
+searching for enough torsion points and for 3 independent points on J
+this could take forever!
+found 3 independent points on J and enough torsion
+basis for torsion is []
+torsion subgroup isomorphic to 
+Abelian Group of order 1
+basis for a free subgroup of finite index is [ (x + t^2 + t + 1, -40*t^2 - 53*t 
+    - 67, 1), (x + 1, 3*t + 3, 1), (x^2 + 1/3*(t^2 - t - 2)*x + 1/3*(-2*t^2 + 
+    2*t + 1), (2*t - 2)*x - t + 1, 2) ]
+it appears that a complete list of rational points on C is [ (1 : 0 : 0), (-t^2 
+    - t - 1 : 40*t^2 + 53*t + 67 : 1), (-1 : 3*t + 3 : 1), (-1 : -3*t - 3 : 1), 
+(-t^2 - t - 1 : -40*t^2 - 53*t - 67 : 1) ]
+want to prove this using Chabauty and the Mordell--Weil sieve
+working with a subgroup A of the Mordell--Weil group isomorphic to  
+Abelian Group isomorphic to Z + Z + Z
+Defined on 3 generators (free)
+the basis for this subgroup is [ (x + t^2 + t + 1, -40*t^2 - 53*t - 67, 1), (x +
+    1, 3*t + 3, 1), (x^2 + 1/3*(t^2 - t - 2)*x + 1/3*(-2*t^2 + 2*t + 1), (2*t - 
+    2)*x - t + 1, 2) ]
+using (-t^2 - t - 1 : 40*t^2 + 53*t + 67 : 1) as base point for Abel-Jacobi map
+the image of the known rational points on C in A is [
+    A.1,
+    0,
+    A.1 + A.2,
+    A.1 - A.2,
+    2*A.1
+]
+applying the Mordell--Weil sieve
+verified saturation at 2
+verified saturation at 3
+verified saturation at 5
+verified saturation at 7
+verified saturation at 11
+verified saturation at 13
+verified saturation at 17
+verified saturation at 19
+verified saturation at 23
+verified saturation at 29
+verified saturation at 31
+verified saturation at 37
+verified saturation at 41
+verified saturation at 43
+verified saturation at 47
+verified saturation at 53
+verified saturation at 59
+verified saturation at 61
+verified saturation at 67
+verified saturation at 71
+verified saturation at 73
+getting sieving information
+11 176 5
+121 12505 103
+17 290 18
+23 530 24
+29 900 30
+31 1375 43
+31 880 14
+43 1850 44
+43 1850 44
+43 1850 44
+47 2210 48
+59 3600 60
+83 6890 43
+89 8100 13
+109 12100 58
+109 12100 53
+109 12100 58
+149 22500 46
+157 24650 158
+157 24650 158
+157 24650 77
+173 29930 81
+179 32400 180
+229 52900 230
+229 52900 230
+229 52900 20
+239 57600 240
+269 72900 84
+281 68231 241
+307 94250 308
+307 94250 308
+307 94250 308
+359 129600 360
+389 152100 66
+419 176400 218
+439 193600 440
+439 193600 440
+439 193600 440
+449 202500 450
+479 230400 480
+499 250000 252
+499 250000 500
+499 250000 500
+509 260100 510
+557 310250 558
+569 324900 67
+599 360000 100
+659 435600 132
+719 518400 352
+739 547600 740
+739 547600 740
+739 547600 740
+809 656100 810
+839 705600 168
+919 846400 920
+919 846400 484
+919 846400 920
+929 864900 145
+1019 1040400 261
+1049 1102500 1050
+1051 1073875 1023
+1109 1232100 1110
+sorting sieving information
+Mordell--Weil sieve
+used 22 places for the Mordell--Weil sieve
+after the Mordell--Weil sieve W= [
+    0,
+    A.1 - A.2,
+    A.1,
+    A.1 + A.2,
+    2*A.1,
+    A.1 + 12474000*A.2 + 87318000*A.3,
+    277201*A.1 + 5821200*A.2 + 51004800*A.3,
+    277201*A.1 - 6652800*A.2 - 36313200*A.3,
+    -277199*A.1 + 6652800*A.2 + 36313200*A.3,
+    -277199*A.1 - 5821200*A.2 - 51004800*A.3
+]
+and L= 
+Abelian Group isomorphic to Z + Z + Z
+Defined on 3 generators in supergroup A:
+    L.1 = 1386000*A.1 + 16632000*A.2 + 18018000*A.3
+    L.2 = 24948000*A.2
+    L.3 = 24948000*A.3 (free)
+the index of L in A is 862650147744000000000
+using prime p= 109 for Chabauty
+there are 3 places above 109
+the structures of J(k_v) above these places are
+Abelian Group isomorphic to Z/110 + Z/110
+Defined on 2 generators
+Relations:
+    110*$.1 = 0
+    110*$.2 = 0
+Abelian Group isomorphic to Z/110 + Z/110
+Defined on 2 generators
+Relations:
+    110*$.1 = 0
+    110*$.2 = 0
+Abelian Group isomorphic to Z/110 + Z/110
+Defined on 2 generators
+Relations:
+    110*B.1 = 0
+    110*B.2 = 0
+the integrals of the basis with place P are [*
+    [ 520307794098260889907878305562291766566381525865575725684434856447434*109 
+    + O(109^35), 51102542553112817926589710196307336363650458846579489825058221\
+        1041954*109 + O(109^35) ],
+    [ 5979989506491715676870233259798434845954872748958515086912770386174742654\
+        21638279014129200766620337*109 + O(109^50), 
+    -73808993429728400307923370348958267441546629611802762472036013068786778619\
+        2573704405280733828220737*109 + O(109^50) ],
+    [ 103904462615259275582540625056156373313844555801618*109 + O(109^26), 
+        227355126512906671038479154203068267937881511925294*109 + O(109^26) ]
+*]
+the integrals of the basis with place P are [*
+    [ -202905522892292124873209100852351972535139357609138559508360605823326158\
+    18421149624274333741608*109 + O(109^48), 
+    -16541075957980130054202025083606206024808099607149116354931172105313715538\
+        3083926129544440327432*109 + O(109^48) ],
+    [ 1507761777853558501595283579468132245259356215013861548010510894286310851\
+        1034686916070351566*109 + O(109^46), 
+    -98704332364357890572623471377259300616854627708023296177738389345514411510\
+        16294860971849188*109 + O(109^46) ],
+    [ -168673426222655352199641611670785038761016659989684015176302781332116742\
+    182854662122617123698906761*109 + O(109^50), 
+        29920270671891781952492715283506729238415079163890363103334327404948155\
+        03449454405443837927645245352*109 + O(109^50) ]
+*]
+the integrals of the basis with place P are [*
+    [ 1741969250680323670991590168640969451778161548738633209518552450769198083\
+        008498152779217959648881432*109 + O(109^50), 
+        49914097358829145052743544068170198502551524007367702473991041485782586\
+        061911549216036516816569847*109 + O(109^50) ],
+    [ -267235109365698864398650994958247013273033587625096018795259282256995*10\
+    9 + O(109^35), 116080580140906448659985748718778504604583380624209539560756\
+        765410794*109 + O(109^35) ],
+    [ 2734818732111203948637066512432036372252840690601065154243687034586417051\
+        266600483792945861212184319*109 + O(109^50), 
+        18655162069554708021579373016141525825542122066364940159772251370754660\
+        40696360718099553171855662970*109 + O(109^50) ]
+*]
+the integration matrix is 
+[-207948*109 + O(109^4) 165050*109 + O(109^4) -147183*109 + O(109^4) -156049*109
+    + O(109^4) 158326*109 + O(109^4) -157467*109 + O(109^4)]
+[-7525*109 + O(109^4) 592698*109 + O(109^4) 73906*109 + O(109^4) 147546*109 + 
+    O(109^4) -364764*109 + O(109^4) -28850*109 + O(109^4)]
+[-24181*109 + O(109^4) -587132*109 + O(109^4) -209299*109 + O(109^4) -464788*109
+    + O(109^4) 505076*109 + O(109^4) 414577*109 + O(109^4)]
+the matrix E is 
+[1 + O(109^3) 585438 + O(109^3) -164421 + O(109^3) -107987 + O(109^3) 236693 + 
+    O(109^3) -65138 + O(109^3)]
+[O(109^50) 1 + O(109^3) 246949 + O(109^3) -601156 + O(109^3) 422255 + O(109^3) 
+    -341010 + O(109^3)]
+[O(109^50) O(109^50) 1 + O(109^3) -313455 + O(109^3) 248551*109 + O(109^4) 23132
+    + O(109^3)]
+[O(109^50) O(109^50) O(109^50) 1 + O(109^3) O(109^50) O(109^50)]
+[O(109^50) O(109^50) O(109^50) O(109^50) 1 + O(109^3) O(109^50)]
+[O(109^50) O(109^50) O(109^50) O(109^50) O(109^50) 1 + O(109^3)]
+point (1 : 0 : 0)
+the leading terms matrix is 
+[O(109^5) -362408 + O(109^3) O(109^5) O(109^5) O(109^5) O(109^5)]
+[O(109^5) O(109^5) O(109^5) 260574 + O(109^3) O(109^5) O(109^5)]
+[O(109^5) O(109^5) O(109^5) O(109^5) O(109^5) -545681 + O(109^3)]
+E*Npt= 
+[O(109^5) -362408 + O(109^3) 570940 + O(109^3) -280051 + O(109^3) -193226 + 
+    O(109^3) 134610 + O(109^3)]
+[O(109^5) O(109^5) O(109^5) 260574 + O(109^3) O(109^5) O(109^5)]
+[O(109^5) O(109^5) O(109^5) O(109^5) O(109^5) -545681 + O(109^3)]
+redSubMat= 
+[ 79  64   0]
+[ 31   0   0]
+[104   0  82]
+point (-t^2 - t - 1 : 40*t^2 + 53*t + 67 : 1)
+the leading terms matrix is 
+[-108466 + O(109^3) -9142 + O(109^3) O(109^5) O(109^5) O(109^5) O(109^5)]
+[O(109^5) O(109^5) -248536 + O(109^3) -236044 + O(109^3) O(109^5) O(109^5)]
+[O(109^5) O(109^5) O(109^5) O(109^5) -119036 + O(109^3) 465290 + O(109^3)]
+E*Npt= 
+[-108466 + O(109^3) 324736 + O(109^3) -128384 + O(109^3) 340742 + O(109^3) 
+    -261803 + O(109^3) -41299 + O(109^3)]
+[O(109^5) O(109^5) -248536 + O(109^3) -443717 + O(109^3) 306993*109 + O(109^4) 
+    -501021 + O(109^3)]
+[O(109^5) O(109^5) O(109^5) O(109^5) -119036 + O(109^3) 465290 + O(109^3)]
+redSubMat= 
+[  8  22   0]
+[ 15   0 101]
+[ 12  52  78]
+point (-1 : 3*t + 3 : 1)
+the leading terms matrix is 
+[-19482 + O(109^3) 19482 + O(109^3) O(109^5) O(109^5) O(109^5) O(109^5)]
+[O(109^5) O(109^5) 490819 + O(109^3) -490819 + O(109^3) O(109^5) O(109^5)]
+[O(109^5) O(109^5) O(109^5) O(109^5) 392016 + O(109^3) -392016 + O(109^3)]
+E*Npt= 
+[-19482 + O(109^3) -163231 + O(109^3) -624141 + O(109^3) -98307 + O(109^3) 
+    -602084 + O(109^3) -167954 + O(109^3)]
+[O(109^5) O(109^5) 490819 + O(109^3) 579765 + O(109^3) 526440*109 + O(109^4) 
+    105865 + O(109^3)]
+[O(109^5) O(109^5) O(109^5) O(109^5) 392016 + O(109^3) -392016 + O(109^3)]
+redSubMat= 
+[ 11 103   0]
+[ 32   0  52]
+[ 15  26  57]
+point (-1 : -3*t - 3 : 1)
+the leading terms matrix is 
+[19482 + O(109^3) -19482 + O(109^3) O(109^5) O(109^5) O(109^5) O(109^5)]
+[O(109^5) O(109^5) -490819 + O(109^3) 490819 + O(109^3) O(109^5) O(109^5)]
+[O(109^5) O(109^5) O(109^5) O(109^5) -392016 + O(109^3) 392016 + O(109^3)]
+E*Npt= 
+[19482 + O(109^3) 163231 + O(109^3) 624141 + O(109^3) 98307 + O(109^3) 602084 + 
+    O(109^3) 167954 + O(109^3)]
+[O(109^5) O(109^5) -490819 + O(109^3) -579765 + O(109^3) -526440*109 + O(109^4) 
+    -105865 + O(109^3)]
+[O(109^5) O(109^5) O(109^5) O(109^5) -392016 + O(109^3) 392016 + O(109^3)]
+redSubMat= 
+[ 98   6   0]
+[ 77   0  57]
+[ 94  83  52]
+point (-t^2 - t - 1 : -40*t^2 - 53*t - 67 : 1)
+the leading terms matrix is 
+[108466 + O(109^3) 9142 + O(109^3) O(109^5) O(109^5) O(109^5) O(109^5)]
+[O(109^5) O(109^5) 248536 + O(109^3) 236044 + O(109^3) O(109^5) O(109^5)]
+[O(109^5) O(109^5) O(109^5) O(109^5) 119036 + O(109^3) -465290 + O(109^3)]
+E*Npt= 
+[108466 + O(109^3) -324736 + O(109^3) 128384 + O(109^3) -340742 + O(109^3) 
+    261803 + O(109^3) 41299 + O(109^3)]
+[O(109^5) O(109^5) 248536 + O(109^3) 443717 + O(109^3) -306993*109 + O(109^4) 
+    501021 + O(109^3)]
+[O(109^5) O(109^5) O(109^5) O(109^5) 119036 + O(109^3) -465290 + O(109^3)]
+redSubMat= 
+[101  87   0]
+[ 94   0   8]
+[ 97  57  31]
+having applied Chabauty to the points [ (1 : 0 : 0), (-t^2 - t - 1 : 40*t^2 + 
+    53*t + 67 : 1), (-1 : 3*t + 3 : 1), (-1 : -3*t - 3 : 1), (-t^2 - t - 1 : 
+    -40*t^2 - 53*t - 67 : 1) ]
+Chabauty is respectively successful at [ true, true, true, true, true ]
+after applying Chabauty with prime 109
+W has 0 elements
+succeeded in proving that the only K-rational points are [ (1 : 0 : 0), (-t^2 - 
+    t - 1 : 40*t^2 + 53*t + 67 : 1), (-1 : 3*t + 3 : 1), (-1 : -3*t - 3 : 1), 
+(-t^2 - t - 1 : -40*t^2 - 53*t - 67 : 1) ]
+u/v= 5/4
+this solution corresponds to $K$-rational point (-t^2 - t - 1 : 40*t^2 + 53*t + 
+    67 : 1)
+u/v= 1
+this solution corresponds to $K$-rational point (-1 : 3*t + 3 : 1)
+############################################################
+s= 2
+it appears that the Torsion subgroup is isomorphic to 
+Abelian Group of order 1
+computing the 2-Selmer group
+might take a very long time
+2-Selmer rank is 0
+two torsion subgroup is 
+Abelian Group of order 1
+Hence rank is at most 0
+searching for enough torsion points and for 0 independent points on J
+this could take forever!
+found 0 independent points on J and enough torsion
+basis for torsion is []
+torsion subgroup isomorphic to 
+Abelian Group of order 1
+basis for a free subgroup of finite index is []
+Mordell--Weil rank is 0 and we know the torsion
+succeeded in showing that the only $K$-rational points are [ (1 : 0 : 0) ]
+############################################################
+
+Total time: 8740.729 seconds, Total memory usage: 175.33MB

@@ -1,0 +1,260 @@
+Attach("MW1.m");
+load "bounds.m";
+
+// Given a set of tuples mod B, return all tuples mod B*p lifting them
+// and compatible with GI. Return "primes" used in the process as second
+// value.
+function LiftInformation(S, GI, B, p)
+  // S = {[a1,...,ar], ...} 
+  // new version (2008-04-08): split lifting into p-steps
+  // preparation: find relevant entries in GI
+  vprintf MWSieve: "LiftInformation: B = %o, p = %o, #S = %o\n", B, p, #S;
+  r := #GI[1,2];
+  vpB := Valuation(B, p);
+  Bp := B*p;
+  // Select relevant entries from GI
+  tests := [e : e in GI | Valuation(Exponent(Universe(e[2])), p) gt vpB];
+  // Reduce to the information needed and remove entries that give no
+  // restrictions
+  tests := [[* e[1], [q(b) : b in e[2]], imC *]
+             : e in tests
+             | #imC lt #G1
+               where imC := {q(c) : c in e[3]}
+               where G1, q := quo< G | [Bp*g : g in Generators(G)]>
+               where G := Universe(e[2])];
+  // Add the homomorphism and its kernel to the data
+  MW := FreeAbelianGroup(r);
+  tests := [Append(Append(e, h), Kernel(h))
+             where h := hom<MW -> Universe(e[2]) | e[2]>
+             : e in tests];
+  
+  // Find a filtration
+  //  B*MW = L_0 \supset L_1 \supset ... \supset L_m = B*p*MW
+  // such that the expected sizes of the sets of candidates
+  //  S_j = {s in MW/L_j : p_ij(h_i(s)) in p_ij(S_i) for all i}
+  // where  h_i : MW --> G_i  and  p_ij : G_i -->> G_i/h_i(L_j),
+  // are as small as possible.
+  // Do it in the greedy way.
+  
+  // The current subgroup
+  BMW := sub<MW | [B*MW.i : i in [1..r]]>;
+  // The target subgroup
+  BpMW :=  sub<MW | [Bp*MW.i : i in[1..r]]>;
+  // The sequence of subgroups, from BMW down to BpMW (initialize)
+  steps := [BMW];
+  Lcurr := BMW;
+  testsleft := tests;
+  
+  vprintf MWSieve, 2: "  starting computation of steps...\n";
+  
+  while not IsEmpty(testsleft) do
+    vprintf MWSieve, 3: "   Size of testleft: %o\n", #testsleft;
+    Lset := {@ Parent(BMW) | @}; // indexed set of subgroups considered
+    Lval := [];   // parallel sequence of "values" of these subgroups
+    for e in testsleft do
+      Lnew := Lcurr meet e[5]; // e[5] = ker(h : MW -> G_e)
+      G := Universe(e[2]);
+      h := e[4];
+      G1, q := quo<G | h(Lcurr)>;
+      pd := #G/#G1;
+      val := 1.0*#e[3]/#{q(c) : c in e[3]}/pd;
+      vprintf MWSieve, 3: "      q = %o, dim = %o, val = %o -- ",
+                          e[1], Valuation(pd, p), ChangePrecision(pd*val, 4);
+      // try to find Lnew in Lset
+      pos := Position(Lset, Lnew);
+      if pos eq 0 then
+        // not yet in: add it and initialize the value
+        vprintf MWSieve, 3: "new subgroup\n";
+        Include(~Lset, Lnew);
+        Append(~Lval, pd*val);
+      else
+        // already there: update the value
+        Lval[pos] *:= val;
+        vprintf MWSieve, 3: "known subgroup, new value = %o\n",
+                            ChangePrecision(Lval[pos], 4);
+      end if;
+    end for; // e in testsleft
+    // Find best new subgroup
+    m, pos := Min(Lval);
+    vprintf MWSieve, 2: "    expected relative growth: %o, dimension: %o\n",
+                        ChangePrecision(1.0*m, 5), 
+                        Valuation(#quo<Lcurr | Lset[pos]>, p);
+    // and put it into the list
+    Append(~steps, Lset[pos]);
+    Lcurr := Lset[pos];
+    // Remove entries that no longer can give information
+    testsleft := [e : e in tests | #e[4](Lcurr) gt 1];
+  end while;
+  
+  if Lcurr ne BpMW then
+    vprintf MWSieve, 2: "    'Information dimension' is only %o\n",
+                        r - Valuation(#quo<Lcurr | BpMW>, p);
+  end if;
+  vprintf MWSieve, 1: "  starting the lifting...\n";
+  vprintf MWSieve, 2: "    intermediate sizes:";
+  
+  // now lift S successively
+  primes := {};
+  Q1, q1 := quo<MW | BMW>;
+  S1 := {q1(MW!s) : s in S};
+  for j := 2 to #steps do
+    L := steps[j];
+    QL, qL := quo<MW | L>;
+    // first determine relevant elements of tests
+    tests1 := [[* e[1], [q(b) : b in e[2]], {q(c) : c in e[3]},
+                  hom<QL -> QG | [q(h(g @@ qL)) : g in OrderedGenerators(QL)]> 
+               *]
+               where QG, q := quo<G | GL>
+                : e in tests
+                | GL ne h(steps[j-1])
+                  where GL := h(L)
+                  where h := hom<MW -> G | e[2]>
+                  where G := Universe(e[2])];
+    // now lift
+    hL := hom<QL -> Q1 | [q1(l @@ qL) : l in OrderedGenerators(QL)]>;
+    KhL := Set(Kernel(hL));
+    cands := {};
+    // for each possible lift of an element of S1 to QL,
+    //  check if it "survives" all the conditions in tests1
+    for a in S1 do
+      lifta := qL(a @@ q1); // some lift of a to QL
+      for k in KhL do
+        // all lifts are obtained by adding elements from the kernel
+        c := lifta + k;
+        if forall(e){e : e in tests1 | e[4](c) in e[3]} then
+          // we have to keep this candidate
+          Include(~cands, c);
+        else
+          // we can discard it. 
+          // Note in primes that we have used this entry.
+          Include(~primes, e[1]);
+        end if;
+      end for; // k
+    end for; // a
+    vprintf MWSieve, 2: " %o", #cands;
+    S1 := cands;
+    Q1 := QL;
+    q1 := qL;
+  end for; // j
+  // lift all the way and convert back to sequences
+  if Lcurr ne BpMW then
+    last, qlast := quo<MW | BpMW>;
+    hlast := hom<last -> Q1 | [q1(l @@ qlast) : l in OrderedGenerators(last)]>;
+    Klast := Set(Kernel(hlast));
+    cands := {(a @@ hlast) + k : k in Klast, a in S1};
+    vprintf MWSieve, 2: " %o", #cands;
+  end if;
+  S := {Eltseq(c) : c in cands};
+  if IsVerbose("MWSieve", 2) then
+    if not IsEmpty(primes) then
+      printf "\n  entries used: %o", primes;
+    end if;
+    printf "\n  size of conditions mod %o is %o\n", Bp, #S;
+  end if;
+  return S, primes;
+end function;
+
+function BMCompute(GI, run)
+  if not IsEmpty(run) and Type(run[1]) eq RngIntElt then
+    run := [<r, -1.0> : r in run];
+  end if;
+  // initialize
+  B := 1;
+  r := #GI[1,2];
+  cands := {[0 : i in [1..r]]};
+  primes := {};
+  s := #run;
+  for j := 1 to #run do
+    p := run[j,1];
+    cands, pr := LiftInformation(cands, GI, B, p);
+    primes join:= pr;
+    B *:= p;
+    if IsVerbose("MWSieve", 1) then
+      if run[j,2] lt 0 then
+        printf "BMCompute: B = %o, size = %o\n", B, #cands;
+      else
+        printf "BMCompute: B = %o, size = %o (predicted: %o)\n",
+               B, #cands, Round(run[j,2]);
+      end if;
+    end if;
+    if IsEmpty(cands) then
+      if IsVerbose("MWSieve", 1) then
+        printf "SUCCESS with B = %o = %o\n", B, Factorization(B);
+        printf "Successive prime factors: %o\n", [run[i,1] : i in [1..j]];
+        printf "Primes used: %o\n\n", primes;
+      end if;
+      s := j;
+      break;
+    end if;
+  end for;
+  return [Integers() | run[i,1] : i in [1..s]], cands, primes;
+end function;
+
+// Lattice stage of Mordell-Weil sieve, following Samir Siksek
+
+// Given:
+// * a finite-index subgroup L of an abstract abelian group MW
+//   isomorphic to the Mordell-Weil group, with explicit generators
+//   of the latter corresponding to the generators of MW
+// * a finite subset S of MW corresponding to the known rational points
+//   on the curve
+// such that we know that the image of C(Q) in MW/L is the image of S.
+
+// For a prime q and the images of the generators of MW in J(F_q),
+// check if the image of C(Q) in MW/(L meet ker(MW -> J(F_q))) is
+// still the image of S.
+
+// NOTE: We assume that there is a Weierstrass point at infinity,
+//       which is used as a base-point for the embedding of C in J.
+// For more general applications, this has to be modified!
+
+function TestEnlarge(L, S, q, J, bas)
+  // L, S as above, q a prime of good reduction
+  // J the Jacobian of the curve, bas a sequence of generators of J(Q),
+  //  correponding to the generators of MW = Universe(S)
+  // returns either
+  //   true, L'  if we can replace L by a smaller subgroup L'
+  // or
+  //   false, L  otherwise.
+  MW := Universe(S);
+  index := Index(MW, L);
+  printf "TestEnlarge: index = %o, q = %o\n", ChangePrecision(1.0*index, 5), q;
+  Jq := BaseChange(J, GF(q));
+  h := #Jq;
+  if #S*ExactQuotient(h, GCD(h, index)) gt 10*q then
+    printf "  too large part prime to index of L\n\n";
+    return false, L;
+  end if;
+  G, m := AbelianGroup(Jq);
+  imbas := [(Jq!b) @@ m : b in bas];
+  h := hom<MW -> G | imbas>;
+  L1 := L meet Kernel(h);
+  if L1 eq L then
+    printf "  no new information (L' = L)\n\n";
+    return false, L;
+  end if;
+  QL, qL := quo<L | L1>;
+  printf "  index (L : L') = %o, #S*(L : L')/q = %o\n",
+         #QL, ChangePrecision(1.0*#QL*#S/q, 4);
+  if 1.0*#QL*#S/q gt 10.0 then
+    printf "  success very unlikely ==> abort\n\n";
+    return false, L;
+  end if;
+  reps := [l @@ qL : l in QL | l ne QL!0];
+  Kq := KummerSurface(Jq);
+  function test(c)
+    // c in MW, check if image in J(F_q) is on C
+    pt := m(h(c));
+    return (Kq!pt)[1] eq 0;
+  end function;
+  for s in S do
+    for r in reps do
+      if test(s + r) then
+        printf "  not enough information\n\n";
+        return false, L;
+      end if;
+    end for; // r
+  end for; // s
+  printf "  success!\n\n";
+  return true, L1;
+end function;

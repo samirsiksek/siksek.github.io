@@ -1,0 +1,136 @@
+﻿
+Rational Points on Curves and Higher Dimensional Varieties
+
+Monday 16--Friday 20 June 2008
+
+at the
+
+Mathematics Research Centre, University of Warwick, UK
+
+organized by
+
+Jean-Louis Colliot-Thélène, Samir Siksek, Alexei Skorobogatov, Michael Stoll
+
+
+
+
+Programme
+
+All talks will be in Lecture Room MS.02 in the Zeeman Building
+
+
+Monday 16 June
+=============
+
+8:30-9:20 Registration
+
+9:20-10:20 Ronald van Luijk (Warwick),
+"Density of rational points on diagonal quartic surfaces"
+
+10:20-11:00 Coffee
+
+11:00-12:00 Tony Varilly (Berkeley),                                    
+"weak approxiamtion on del Pezzos of degree 1"
+
+12:10-13:10 Roger Heath-Brown (Oxford),
+"Sums and differences of 3 k-th powers"
+
+13:10-15:00 Lunch
+
+15:00-16:00 Tea in the common room
+
+16:00-17:00 Tim Browning (Bristol),
+"Manin's conjecture for a non-singular quartic del Pezzo surface"
+
+17:10-17:40 Evis Ieronymou (Imperial), 
+"Transcendental elements of the Brauer group of diagonal quartic surfaces"
+
+18:00 Dinner in Mathematics Common Room
+
+
+Tuesday 17 June
+===============
+
+9:20-10:20 Bjorn Poonen (Berkeley),
+"Insufficiency of the Brauer-Manin obstruction applied to etale covers"
+
+10:20-11:00 Coffee
+
+11:00-12:00 Cyril Demarche (Orsay),                                  
+"Descent obstruction and Brauer-Manin obstruction"
+
+12:10-13:10 Olivier Wittenberg (Strasbourg),
+"Fundamental groups and the elementary obstruction"
+
+13:10-15:00 Lunch
+
+15:00-16:00 Tea in the common room
+
+16:00-17:00 David Harari (Orsay),
+"The defect of strong approximation on commutative algebraic groups".
+
+
+
+Wednesday 18 June
+=================
+
+9:20-10:20 Minhyong Kim (UCL),
+"A non-abelian principle of Birch and Swinnerton-Dyer" 
+
+10:20-11:00 Coffee
+
+11:00-12:00 Ambrus Pal (Imperial),
+"Constructing rational points on genus one curves over function fields"
+
+12:10-13:10 Christian Wuthrich (Nottingham),
+"Computations about the Tate-Shafarevich group using Iwasawa theory"
+
+Afternoon Off 
+
+
+Thursday 19 June
+================
+
+9:20-10:20 Damiano Testa (Bremen),                                   
+"The Rational Box Problem"
+
+10:20-11:00 Coffee
+
+11:00-12:00 Victor Flynn (Oxford), 
+"Sha and degree 4 del Pezzo surfaces"
+
+12:10-13:10 Alexei Skorobogatov (Imperial),
+"On the equations for universal torsors over del Pezzo surfaces" 
+
+13:10-15:00 Lunch
+
+15:00-16:00 Tea in the common room
+
+16:00-17:00 Noam Elkies (Harvard),
+"How many points can a genus-2 curve have?"
+
+17:10-17:40 Jan Steffen Mueller (Bremen), 
+"Explicit Kummer surface theory in arbitrary characteristic"
+
+17:40- Drinks in common room
+
+Friday 20 June
+==============
+
+9:20-10:20 Tim Dokchitser (Cambridge), 
+"The parity of ranks of elliptic curves"
+
+10:20-11:00 Coffee 
+
+11:00-12:00 Tom Fisher (Cambridge),
+"Minimal models for genus one curves"
+
+12:10-13:10 Emmanuel Peyre (Grenoble),
+"Very free rational points" 
+
+13:10-15:00 Lunch
+
+15:00-16:00 Tea in the common room
+
+16:00-17:00 Mathematics Institute Colloquium (TBA)
+

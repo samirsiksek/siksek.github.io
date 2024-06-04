@@ -1,0 +1,687 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"  
+  "http://www.w3.org/TR/html4/loose.dtd">  
+<html > 
+<head><title></title> 
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+<meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)"> 
+<meta name="originator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)"> 
+<!-- html --> 
+<meta name="src" content="solns1.tex"> 
+<meta name="date" content="2014-10-26 09:33:00"> 
+<link rel="stylesheet" type="text/css" href="solns1.css"> 
+</head><body 
+>
+<div class="center" 
+>
+<!--l. 54--><p class="noindent" >
+<!--l. 55--><p class="noindent" ><span 
+class="cmbx-12x-x-144">MA3D5 Galois Theory</span>
+<!--l. 59--><p class="noindent" ><span 
+class="cmr-12x-x-120">Solutions to Homework Assignment 1</span>
+</div>
+<!--l. 71--><p class="noindent" >You&#8217;ll mostly need the following facts from the lectures to answer the
+homework questions.
+          <ol  class="enumerate1" >
+       <li 
+  class="enumerate" id="x1-2x">(Algebra II fact) Let <span 
+class="cmmi-12">f </span><span 
+class="cmsy-10x-x-120">&isin; </span><span 
+class="msbm-10x-x-120">&#x2124;</span>[<span 
+class="cmmi-12">x</span>] be primitive (i.e. the gcd of all
+       the coefficients is 1). Then <span 
+class="cmmi-12">f </span>is irreducible in <span 
+class="msbm-10x-x-120">&#x211A;</span>[<span 
+class="cmmi-12">x</span>] if and only
+       if it is irreducible in <span 
+class="msbm-10x-x-120">&#x2124;</span>[<span 
+class="cmmi-12">x</span>].
+          </li>
+       <li 
+  class="enumerate" id="x1-3x">If <span 
+class="cmmi-12">&alpha; </span>is algebraic over a field <span 
+class="cmmi-12">K </span>then its minimal polynomial
+       over  <span 
+class="cmmi-12">K  </span>is  defined  as  the  monic  polynomial  <span 
+class="cmmi-12">m  </span><span 
+class="cmsy-10x-x-120">&isin; </span><span 
+class="cmmi-12">K</span>[<span 
+class="cmmi-12">x</span>]  of
+       smallest possible degree such that <span 
+class="cmmi-12">m</span>(<span 
+class="cmmi-12">&alpha;</span>)  =  0. Moreover, the
+       minimal polynomial of <span 
+class="cmmi-12">&alpha; </span>over <span 
+class="cmmi-12">K </span>is the unique monic irreducible
+       polynomial <span 
+class="cmmi-12">m </span><span 
+class="cmsy-10x-x-120">&isin; </span><span 
+class="cmmi-12">K</span>[<span 
+class="cmmi-12">x</span>] such that <span 
+class="cmmi-12">m</span>(<span 
+class="cmmi-12">&alpha;</span>) = 0.
+          </li>
+       <li 
+  class="enumerate" id="x1-4x">Let <span 
+class="cmmi-12">&alpha; </span>be algebraic over <span 
+class="cmmi-12">K </span>having minimal polynomial <span 
+class="cmmi-12">m </span><span 
+class="cmsy-10x-x-120">&isin; </span><span 
+class="cmmi-12">K</span>[<span 
+class="cmmi-12">x</span>]
+       of degree <span 
+class="cmmi-12">d</span>. Then [<span 
+class="cmmi-12">K</span>(<span 
+class="cmmi-12">&alpha;</span>) : <span 
+class="cmmi-12">K</span>] = <span 
+class="cmmi-12">d</span>. Moreover, a <span 
+class="cmmi-12">K</span>-basis for
+       <span 
+class="cmmi-12">K</span>(<span 
+class="cmmi-12">&alpha;</span>) is 1<span 
+class="cmmi-12">,&alpha;,</span><span 
+class="cmmi-12">&hellip;</span><span 
+class="cmmi-12">,&alpha;</span><sup><span 
+class="cmmi-8">d</span><span 
+class="cmsy-8">&minus;</span><span 
+class="cmr-8">1</span></sup>.
+          </li>
+       <li 
+  class="enumerate" id="x1-5x">The tower law: if <span 
+class="cmmi-12">M&#x2215;L&#x2215;K </span>then [<span 
+class="cmmi-12">M </span>: <span 
+class="cmmi-12">K</span>] = [<span 
+class="cmmi-12">M </span>: <span 
+class="cmmi-12">L</span>][<span 
+class="cmmi-12">L </span>: <span 
+class="cmmi-12">K</span>].
+       From the proof of the tower law we know that if <span 
+class="cmsy-10x-x-120">{</span><span 
+class="cmmi-12">m</span><sub><span 
+class="cmmi-8">i</span></sub><span 
+class="cmsy-10x-x-120">} </span>is a basis
+       for <span 
+class="cmmi-12">M&#x2215;L </span>and <span 
+class="cmsy-10x-x-120">{</span><span 
+class="cmmi-12">&#x2113;</span><sub><span 
+class="cmmi-8">j</span></sub><span 
+class="cmsy-10x-x-120">} </span>is a basis for <span 
+class="cmmi-12">L&#x2215;K </span>then <span 
+class="cmsy-10x-x-120">{</span><span 
+class="cmmi-12">m</span><sub><span 
+class="cmmi-8">i</span></sub><span 
+class="cmmi-12">&#x2113;</span><sub><span 
+class="cmmi-8">j</span></sub><span 
+class="cmsy-10x-x-120">} </span>is a basis for
+       <span 
+class="cmmi-12">M&#x2215;K</span>.</li></ol>
+<!--l. 105--><p class="noindent" ><span 
+class="cmbx-12">Answer 1(a) </span>Note that <span 
+class="cmmi-12">x</span><sup><span 
+class="cmr-8">2</span></sup> <span 
+class="cmsy-10x-x-120">&minus; </span><span 
+class="cmmi-12">q </span>is irreducible over <span 
+class="msbm-10x-x-120">&#x211A;</span>, thus it is a minimal
+polynomial for <img 
+src="solns10x.png" alt="&radic; --
+  q"  class="sqrt" > over <span 
+class="msbm-10x-x-120">&#x211A;</span>. By fact (iii),
+  <center class="math-display" >
+<img 
+src="solns11x.png" alt="&#x211A; (&radic;q-) = {a + b&radic;q-: a,b &isin; &#x211A;}.
+" class="math-display" ></center>
+<!--l. 111--><p class="nopar" > Suppose <img 
+src="solns12x.png" alt="&radic; --
+  p"  class="sqrt" > <span 
+class="cmsy-10x-x-120">&isin; </span><span 
+class="msbm-10x-x-120">&#x211A;</span>(<img 
+src="solns13x.png" alt="&radic; --
+  q"  class="sqrt" >). Then
+  <center class="math-display" >
+<img 
+src="solns14x.png" alt="&radic; --       &radic; --
+  p = a + b  q
+" class="math-display" ></center>
+<!--l. 115--><p class="nopar" > where <span 
+class="cmmi-12">a</span>, <span 
+class="cmmi-12">b </span><span 
+class="cmsy-10x-x-120">&isin; </span><span 
+class="msbm-10x-x-120">&#x211A;</span>. Squaring both sides and rearranging gives
+  <center class="math-display" >
+<img 
+src="solns15x.png" alt="                   &radic; --
+(a2 + qb2 &minus; p) + 2ab  q = 0.
+" class="math-display" ></center>
+<!--l. 120--><p class="nopar" > As 1, <img 
+src="solns16x.png" alt="&radic; --
+  q"  class="sqrt" > is a basis for <span 
+class="msbm-10x-x-120">&#x211A;</span>(<img 
+src="solns17x.png" alt="&radic; --
+  q"  class="sqrt" >) over <span 
+class="cmmi-12">q</span>, we have
+  <center class="math-display" >
+<img 
+src="solns18x.png" alt=" 2    2
+a + qb  &minus; p = 0,     2ab = 0.
+" class="math-display" ></center>
+<!--l. 125--><p class="nopar" > Hence, either <span 
+class="cmmi-12">a </span>= 0, <span 
+class="cmmi-12">b </span>= <img 
+src="solns19x.png" alt="&#x2218; --
+   p
+   q"  class="sqrt" > or <span 
+class="cmmi-12">b </span>= 0, <span 
+class="cmmi-12">a </span>= <img 
+src="solns110x.png" alt="&radic;p--"  class="sqrt" >. As <span 
+class="cmmi-12">p</span>, <span 
+class="cmmi-12">q </span>are distinct primes,
+and <span 
+class="cmmi-12">a</span>, <span 
+class="cmmi-12">b </span><span 
+class="cmsy-10x-x-120">&isin; </span><span 
+class="msbm-10x-x-120">&#x211A; </span>we have a contradiction.
+<!--l. 132--><p class="noindent" ><span 
+class="cmbx-12">Answer 1(b)</span>
+<!--l. 134--><p class="indent" >  We apply the tower law to get
+  <center class="math-display" >
+<img 
+src="solns111x.png" alt="    &radic;-- &radic;--           &radic; --
+[&#x211A; ( p,  q ) : &#x211A; ] = [L ( p) : L ][L : &#x211A;]
+" class="math-display" ></center>
+<!--l. 138--><p class="nopar" > where <span 
+class="cmmi-12">L </span>= <span 
+class="msbm-10x-x-120">&#x211A;</span>(<img 
+src="solns112x.png" alt="&radic;--
+ q"  class="sqrt" >). We know already that [<span 
+class="cmmi-12">L </span>: <span 
+class="msbm-10x-x-120">&#x211A;</span>] = 2. Now <img 
+src="solns113x.png" alt="&radic; --
+  p"  class="sqrt" > is a root of
+<span 
+class="cmmi-12">x</span><sup><span 
+class="cmr-8">2</span></sup> <span 
+class="cmsy-10x-x-120">&minus; </span><span 
+class="cmmi-12">p </span><span 
+class="cmsy-10x-x-120">&isin; </span><span 
+class="cmmi-12">L</span>[<span 
+class="cmmi-12">x</span>]. Note that <img 
+src="solns114x.png" alt="&radic; --
+  p"  class="sqrt" ><img 
+src="solns115x.png" alt="&isin;&#x2215;"  class="notin" ><span 
+class="cmmi-12">L </span>by (a), so <span 
+class="cmmi-12">x</span><sup><span 
+class="cmr-8">2</span></sup> <span 
+class="cmsy-10x-x-120">&minus; </span><span 
+class="cmmi-12">p </span>is irreducible over <span 
+class="cmmi-12">L</span>
+and hence it is the minimal polynomial for <img 
+src="solns116x.png" alt="&radic;p--"  class="sqrt" > over <span 
+class="cmmi-12">L</span>. By fact (iii),
+[<span 
+class="cmmi-12">L</span>(<img 
+src="solns117x.png" alt="&radic;p--"  class="sqrt" >) : <span 
+class="cmmi-12">L</span>] = 2. Hence
+  <center class="math-display" >
+<img 
+src="solns118x.png" alt="   &radic; --&radic; --          &radic; --
+[&#x211A; (  p,  q) : &#x211A; ] = [L( p) : L ][L : &#x211A; ] = 2 &#x00D7; 2 = 4.
+" class="math-display" ></center>
+<!--l. 149--><p class="nopar" >
+<!--l. 153--><p class="noindent" ><span 
+class="cmbx-12">Answer 1(c)</span>
+<!--l. 155--><p class="indent" >  Since <img 
+src="solns119x.png" alt="&radic; ---
+  pq"  class="sqrt" > <span 
+class="cmsy-10x-x-120">&isin; </span><span 
+class="msbm-10x-x-120">&#x211A;</span>(<img 
+src="solns120x.png" alt="&radic; --
+  p"  class="sqrt" ><span 
+class="cmmi-12">,</span><img 
+src="solns121x.png" alt="&radic; --
+  q"  class="sqrt" >) we have
+  <center class="math-display" >
+<img 
+src="solns122x.png" alt="&#x211A; (&radic;p,-&radic;q,-&radic;pq-) = &#x211A; (&radic;p, &radic;q-).
+" class="math-display" ></center>
+<!--l. 159--><p class="nopar" > Thus
+  <center class="math-display" >
+<img 
+src="solns123x.png" alt="    &radic;-- &radic;-- &radic;---           &radic; --&radic; --
+[&#x211A; ( p,  q,  pq ) : &#x211A; ] = [&#x211A; ( p, q) : &#x211A; ] = 4.
+" class="math-display" ></center>
+<!--l. 163--><p class="nopar" >
+<!--l. 167--><p class="noindent" ><span 
+class="cmbx-12">Answer 1(d)</span>
+<!--l. 169--><p class="indent" >  Write <span 
+class="cmmi-12">M </span>= <span 
+class="msbm-10x-x-120">&#x211A;</span>(<img 
+src="solns124x.png" alt="&radic;p--"  class="sqrt" ><span 
+class="cmmi-12">,</span><img 
+src="solns125x.png" alt="&radic;q--"  class="sqrt" >). Want to show that <span 
+class="cmmi-12">M </span>= <span 
+class="msbm-10x-x-120">&#x211A;</span>(<img 
+src="solns126x.png" alt="&radic;p--"  class="sqrt" > + <img 
+src="solns127x.png" alt="&radic;q--"  class="sqrt" >). Let
+<span 
+class="cmmi-12">&alpha; </span>= <img 
+src="solns128x.png" alt="&radic; --
+  p"  class="sqrt" > + <img 
+src="solns129x.png" alt="&radic; --
+  q"  class="sqrt" >. Since <span 
+class="cmmi-12">&alpha; </span><span 
+class="cmsy-10x-x-120">&isin; </span><span 
+class="cmmi-12">M </span>it follows that <span 
+class="msbm-10x-x-120">&#x211A;</span>(<span 
+class="cmmi-12">&alpha;</span>) <span 
+class="cmsy-10x-x-120">&sube; </span><span 
+class="cmmi-12">M</span>. To show <span 
+class="cmmi-12">M </span>= <span 
+class="msbm-10x-x-120">&#x211A;</span>(<span 
+class="cmmi-12">&alpha;</span>)
+it is enough to show that <span 
+class="msbm-10x-x-120">&#x211A;</span>(<span 
+class="cmmi-12">&alpha;</span>) <span 
+class="cmsy-10x-x-120">&supe; </span><span 
+class="cmmi-12">M</span>. For this it is enough to show that
+<img 
+src="solns130x.png" alt="&radic; --
+  p"  class="sqrt" > <span 
+class="cmsy-10x-x-120">&isin; </span><span 
+class="msbm-10x-x-120">&#x211A;</span>(<span 
+class="cmmi-12">&alpha;</span>) and <img 
+src="solns131x.png" alt="&radic; --
+  q"  class="sqrt" > <span 
+class="cmsy-10x-x-120">&isin; </span><span 
+class="msbm-10x-x-120">&#x211A;</span>(<span 
+class="cmmi-12">&alpha;</span>). Note that
+  <center class="math-display" >
+<img 
+src="solns132x.png" alt="     &radic; --2
+(&alpha; &minus;   p) =  q,
+" class="math-display" ></center>
+<!--l. 178--><p class="nopar" > which gives
+  <table 
+class="equation"><tr><td><a 
+ id="x1-6r1"></a>
+  <center class="math-display" >
+<img 
+src="solns133x.png" alt=" 2        &radic; --
+&alpha; +  p &minus; 2  p&alpha; = q.
+" class="math-display" ></center></td><td class="equation-label">(1)</td></tr></table>
+<!--l. 182--><p class="nopar" >
+Rearranging
+  <center class="math-display" >
+<img 
+src="solns134x.png" alt="&radic; --  &alpha;2-+-p-&minus;-q-
+  p =     2      &isin; &#x211A; (&alpha;).
+" class="math-display" ></center>
+<!--l. 186--><p class="nopar" > Similarly <img 
+src="solns135x.png" alt="&radic;--
+ q"  class="sqrt" > <span 
+class="cmsy-10x-x-120">&isin; </span><span 
+class="msbm-10x-x-120">&#x211A;</span>(<span 
+class="cmmi-12">&alpha;</span>) as required. Hence <span 
+class="cmmi-12">M </span>= <span 
+class="msbm-10x-x-120">&#x211A;</span>(<span 
+class="cmmi-12">&alpha;</span>).
+<!--l. 193--><p class="noindent" ><span 
+class="cmbx-12">Answer 1(e)</span>
+<!--l. 195--><p class="indent" >  We want to write down a minimal polynomial <span 
+class="cmmi-12">m </span>for <span 
+class="cmmi-12">&alpha; </span>over <span 
+class="msbm-10x-x-120">&#x211A;</span>. Since
+<span 
+class="cmmi-12">M&#x2215;</span><span 
+class="msbm-10x-x-120">&#x211A; </span>has degree 4, we know from fact (iii) that we are looking for a monic
+polynomial of degree 4. Rearranging (<a 
+href="#x1-6r1">1<!--tex4ht:ref: eqn:al5 --></a>) we have <span 
+class="cmmi-12">&alpha;</span><sup><span 
+class="cmr-8">2</span></sup> + <span 
+class="cmmi-12">p </span><span 
+class="cmsy-10x-x-120">&minus; </span><span 
+class="cmmi-12">q </span>= 2<img 
+src="solns136x.png" alt="&radic;p--"  class="sqrt" ><span 
+class="cmmi-12">&alpha;</span>.
+Squaring both sides and rearranging, we see that <span 
+class="cmmi-12">&alpha; </span>is the root of
+                                                                     
+
+                                                                     
+  <center class="math-display" >
+<img 
+src="solns137x.png" alt="f = x4 &minus; 2(p + q)x2 + (p &minus; q)2.
+" class="math-display" ></center>
+<!--l. 203--><p class="nopar" > Observe that <span 
+class="cmmi-12">m</span><span 
+class="cmsy-10x-x-120">&#x2223;</span><span 
+class="cmmi-12">f </span>(as <span 
+class="cmmi-12">f</span>(<span 
+class="cmmi-12">&alpha;</span>) = 0) and they both have degree 4 and are
+monic. So <span 
+class="cmmi-12">m </span>= <span 
+class="cmmi-12">f</span>.
+<!--l. 211--><p class="noindent" ><span 
+class="cmbx-12">Answer 2(a)</span>
+<!--l. 213--><p class="indent" >  Want to show that <span 
+class="cmmi-12">f </span>= <span 
+class="cmmi-12">x</span><sup><span 
+class="cmr-8">3</span></sup> + <span 
+class="cmmi-12">x </span>+ 3 is irreducible over <span 
+class="msbm-10x-x-120">&#x211A;</span>. We will apply
+fact (i) so we only have to show that <span 
+class="cmmi-12">f </span>is irreducible over <span 
+class="msbm-10x-x-120">&#x2124;</span>. Suppose it is
+reducible over <span 
+class="msbm-10x-x-120">&#x2124;</span>. Then
+  <center class="math-display" >
+<img 
+src="solns138x.png" alt=" 3                    2
+x  + x + 3 = (x + a)(x  + bx + c),    a,b,c &isin; &#x2124;.
+" class="math-display" ></center>
+<!--l. 219--><p class="nopar" > Comparing coefficients
+  <center class="math-display" >
+<img 
+src="solns139x.png" alt="a + b = 0,    ab + c = 1,     ac = 3.
+" class="math-display" ></center>
+<!--l. 223--><p class="nopar" > From the first and last equation we have <span 
+class="cmmi-12">a </span>= <span 
+class="cmsy-10x-x-120">±</span>1, <span 
+class="cmmi-12">b </span>= <span 
+class="cmsy-10x-x-120">&#x2213;</span>1, <span 
+class="cmmi-12">c </span>= <span 
+class="cmsy-10x-x-120">±</span>3 or
+<span 
+class="cmmi-12">a </span>= <span 
+class="cmsy-10x-x-120">±</span>3, <span 
+class="cmmi-12">b </span>= <span 
+class="cmsy-10x-x-120">&#x2213;</span>3, <span 
+class="cmmi-12">c </span>= <span 
+class="cmsy-10x-x-120">±</span>1. Both contradict <span 
+class="cmmi-12">ab </span>+ <span 
+class="cmmi-12">c </span>= 1.
+<!--l. 232--><p class="noindent" ><span 
+class="cmbx-12">Answer 2(b)</span>
+<!--l. 234--><p class="indent" >  Note that <span 
+class="cmmi-12">f</span><sup><span 
+class="cmsy-8">&prime;</span></sup>(<span 
+class="cmmi-12">x</span>) = 3<span 
+class="cmmi-12">x</span><sup><span 
+class="cmr-8">2</span></sup> + 1 <span 
+class="cmmi-12">&#x003E; </span>0 for all <span 
+class="cmmi-12">x </span><span 
+class="cmsy-10x-x-120">&isin; </span><span 
+class="msbm-10x-x-120">&#x211D;</span>. Hence <span 
+class="cmmi-12">f </span>is strictly increasing
+and can&#8217;t have more than one real root. Moreover, <span 
+class="cmmi-12">f</span>(<span 
+class="cmmi-12">x</span>) <span 
+class="cmsy-10x-x-120">&rarr;&infin; </span>as <span 
+class="cmmi-12">x </span><span 
+class="cmsy-10x-x-120">&rarr;&infin;</span>
+and <span 
+class="cmmi-12">f</span>(<span 
+class="cmmi-12">x</span>) <span 
+class="cmsy-10x-x-120">&rarr;&minus;&infin; </span>and <span 
+class="cmmi-12">x </span><span 
+class="cmsy-10x-x-120">&rarr;&minus;&infin;</span>. So <span 
+class="cmmi-12">f </span>must have precisely one real
+root.
+<!--l. 243--><p class="noindent" ><span 
+class="cmbx-12">Answer 2(c)</span>
+<!--l. 245--><p class="indent" >  As <span 
+class="cmmi-12">f </span>is irreducible, [<span 
+class="msbm-10x-x-120">&#x211A;</span>(<span 
+class="cmmi-12">&#x03B8;</span>) : <span 
+class="msbm-10x-x-120">&#x211A;</span>] = 3. Now, <span 
+class="cmmi-12">f </span>has the root <span 
+class="cmmi-12">&#x03B8; </span>in <span 
+class="cmmi-12">K </span>= <span 
+class="msbm-10x-x-120">&#x211A;</span>(<span 
+class="cmmi-12">&#x03B8;</span>), so
+<span 
+class="cmmi-12">f </span>factors into
+  <center class="math-display" >
+<img 
+src="solns140x.png" alt="f(x) = (x &minus; &#x03B8;)g(x )
+" class="math-display" ></center>
+<!--l. 250--><p class="nopar" > where <span 
+class="cmmi-12">g </span><span 
+class="cmsy-10x-x-120">&isin; </span><span 
+class="cmmi-12">K</span>[<span 
+class="cmmi-12">x</span>] is monic quadratic. The roots of <span 
+class="cmmi-12">g </span>are <span 
+class="cmmi-12">&#x03D5;</span>, <span 
+class="cmmi-12">&#x03D5;</span><sup><span 
+class="cmsy-8">&prime;</span></sup>. If <span 
+class="cmmi-12">g </span>is
+reducible over <span 
+class="cmmi-12">K</span>, then <span 
+class="cmmi-12">&#x03D5;</span>, <span 
+class="cmmi-12">&#x03D5;</span><sup><span 
+class="cmsy-8">&prime;</span></sup> <span 
+class="cmsy-10x-x-120">&isin; </span><span 
+class="cmmi-12">K</span>. However, <span 
+class="cmmi-12">K </span>= <span 
+class="msbm-10x-x-120">&#x211A;</span>(<span 
+class="cmmi-12">&#x03B8;</span>) <span 
+class="cmsy-10x-x-120">&sub; </span><span 
+class="msbm-10x-x-120">&#x211D; </span>as <span 
+class="cmmi-12">&#x03B8; </span><span 
+class="cmsy-10x-x-120">&isin; </span><span 
+class="msbm-10x-x-120">&#x211D;</span>, and <span 
+class="cmmi-12">&#x03D5;</span>,
+<span 
+class="cmmi-12">&#x03D5;</span><sup><span 
+class="cmsy-8">&prime;</span></sup><img 
+src="solns141x.png" alt="&#x2215;&isin;"  class="notin" ><span 
+class="msbm-10x-x-120">&#x211D;</span>. So <span 
+class="cmmi-12">&#x03D5;</span>, <span 
+class="cmmi-12">&#x03D5;</span><sup><span 
+class="cmsy-8">&prime;</span></sup><img 
+src="solns142x.png" alt="&isin;&#x2215;"  class="notin" ><span 
+class="cmmi-12">K</span>, so <span 
+class="cmmi-12">g </span>is irreducible over <span 
+class="cmmi-12">K</span>, and it must be the minimal
+polynomial for <span 
+class="cmmi-12">&#x03D5; </span>over <span 
+class="cmmi-12">K</span>. Hence [<span 
+class="cmmi-12">K</span>(<span 
+class="cmmi-12">&#x03D5;</span>) : <span 
+class="cmmi-12">K</span>] = deg(<span 
+class="cmmi-12">g</span>) = 2. By tower
+law
+                                                                     
+
+                                                                     
+  <center class="math-display" >
+<img 
+src="solns143x.png" alt="[&#x211A; (&#x03B8;,&#x03D5;) : &#x211A;] = [K (&#x03D5;) : K ][K : &#x211A; ] = 2 &sdot; 3 = 6.
+" class="math-display" ></center>
+<!--l. 261--><p class="nopar" > Finally <span 
+class="cmmi-12">&#x03D5;</span><sup><span 
+class="cmsy-8">&prime;</span></sup> is a root of <span 
+class="cmmi-12">g</span>, and in <span 
+class="cmmi-12">L </span>= <span 
+class="msbm-10x-x-120">&#x211A;</span>(<span 
+class="cmmi-12">&#x03B8;,&#x03D5;</span>) the quadratic polynomial <span 
+class="cmmi-12">g </span>has
+a root <span 
+class="cmmi-12">&#x03D5;</span>, so <span 
+class="cmmi-12">&#x03D5;</span><sup><span 
+class="cmsy-8">&prime;</span></sup> <span 
+class="cmsy-10x-x-120">&isin; </span><span 
+class="cmmi-12">L</span>. It follows that <span 
+class="msbm-10x-x-120">&#x211A;</span>(<span 
+class="cmmi-12">&#x03B8;,&#x03D5;,&#x03D5;</span><sup><span 
+class="cmsy-8">&prime;</span></sup>) = <span 
+class="cmmi-12">L</span>, and so
+  <center class="math-display" >
+<img 
+src="solns144x.png" alt="         &prime;
+[&#x211A; (&#x03B8;,&#x03D5;,&#x03D5; ) : &#x211A; ] = 6.
+" class="math-display" ></center>
+<!--l. 267--><p class="nopar" >
+<!--l. 271--><p class="noindent" ><span 
+class="cmbx-12">Answer 2(d)</span>
+<!--l. 275--><p class="indent" >  Let <span 
+class="cmmi-12">K</span><sup><span 
+class="cmsy-8">&prime;</span></sup> = <span 
+class="msbm-10x-x-120">&#x211A;</span>(<span 
+class="cmmi-12">&#x03B8;</span><sup><span 
+class="cmr-8">2</span></sup>), and as before <span 
+class="cmmi-12">K </span>= <span 
+class="msbm-10x-x-120">&#x211A;</span>(<span 
+class="cmmi-12">&#x03B8;</span>). Now <span 
+class="msbm-10x-x-120">&#x211A; </span><span 
+class="cmsy-10x-x-120">&sube; </span><span 
+class="cmmi-12">K</span><sup><span 
+class="cmsy-8">&prime;</span></sup> <span 
+class="cmsy-10x-x-120">&sube; </span><span 
+class="cmmi-12">K</span>. By the
+tower law,
+  <center class="math-display" >
+<img 
+src="solns145x.png" alt="                     &prime;   &prime;
+3 = [K  : &#x211A; ] = [K : K ][K : &#x211A; ].
+" class="math-display" ></center>
+<!--l. 279--><p class="nopar" > So [<span 
+class="cmmi-12">K</span><sup><span 
+class="cmsy-8">&prime;</span></sup> : <span 
+class="msbm-10x-x-120">&#x211A;</span>] = 1 or 3. If [<span 
+class="cmmi-12">K</span><sup><span 
+class="cmsy-8">&prime;</span></sup> : <span 
+class="msbm-10x-x-120">&#x211A;</span>] = 1, then <span 
+class="cmmi-12">K</span><sup><span 
+class="cmsy-8">&prime;</span></sup> = <span 
+class="msbm-10x-x-120">&#x211A; </span>so <span 
+class="cmmi-12">&#x03B8;</span><sup><span 
+class="cmr-8">2</span></sup> = <span 
+class="cmmi-12">a </span><span 
+class="cmsy-10x-x-120">&isin; </span><span 
+class="msbm-10x-x-120">&#x211A;</span>, so <span 
+class="cmmi-12">&#x03B8; </span>is the
+root of a quadratic polynomial <span 
+class="cmmi-12">x</span><sup><span 
+class="cmr-8">2</span></sup> <span 
+class="cmsy-10x-x-120">&minus;</span><span 
+class="cmmi-12">a </span><span 
+class="cmsy-10x-x-120">&isin; </span><span 
+class="msbm-10x-x-120">&#x211A;</span>[<span 
+class="cmmi-12">x</span>] contradicting the fact that <span 
+class="cmmi-12">f </span>is
+the minimal polynomial of <span 
+class="cmmi-12">&#x03B8;</span>. Hence [<span 
+class="cmmi-12">K</span><sup><span 
+class="cmsy-8">&prime;</span></sup> : <span 
+class="msbm-10x-x-120">&#x211A;</span>] = 3, so [<span 
+class="cmmi-12">K </span>: <span 
+class="cmmi-12">K</span><sup><span 
+class="cmsy-8">&prime;</span></sup>] = 1, so
+<span 
+class="cmmi-12">K </span>= <span 
+class="cmmi-12">K</span><sup><span 
+class="cmsy-8">&prime;</span></sup>, as required.
+<!--l. 289--><p class="noindent" ><span 
+class="cmbx-12">Answer 2(e)</span>
+<!--l. 291--><p class="indent" >  We know that [<span 
+class="msbm-10x-x-120">&#x211A;</span>(<span 
+class="cmmi-12">&#x03B8;</span><sup><span 
+class="cmr-8">2</span></sup>) : <span 
+class="msbm-10x-x-120">&#x211A;</span>] = [<span 
+class="cmmi-12">K</span><sup><span 
+class="cmsy-8">&prime;</span></sup> : <span 
+class="msbm-10x-x-120">&#x211A;</span>] = [<span 
+class="cmmi-12">K </span>: <span 
+class="msbm-10x-x-120">&#x211A;</span>] = 3, so the minimal
+polynomial <span 
+class="cmmi-12">m </span>of <span 
+class="cmmi-12">&#x03B8;</span><sup><span 
+class="cmr-8">2</span></sup> over <span 
+class="msbm-10x-x-120">&#x211A; </span>has degree 3. Now
+  <center class="math-display" >
+<img 
+src="solns146x.png" alt="&#x03B8;3 + &#x03B8; = &minus; 3.
+" class="math-display" ></center>
+<!--l. 296--><p class="nopar" > Squaring both sides and rearranging we obtain that <span 
+class="cmmi-12">&#x03B8;</span><sup><span 
+class="cmr-8">2</span></sup> is a root
+of
+  <center class="math-display" >
+<img 
+src="solns147x.png" alt="     3     2
+f = x  + 2x  + x &minus; 9.
+" class="math-display" ></center>
+<!--l. 301--><p class="nopar" > Thus <span 
+class="cmmi-12">m</span><span 
+class="cmsy-10x-x-120">&#x2223;</span><span 
+class="cmmi-12">f</span>. As both are monic of degree 3, we have <span 
+class="cmmi-12">m </span>= <span 
+class="cmmi-12">f</span>.
+<!--l. 308--><p class="noindent" ><span 
+class="cmbx-12">Answer 3</span>
+<!--l. 310--><p class="indent" >  We given that [<span 
+class="cmmi-12">L </span>: <span 
+class="cmmi-12">K</span>] = <span 
+class="cmmi-12">p </span>where <span 
+class="cmmi-12">p </span>is a prime. In particular, <span 
+class="cmmi-12">K </span><span 
+class="cmsy-10x-x-120">&sub; </span><span 
+class="cmmi-12">L</span>
+                                                                     
+
+                                                                     
+and <span 
+class="cmmi-12">K</span><span 
+class="cmmi-12">&ne;</span><span 
+class="cmmi-12">L</span>. Choose <span 
+class="cmmi-12">&alpha; </span><span 
+class="cmsy-10x-x-120">&isin; </span><span 
+class="cmmi-12">L</span><span 
+class="cmsy-10x-x-120">\</span><span 
+class="cmmi-12">K</span>. Then <span 
+class="cmmi-12">K </span><span 
+class="cmsy-10x-x-120">&sube; </span><span 
+class="cmmi-12">K</span>(<span 
+class="cmmi-12">&alpha;</span>) <span 
+class="cmsy-10x-x-120">&sube; </span><span 
+class="cmmi-12">L</span>. By the tower
+law,
+  <center class="math-display" >
+<img 
+src="solns148x.png" alt="[K (&alpha; ) : K ][L : K (&alpha; )] = [L : K ] = p.
+" class="math-display" ></center>
+<!--l. 315--><p class="nopar" > As <span 
+class="cmmi-12">p </span>is prime, [<span 
+class="cmmi-12">K</span>(<span 
+class="cmmi-12">&alpha;</span>) : <span 
+class="cmmi-12">K</span>] = 1 or <span 
+class="cmmi-12">p</span>. But <span 
+class="cmmi-12">&alpha;</span><img 
+src="solns149x.png" alt="&#x2215;&isin;"  class="notin" ><span 
+class="cmmi-12">K</span>, so <span 
+class="cmmi-12">K</span>(<span 
+class="cmmi-12">&alpha;</span>)<span 
+class="cmmi-12">&ne;</span><span 
+class="cmmi-12">K </span>so [<span 
+class="cmmi-12">K</span>(<span 
+class="cmmi-12">&alpha;</span>) : <span 
+class="cmmi-12">K</span>]<span 
+class="cmmi-12">&ne;</span>1.
+Thus [<span 
+class="cmmi-12">K</span>(<span 
+class="cmmi-12">&alpha;</span>) : <span 
+class="cmmi-12">K</span>] = <span 
+class="cmmi-12">p</span>. Hence [<span 
+class="cmmi-12">L </span>: <span 
+class="cmmi-12">K</span>(<span 
+class="cmmi-12">&alpha;</span>)] = 1, so <span 
+class="cmmi-12">L </span>= <span 
+class="cmmi-12">K</span>(<span 
+class="cmmi-12">&alpha;</span>). This means that
+<span 
+class="cmmi-12">L&#x2215;K </span>is a simple extension.
+   
+</body></html> 
+
+                                                                     
+
+

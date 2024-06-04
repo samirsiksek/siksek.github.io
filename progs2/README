@@ -1,0 +1,58 @@
+
+
+This directory contains MAGMA scripts for the verification of the
+computations in the paper:
+
+"Elliptic Curves over Real Quadratic Fields are Modular",
+by Nuno Freitas, Bao Le Hung, Samir Siksek.
+
+====================================================
+
+gl.txt    	For p=3,5,7, determines the odd irreducible subgroups
+	  	of GL_2(F_p) having surjective determinant, and whose
+		intersection with SL_2(F_p) is absolutely reducible.
+
+====================================================
+
+Xb3b5.txt   	Checks the correctness of the model for X(b3,b5)=X_0(15) 
+	 	 		and j-map X(b3,b5) --> X(1) given by the MAGMA 
+	  			"small curves database".
+
+===================================================
+
+Xs3b5.txt   	Gives a model for X(s3,b5) and the j-map.
+
+==================================================
+
+Xd7.txt     	Derives a model for X(d7) and the j-map, 
+				and verifies that they are equivalent to 
+				the model and j-map given by Elkies.
+
+==================================================
+
+Xe7.txt     	Derives a model for X(e7) and the j-map.
+
+==================================================
+
+Xb5b7.txt   	Computations on X(b5,b7)
+
+==================================================
+
+Xb3s5.txt   	Computations on X(b3,s5)
+
+=================================================
+
+Xs3s5.txt	  	Computations on X(s3,s5)
+
+=================================================
+
+Qsqrt5.txt  	Computations for showing that elliptic curves 
+				over $\Q(\sqrt{5})$ are modular.
+
+=================================================
+
+sieve.txt        A sieve for quadratic points on
+	       X(b3,b5,d7)
+	       X(s3,b5,d7)
+	       X(b3,b5,e7)
+               X(s3,b5,e7)

@@ -1,0 +1,37 @@
+Magma V2.21-9     Fri Mar 11 2016 08:13:49 on lehner   [Seed = 3295823741]
+Type ? for help.  Type <Ctrl>-D to quit.
+
+Loading startup file "/home/samir/.magmarc"
+
+The modular curve X_0(20) is the elliptic curve Elliptic Curve defined by y^2 = 
+x^3 + x^2 + 4*x + 4 over Rational Field
+with Cremona label 20a1
+Points on X_0(20) over Q(zeta_7)^+ are [ (0 : 1 : 0), (4 : 10 : 1), (0 : 2 : 1),
+(-1 : 0 : 1), (0 : -2 : 1), (4 : -10 : 1) ]
+The cusps of X_0(20) are [
+    Place at (4 : 10 : 1),
+    Place at (4 : -10 : 1),
+    Place at (-1 : 0 : 1),
+    Place at (0 : -2 : 1),
+    Place at (0 : 2 : 1),
+    Place at (0 : 1 : 0)
+]
+Thus every Q(zeta_7)^+ point on X_0(20) is a cusp.
+The modular curve X_0(11) is the elliptic curve Elliptic Curve defined by y^2 + 
+y = x^3 - x^2 - 10*x - 20 over Rational Field
+with Cremona label 11a1
+Points on X_0(11) over Q(zeta_7)^+ are [ (0 : 1 : 0), (5 : -6 : 1), (16 : 60 : 
+    1), (16 : -61 : 1), (5 : 5 : 1) ]
+The cusps of X_0(11) are [
+    Place at (16 : 60 : 1),
+    Place at (0 : 1 : 0)
+]
+The non-cuspidal points on X_0(11) over Q(zeta_7)^+ are [ (5 : -6 : 1), (16 : 
+    -61 : 1), (5 : 5 : 1) ]
+These have j-invariants [
+    -32768,
+    -121,
+    -24729001
+]
+
+Total time: 8.000 seconds, Total memory usage: 56.06MB

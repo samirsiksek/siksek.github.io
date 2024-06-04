@@ -1,0 +1,98 @@
+Magma V2.21-9     Fri Mar 11 2016 08:19:00 on lehner   [Seed = 2319119924]
+Type ? for help.  Type <Ctrl>-D to quit.
+
+Loading startup file "/home/samir/.magmarc"
+
++++++++++++++++++++++
+Treating the case p= 5
+treating the case 5 doesn't divide x
+the space of newforms is trivial
+treating the case 5 divides x
+the space of newforms is trivial
++++++++++++++++++++++
+Treating the case p= 7
+treating the case 7 doesn't divide x
+the space of newforms is trivial
+treating the case 7 divides x
++++++++++++
+Dealing with the 1 -th eigenform
+this has Hecke eigenvalue field of degree 1
+Factoristion of B_S(ff) [ <2, 8>, <3, 5>, <7, 6> ]
+surviving primes ell= []
+list S of primes used in the sieve= [ 3 ]
++++++++++++++++++++++
+Treating the case p= 11
+treating the case 11 doesn't divide x
++++++++++++
+Dealing with the 2 -th eigenform
+this has Hecke eigenvalue field of degree 2
+Factoristion of B_S(ff) []
+surviving primes ell= []
+list S of primes used in the sieve= [ 23, 43 ]
+treating the case 11 divides x
++++++++++++
+Dealing with the 3 -th eigenform
+this has Hecke eigenvalue field of degree 5
+Factoristion of B_S(ff) []
+surviving primes ell= []
+list S of primes used in the sieve= [ 23, 43 ]
++++++++++++
+Dealing with the 4 -th eigenform
+this has Hecke eigenvalue field of degree 5
+Factoristion of B_S(ff) []
+surviving primes ell= []
+list S of primes used in the sieve= [ 23, 43 ]
++++++++++++++++++++++
+Treating the case p= 13
+treating the case 13 doesn't divide x
++++++++++++
+Dealing with the 5 -th eigenform
+this has Hecke eigenvalue field of degree 1
+Factoristion of B_S(ff) [ <2, 6240>, <3, 312> ]
+surviving primes ell= []
+list S of primes used in the sieve= [ 79, 103 ]
++++++++++++
+Dealing with the 6 -th eigenform
+this has Hecke eigenvalue field of degree 1
+Factoristion of B_S(ff) [ <2, 12792>, <3, 234> ]
+surviving primes ell= []
+list S of primes used in the sieve= [ 79, 103 ]
++++++++++++
+Dealing with the 7 -th eigenform
+this has Hecke eigenvalue field of degree 2
+Factoristion of B_S(ff) [ <2, 10608>, <3, 624> ]
+surviving primes ell= []
+list S of primes used in the sieve= [ 79, 103 ]
++++++++++++
+Dealing with the 8 -th eigenform
+this has Hecke eigenvalue field of degree 3
+Factoristion of B_S(ff) [ <2, 18720>, <3, 936> ]
+surviving primes ell= []
+list S of primes used in the sieve= [ 79, 103 ]
+treating the case 13 divides x
++++++++++++
+Dealing with the 9 -th eigenform
+this has Hecke eigenvalue field of degree 1
+Factoristion of B_S(ff) [ <7, 2> ]
+surviving primes ell= [ 7 ]
+list S of primes used in the sieve= [ 3, 5, 31, 47 ]
++++++++++++
+Dealing with the 10 -th eigenform
+this has Hecke eigenvalue field of degree 1
+Factoristion of B_S(ff) [ <3, 7> ]
+surviving primes ell= []
+list S of primes used in the sieve= [ 3, 5, 31, 47 ]
++++++++++++
+Dealing with the 11 -th eigenform
+this has Hecke eigenvalue field of degree 3
+Factoristion of B_S(ff) [ <7, 6> ]
+surviving primes ell= [ 7 ]
+list S of primes used in the sieve= [ 3, 5, 31, 47 ]
++++++++++++
+Dealing with the 12 -th eigenform
+this has Hecke eigenvalue field of degree 3
+Factoristion of B_S(ff) []
+surviving primes ell= []
+list S of primes used in the sieve= [ 3, 5, 31, 47 ]
+
+Total time: 222.650 seconds, Total memory usage: 560.62MB

@@ -1,0 +1,102 @@
+sage: E=EllipticCurve([0,8,0,48,0])
+sage: E
+Elliptic Curve defined by y^2 = x^3 + 8*x^2 + 48*x over Rational Field
+sage: F=E.minimal_model()
+sage: F.discriminant()
+-1152
+sage: F.discriminant().factor()
+-1 * 2^7 * 3^2
+sage: F.conductor()
+384
+sage: F.conductor().factor()
+2^7 * 3
+sage: F.conductor().support()
+[2, 3]
+sage: F.isogenies_prime_degree()
+[Isogeny of degree 2 from Elliptic Curve defined by y^2 = x^3 - x^2 + 2*x - 2 over Rational Field to Elliptic Curve defined by y^2 = x^3 - x^2 - 13*x - 11 over Rational Field]
+
+
+
+
+
+
+sage: M=ModularForms(Gamma0(110),2)
+sage: M
+Modular Forms space of dimension 22 for Congruence Subgroup Gamma0(110) of weight 2 over Rational Field
+sage: S=M.cuspidal_subspace()
+sage: S
+Cuspidal subspace of dimension 9 of Modular Forms space of dimension 10 for Congruence Subgroup Gamma0(113) of weight 2 over Rational Field
+sage: S.newforms(names='a')
+[q - q^2 + 2*q^3 - q^4 + 2*q^5 + O(q^6),
+ q + q^2 + (a1 - 1)*q^3 - q^4 + (-2*a1 + 4)*q^5 + O(q^6),
+ q + a2*q^2 + (-a2^2 - 2*a2 - 1)*q^3 + (a2^2 - 2)*q^4 + (2*a2^2 + 2*a2 - 3)*q^5 + O(q^6),
+ q + a3*q^2 + (a3^2 - 5)*q^3 + (a3^2 - 2)*q^4 - q^5 + O(q^6)]
+
+#alternative way
+sage: N=Newforms(110,2, names='a')
+sage: N
+[q - q^2 + q^3 + q^4 - q^5 + O(q^6),
+ q + q^2 - q^3 + q^4 + q^5 + O(q^6),
+ q + q^2 + q^3 + q^4 - q^5 + O(q^6),
+ q - q^2 + (-1/2*a3 - 1/2)*q^3 + q^4 + q^5 + O(q^6)]
+
+sage: f=N[2]
+sage: f.q_expansion(100)
+q + q^2 + q^3 + q^4 - q^5 + q^6 - q^7 + q^8 - 2*q^9 - q^10 - q^11 + q^12 + 2*q^13 - q^14 - q^15 + q^16 - 3*q^17 - 2*q^18 - q^19 - q^20 - q^21 - q^22 + 6*q^23 + q^24 + q^25 + 2*q^26 - 5*q^27 - q^28 - 9*q^29 - q^30 + 5*q^31 + q^32 - q^33 - 3*q^34 + q^35 - 2*q^36 + 5*q^37 - q^38 + 2*q^39 - q^40 - 6*q^41 - q^42 + 8*q^43 - q^44 + 2*q^45 + 6*q^46 + 6*q^47 + q^48 - 6*q^49 + q^50 - 3*q^51 + 2*q^52 + 9*q^53 - 5*q^54 + q^55 - q^56 - q^57 - 9*q^58 + 6*q^59 - q^60 + 5*q^61 + 5*q^62 + 2*q^63 + q^64 - 2*q^65 - q^66 + 8*q^67 - 3*q^68 + 6*q^69 + q^70 - 9*q^71 - 2*q^72 - 10*q^73 + 5*q^74 + q^75 - q^76 + q^77 + 2*q^78 + 14*q^79 - q^80 + q^81 - 6*q^82 - 6*q^83 - q^84 + 3*q^85 + 8*q^86 - 9*q^87 - q^88 - 15*q^89 + 2*q^90 - 2*q^91 + 6*q^92 + 5*q^93 + 6*q^94 + q^95 + q^96 + 8*q^97 - 6*q^98 + 2*q^99 + O(q^100)
+sage: f.padded_list(10)
+[0, 1, 1, 1, 1, -1, 1, -1, 1, -2]
+sage: f[5]
+-1
+sage: f[5].parent()
+Rational Field
+sage: ZZ(f[5]) #now this is an integer
+-1
+
+
+
+sage: g=N[3]
+sage: g
+q - q^2 + (-1/2*a3 - 1/2)*q^3 + q^4 + q^5 + O(q^6)
+sage: theta=g[3]
+sage: theta
+-1/2*a3 - 1/2
+sage: theta.parent()
+Number Field in a3 with defining polynomial x^2 - 33
+
+sage: K=g.hecke_eigenvalue_field()
+sage: theta.galois_conjugates(K)
+[1/2*a3 - 1/2, -1/2*a3 - 1/2]
+
+#Galois conjugates
+sage: G=K.galois_group()
+sage: G
+Galois group of Number Field in a3 with defining polynomial x^2 - 33
+sage: G.list()
+[(), (1,2)]
+sage: G[0]
+()
+sage: G[1]
+(1,2)
+sage: [G[0](i) for i in g.padded_list(10)] #these are the coefficients of the q-expansion of g
+[0, 1, -1, -1/2*a3 - 1/2, 1, 1, 1/2*a3 + 1/2, 1/2*a3 + 1/2, -1, 1/2*a3 + 11/2]
+sage: [G[1](i) for i in g.padded_list(8)] #these are the coefficients of the q-expansion of the Galois conjugate of g
+[0, 1, -1, 1/2*a3 - 1/2, 1, 1, -1/2*a3 + 1/2, -1/2*a3 + 1/2]
+
+sage: for tau in K.galois_group():
+....:     g1=[tau(i) for i in g.padded_list(30)]
+....:     print g1
+....:     
+[0, 1, -1, -1/2*a3 - 1/2, 1, 1, 1/2*a3 + 1/2, 1/2*a3 + 1/2, -1, 1/2*a3 + 11/2, -1, -1, -1/2*a3 - 1/2, 2, -1/2*a3 - 1/2, -1/2*a3 - 1/2, 1, 1/2*a3 - 3/2, -1/2*a3 - 11/2, -1/2*a3 + 7/2, 1, -1/2*a3 - 17/2, 1, a3 - 3, 1/2*a3 + 1/2, 1, -2, -3/2*a3 - 19/2, 1/2*a3 + 1/2, 1/2*a3 - 3/2]
+[0, 1, -1, 1/2*a3 - 1/2, 1, 1, -1/2*a3 + 1/2, -1/2*a3 + 1/2, -1, -1/2*a3 + 11/2, -1, -1, 1/2*a3 - 1/2, 2, 1/2*a3 - 1/2, 1/2*a3 - 1/2, 1, -1/2*a3 - 3/2, 1/2*a3 - 11/2, 1/2*a3 + 7/2, 1, 1/2*a3 - 17/2, 1, -a3 - 3, -1/2*a3 + 1/2, 1, -2, 3/2*a3 - 19/2, -1/2*a3 + 1/2, -1/2*a3 - 3/2]
+
+
+
+
+
+
+
+
+
+
+
+

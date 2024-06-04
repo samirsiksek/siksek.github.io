@@ -1,0 +1,195 @@
+htfcss: cmmi font-style: italic;
+htfcss: cmmib font-style: italic; font-weight: bold;
+htfcss: cmbx  font-weight: bold;
+htfcss: cmbxsl  font-weight: bold; font-style: oblique;
+htfcss: cmbx  font-weight: bold;
+htfcss: cmbxsl  font-weight: bold; font-style: oblique;
+File: solns1.html
+File: solns1.css
+File: solns1.tmp
+Css: p.noindent { text-indent: 0em }
+Css: td p.noindent { text-indent: 0em; margin-top:0em; }
+Css: p.nopar { text-indent: 0em; }
+Css: p.indent{ text-indent: 1.5em }
+Css: @media print {div.crosslinks {visibility:hidden;}}
+Css: a img { border-top: 0; border-left: 0; border-right: 0; }
+Font_Css("4"): .small-caps{font-variant: small-caps; }
+Font_Css("10"): .htf-cmbx {font-weight: bold; font-style:normal;}
+Font_Css("12"): .htf-calligraphy {font-family:cursive}
+Font_Css("14"): .htf-italic {font-style: italic;}
+Font_Css("16"): .htf-bold {font-weight: bold;}
+Font_Css("12"): .htf-calligraphy-bold {font-family:cursive ; font-weight: bold; }
+Css: center { margin-top:1em; margin-bottom:1em; }
+Css: td center { margin-top:0em; margin-bottom:0em; }
+Css: .Canvas { position:relative; }
+Css: img.math{vertical-align:middle;}
+Css: li p.indent { text-indent: 0em }
+Css: li p:first-child{ margin-top:0em; }
+Css: li p:last-child, li div:last-child { margin-bottom:0.5em; }
+Css: li p~ul:last-child, li p~ol:last-child{ margin-bottom:0.5em; }
+Css: .enumerate1 {list-style-type:decimal;}
+Css: .enumerate2 {list-style-type:lower-alpha;}
+Css: .enumerate3 {list-style-type:lower-roman;}
+Css: .enumerate4 {list-style-type:upper-alpha;}
+Css: div.newtheorem { margin-bottom: 2em; margin-top: 2em;}
+Css: .obeylines-h,.obeylines-v {white-space: nowrap; }
+Css: div.obeylines-v p { margin-top:0; margin-bottom:0; }
+Css: .overline{ text-decoration:overline; }
+Css: .overline img{ border-top: 1px solid black; }
+Css: td.displaylines {text-align:center; white-space:nowrap;}
+Css: .centerline {text-align:center;}
+Css: .rightline {text-align:right;}
+Css: div.verbatim {font-family: monospace; white-space: nowrap; text-align:left; clear:both; }
+Css: .fbox {padding-left:3.0pt; padding-right:3.0pt; text-indent:0pt; border:solid black 0.4pt; }
+Css: div.fbox {display:table}
+Css: div.center div.fbox {text-align:center; clear:both; padding-left:3.0pt; padding-right:3.0pt; text-indent:0pt; border:solid black 0.4pt; }
+Css: div.minipage{width:100%;}
+Css: div.center, div.center div.center {text-align: center; margin-left:1em; margin-right:1em;}
+Css: div.center div {text-align: left;}
+Css: div.flushright, div.flushright div.flushright {text-align: right;}
+Css: div.flushright div {text-align: left;}
+Css: div.flushleft {text-align: left;}
+Css: .underline{ text-decoration:underline; }
+Css: .underline img{ border-bottom: 1px solid black; margin-bottom:1pt; }
+Css: .framebox-c, .framebox-l, .framebox-r { padding-left:3.0pt; padding-right:3.0pt; text-indent:0pt; border:solid black 0.4pt; }
+Css: .framebox-c {text-align:center;}
+Css: .framebox-l {text-align:left;}
+Css: .framebox-r {text-align:right;}
+Css: span.thank-mark{ vertical-align: super }
+Css: span.footnote-mark sup.textsuperscript, span.footnote-mark a sup.textsuperscript{ font-size:80%; }
+Css: div.tabular, div.center div.tabular {text-align: center; margin-top:0.5em; margin-bottom:0.5em; }
+Css: table.tabular td p{margin-top:0em;}
+Css: table.tabular {margin-left: auto; margin-right: auto;}
+Css: td p:first-child{ margin-top:0em; }
+Css: td p:last-child{ margin-bottom:0em; }
+Css: div.td00{ margin-left:0pt; margin-right:0pt; }
+Css: div.td01{ margin-left:0pt; margin-right:5pt; }
+Css: div.td10{ margin-left:5pt; margin-right:0pt; }
+Css: div.td11{ margin-left:5pt; margin-right:5pt; }
+Css: table[rules] {border-left:solid black 0.4pt; border-right:solid black 0.4pt; }
+Css: td.td00{ padding-left:0pt; padding-right:0pt; }
+Css: td.td01{ padding-left:0pt; padding-right:5pt; }
+Css: td.td10{ padding-left:5pt; padding-right:0pt; }
+Css: td.td11{ padding-left:5pt; padding-right:5pt; }
+Css: table[rules] {border-left:solid black 0.4pt; border-right:solid black 0.4pt; }
+Css: .hline hr, .cline hr{ height : 1px; margin:0px; }
+Css: .tabbing-right {text-align:right;}
+Css: span.TEX {letter-spacing: -0.125em; }
+Css: span.TEX span.E{ position:relative;top:0.5ex;left:-0.0417em;}
+Css: a span.TEX span.E {text-decoration: none; }
+Css: span.LATEX span.A{ position:relative; top:-0.5ex; left:-0.4em; font-size:85%;}
+Css: span.LATEX span.TEX{ position:relative; left: -0.4em; }
+Css: div.float, div.figure {margin-left: auto; margin-right: auto;}
+Css: div.float img {text-align:center;}
+Css: div.figure img {text-align:center;}
+Css: .marginpar {width:20%; float:right; text-align:left; margin-left:auto; margin-top:0.5em; font-size:85%; text-decoration:underline;}
+Css: .marginpar p{margin-top:0.4em; margin-bottom:0.4em;}
+Css: table.equation {width:100%;}
+Css: .equation td{text-align:center; }
+Css: td.equation { margin-top:1em; margin-bottom:1em; } 
+Css: td.equation-label { width:5%; text-align:center; }
+Css: td.eqnarray4 { width:5%; white-space: normal; }
+Css: td.eqnarray2 { width:5%; }
+Css: table.eqnarray-star, table.eqnarray {width:100%;}
+Css: div.eqnarray{text-align:center;}
+Css: div.array {text-align:center;}
+Css: div.pmatrix {text-align:center;}
+Css: table.pmatrix {width:100%;}
+Css: span.pmatrix img{vertical-align:middle;}
+Css: div.pmatrix {text-align:center;}
+Css: table.pmatrix {width:100%;}
+Css: span.bar-css {text-decoration:overline;}
+Css: img.cdots{vertical-align:middle;}
+Css: span.footnote-mark{ vertical-align: super; font-size:80%; }
+Css: div.submaketitle{ text-align:left; margin-top:2em; border-top: 1px solid black; border-bottom: 1px solid black; margin-left:5%; margin-right:5%; font-size:85%; line-height: 95%;}
+Css: div.submaketitle div {margin-top:0.5em; margin-bottom:0.5em; }
+Css: div.submaketitle p { margin-top:0em; margin-bottom:0em; }
+Css: div.abstract{ margin-top: 2em; text-align:left; margin-right:15pt; margin-left:15pt; }
+Css: div.addresses p {margin-top:0em; margin-bottom:0em; }
+Css: h2.titleHead{text-align:center;}
+Css: div.maketitle{ margin-bottom: 2em; text-align:center; }
+Css: div.caption {text-indent:-2em; margin-left:3em; margin-right:1em; text-align:left;}
+Css: div.caption span.id{font-weight: bold; white-space: nowrap; }
+Css: p.bibitem { text-indent: -2em; margin-left: 2em; margin-top:0.6em; margin-bottom:0.6em; }
+Css: p.bibitem-p { text-indent: 0em; margin-left: 2em; margin-top:0.6em; margin-bottom:0.6em; }
+Css: .qed {width:2ex; float:right; text-align:right;}
+Css: .partToc a, .partToc, .likepartToc a, .likepartToc {line-height: 200%; font-weight:bold; font-size:110%;}
+Font_Size: 12
+Css: div.translators {text-align:right; margin-bottom:0.7em;}
+Css: .sectionHead{text-align:center;}
+Css: .equation td{text-align:center; }
+Css: .equation-star td{text-align:center; }
+Css: table.equation-star { width:100%; }
+Css: table.equation { width:100%; }
+Css: table.align, table.alignat, table.xalignat, table.xxalignat, table.flalign {width:100%; margin-left:5%; white-space: nowrap;}
+Css: table.align-star, table.alignat-star, table.xalignat-star, table.flalign-star {margin-left:auto; margin-right:auto; white-space: nowrap;}
+Css: td.align-label { width:5%; text-align:center; }
+Css: td.align-odd { text-align:right; padding-right:0.3em;}
+Css: td.align-even { text-align:left; padding-right:0.6em;}
+Css: table.multline, table.multline-star {width:100%;}
+Css: td.gather {text-align:center; }
+Css: table.gather {width:100%;}
+Css: div.gather-star {text-align:center;}
+Css: .figure img.graphics {margin-left:10%;}
+--- needs --- solns1.idv[2] ==> solns10x.png ---
+--- needs --- solns1.idv[3] ==> solns11x.png ---
+--- needs --- solns1.idv[4] ==> solns12x.png ---
+--- needs --- solns1.idv[5] ==> solns13x.png ---
+--- needs --- solns1.idv[7] ==> solns14x.png ---
+--- needs --- solns1.idv[8] ==> solns15x.png ---
+--- needs --- solns1.idv[9] ==> solns16x.png ---
+--- needs --- solns1.idv[10] ==> solns17x.png ---
+--- needs --- solns1.idv[11] ==> solns18x.png ---
+--- needs --- solns1.idv[12] ==> solns19x.png ---
+--- needs --- solns1.idv[13] ==> solns110x.png ---
+--- needs --- solns1.idv[14] ==> solns111x.png ---
+--- needs --- solns1.idv[15] ==> solns112x.png ---
+--- needs --- solns1.idv[16] ==> solns113x.png ---
+--- needs --- solns1.idv[17] ==> solns114x.png ---
+--- needs --- solns1.idv[18] ==> solns115x.png ---
+--- needs --- solns1.idv[19] ==> solns116x.png ---
+--- needs --- solns1.idv[20] ==> solns117x.png ---
+--- needs --- solns1.idv[21] ==> solns118x.png ---
+--- needs --- solns1.idv[22] ==> solns119x.png ---
+--- needs --- solns1.idv[23] ==> solns120x.png ---
+--- needs --- solns1.idv[24] ==> solns121x.png ---
+--- needs --- solns1.idv[25] ==> solns122x.png ---
+--- needs --- solns1.idv[27] ==> solns123x.png ---
+--- needs --- solns1.idv[28] ==> solns124x.png ---
+--- needs --- solns1.idv[29] ==> solns125x.png ---
+--- needs --- solns1.idv[30] ==> solns126x.png ---
+--- needs --- solns1.idv[31] ==> solns127x.png ---
+--- needs --- solns1.idv[32] ==> solns128x.png ---
+--- needs --- solns1.idv[33] ==> solns129x.png ---
+--- needs --- solns1.idv[34] ==> solns130x.png ---
+--- needs --- solns1.idv[35] ==> solns131x.png ---
+--- needs --- solns1.idv[36] ==> solns132x.png ---
+--- needs --- solns1.idv[37] ==> solns133x.png ---
+--- needs --- solns1.idv[39] ==> solns134x.png ---
+--- needs --- solns1.idv[40] ==> solns135x.png ---
+--- needs --- solns1.idv[41] ==> solns136x.png ---
+--- needs --- solns1.idv[43] ==> solns137x.png ---
+--- needs --- solns1.idv[44] ==> solns138x.png ---
+--- needs --- solns1.idv[45] ==> solns139x.png ---
+--- needs --- solns1.idv[46] ==> solns140x.png ---
+--- needs --- solns1.idv[47] ==> solns141x.png ---
+--- needs --- solns1.idv[48] ==> solns142x.png ---
+--- needs --- solns1.idv[50] ==> solns143x.png ---
+--- needs --- solns1.idv[51] ==> solns144x.png ---
+--- needs --- solns1.idv[52] ==> solns145x.png ---
+--- needs --- solns1.idv[53] ==> solns146x.png ---
+--- needs --- solns1.idv[54] ==> solns147x.png ---
+--- needs --- solns1.idv[56] ==> solns148x.png ---
+--- needs --- solns1.idv[57] ==> solns149x.png ---
+--- characters ---
+Font("cmr","12","12","100")
+Font("cmbx","12","12","100")
+Font("cmbx","12","12","144")
+Font("cmr","12","12","120")
+Font("cmr","8","8","100")
+Font("cmmi","12","12","100")
+Font("cmmi","8","8","100")
+Font("cmsy","10","10","120")
+Font("cmsy","8","8","100")
+Font("cmex","10","10","120")
+Font("msbm","10","10","120")

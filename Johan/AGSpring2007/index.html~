@@ -1,0 +1,154 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html><head><title>Algebraic Geometry</title></head><body>
+<h1>Algebraic Geometry, Spring 2007</h1>
+
+<p>
+On Mastermath one can see a 
+<a href="http://www.mastermath.nl/courses/00003/00016/">general description</a> of this course, 
+as well as a <a href="http://www.mastermath.nl/program/">schedule</a> (time and
+location). There will be no course on April 3 and May 1. 
+
+</p><p> This page gives a progress report on what has been done (course
+and problem session), and gives a planning of what is to
+follow. The course will be taught by 
+<a href="http://www.math.leidenuniv.nl/~edix/">Bas Edixhoven</a> and assisted by 
+<a href="http://www.math.leidenuniv.nl/~jgbosman/">Johan Bosman</a> and
+<a href="http://www.math.leidenuniv.nl/~pbruin/">Peter Bruin</a>.
+
+</p><p>
+<H3>Additional notes</H3>
+<a href="http://www.math.leidenuniv.nl/~jgbosman/AGSpring2007/cat.pdf">Categories and functors.</a> The language of category theory has
+turned out to be very important in algebraic geometry. Note that this is a very basic and
+very incomplete introduction of 3 pages into the terminology of categories. Other important notions are: contravariant
+functors, fibred products, representable functors, Yoneda's lemma. 
+</p><p>
+<H3>Homework grading</H3>
+
+Each week we will present a set of exercises, mainly from Hartshorne's book. 
+The students should select <b>three</b> exercises from the set to hand in. We will determine a number C in [0,10] that should reflect
+the quality of this submission. The grade awarded to the submission will then be computed as follows:
+<li>grade = C if the submission is done within one week;</li>
+<li>grade = min(C,6) if the submission takes more than a week, but less than two weeks;</li>
+<li>grade = min(C,0) if the submission takes more than two weeks.</li> 
+<p>
+In the last case we will use an efficient algorithm to determine the grade: we
+output 0 without first computing C. 
+In the first two cases the number C is determined in the following way. You can get at most 9
+points for the problems and possibly 1 extra point. For an easy problem you can get at most 2 points and for a difficult problem you
+can get at most 3 points. The extra point is awarded if all of the following conditions are met: your name appears on the
+paper and the submission is well-readable (mathematically as well as typographically).
+<p>
+<H3>Final set of exercises</H3>
+The final set of exercises can be found <a href="http://www.math.leidenuniv.nl/~jgbosman/AGSpring2007/finalset.pdf">here</a>. Solutions to all problems have
+to be handed in, to either <a href="http://www.math.leidenuniv.nl/~jgbosman/">Johan Bosman</a> or 
+<a href="http://www.math.leidenuniv.nl/~pbruin/">Peter Bruin</a>. After we read your written solutions, we will discuss them orally with you. You may choose
+a date yourself when to do this, but we prefer you do this the first week of July. <b>You may also choose to let this assignment count for either 30% or 50% of
+your final grade</b>, whichever percertage fits best for you.
+
+</p><p>
+<H3>Weekly progress</H3>
+We will start working in Chapter II of Hartshorne's Algebraic Geometry.
+</p><p>
+</p><dl>
+  <dt>1. February 6.
+  </dt><dd>We will start in [HAG, section II.1]: sheaves.
+  <p>Exercises: 1.1 (3 pts), 1.2 (3 pts), 1.3 (3 pts), 1.4 (2 pts), 1.5 (2 pts) (all from chapter II).
+
+<dt>2. February 13.
+  <dd>We will finish section II.1 and start with locally ringed spaces.
+  <p>Exercises: I.1.7 (3pts), II.1.8 (2pts), II.1.16abc (3pts), 
+  <a href="http://www.math.leidenuniv.nl/~jgbosman/AGSpring2007/AGexc1.pdf">additional exercise 1</a> (3pts). 
+  (Note that the
+  first exercise is from chapter I).
+
+<dt>3. February 20.
+  <dd> We will give examples of locally ringed spaces and see the connection with algebraic varieties. 
+  <p><a href="http://www.math.leidenuniv.nl/~jgbosman/AGSpring2007/exercises-week3.pdf">Exercises.</a>
+
+<dt>4. February 27.
+  <dd> We will continue the formulation of algebraic varieties in terms of locally ringed spaces and
+  give the definition of an abstract variety. The anti-equivalence of the category of affine varieties
+  over an algebraically closed field k 
+  to the category of reduced k-algebras of finite type will be treated.
+  <p><a href="http://www.math.leidenuniv.nl/~jgbosman/AGSpring2007/week4.pdf">Exercises.</a>
+
+<dt>5. March 6.
+  <dd> We will define projective <i>n</i>-space
+  <b>P</b><sup><i>n</i></sup> over an algebraically closed field
+  <i>k</i> as a quotient of <b>A</b><sup><i>n</i>+1</sup> \ {0} in the
+  category of varieties over <i>k</i>, and we will describe how
+  <b>P</b><sup><i>n</i></sup> can be covered by copies of
+  <b>A</b><sup><i>n</i></sup>.
+  <p><a href="http://www.math.leidenuniv.nl/~jgbosman/AGSpring2007/exercises-week5.pdf">Exercises.</a>
+
+<dt>6. March 13.
+  <dd>We will finish our treatment of projective spaces and start with section II.2: schemes. 
+  <p><a href="http://www.math.leidenuniv.nl/~jgbosman/AGSpring2007/week6.pdf">Exercises.</a>
+</dd>
+
+<dt>7. March 20.  <dd>We will show that Spec is a functor from the
+  category of rings to the category of locally ringed spaces, and that
+  giving a ring homomorphism from a ring <i>A</i> to a ring <i>B</i>
+  is &lsquo;the same&rsquo; as giving a morphism of locally ringed
+  spaces from Spec(<i>B</i>) to Spec(<i>A</i>) (i.e. Spec is <i>fully
+  faithful</i>).  We will also give some examples of schemes.
+  <p>Exercises: 2.6 (2 pts), 2.7 (3 pts), 2.8 (3 pts), 2.9 (3 pts),
+  2.13 (3 pts) (all from Chapter II).
+</dd>
+
+<dt>8. March 27.
+  <dd>We will make projective schemes by gluing affine schemes in the proper way. We will also treat the equivalence between reduced
+  k-schemes of finite type and varieties over k, where k is an algebraically closed field.
+  <p><a href="http://www.math.leidenuniv.nl/~jgbosman/AGSpring2007/week8.pdf">Exercises.</a>
+</dd>
+
+<dt>9. April 3.
+  <dd>There will be no course this week. This means that the exercises
+  from March 27 can be handed in the 10th of April without loss of
+  points.
+</dd>
+
+<p>
+<dt>10. April 10.
+  <dd>We will treat various properties of schemes defined in Hartshorne,
+  Section II.3.
+  <p><a href="http://www.math.leidenuniv.nl/~jgbosman/AGSpring2007/week10.pdf">Exercises.</a>
+</dd>
+
+<dt>11. April 17.
+  <dd>We will start in chapter IV of Hartshorne's book: curves. In particular we will treat the equivalence between regular
+  projective irreducible curves and function fields.
+  <p><a href="http://www.math.leidenuniv.nl/~jgbosman/AGSpring2007/week11.pdf">Exercises.</a>
+</dd>
+
+<dt>12. April 24.
+  <dd>More about curves: the Riemann&ndash;Roch formula,
+  differentials, hyperelliptic curves.
+  <p><a href="http://www.math.leidenuniv.nl/~jgbosman/AGSpring2007/week12.pdf">Exercises.</a>
+  Since we didn't get far enough in class, the deadline for this assignment is postponed to May 15.
+</dd>
+
+<dt>13. May 1.
+  <dd>No course.</dd>
+<p> 
+<dt>14. May 8. 
+  <dd>We will continue the treatment of curves from last time. The Hurwitz formula is one of today's topics.
+  <p><a href="http://www.math.leidenuniv.nl/~jgbosman/AGSpring2007/week14.pdf">Exercises.</a> 
+  Deadline: May 22.
+</dd>
+
+<dt>15. May 15.
+  <dd> Topics from section II.5 will be discussed: sheaves of modules, pull-backs, tensor products and quasi-coherent sheaves.
+   <p><a href="http://www.math.leidenuniv.nl/~jgbosman/AGSpring2007/finalset.pdf">Final exercise set.</a> 
+   Notes: there is no deadline, solution all problems have to be handed in and oral discussion of this set is required.
+</dd>
+</dl>   
+<hr>
+<address><a href="http://www.math.leidenuniv.nl/~jgbosman/">
+Johan Bosman &lt;jgbosman@math.leidenuniv.nl&gt;</a></address>
+<address><a href="http://www.math.leidenuniv.nl/~pbruin/">
+Peter Bruin &lt;pbruin@math.leidenuniv.nl&gt;</a></address>
+<p>
+<i>Last modification: May 16, 2007.</i>
+
+</body></html>

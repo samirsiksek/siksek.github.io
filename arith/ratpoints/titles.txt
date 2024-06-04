@@ -1,0 +1,189 @@
+
+
+
+David Harari
+
+"The defect of strong approximation on commutative algebraic groups". 
+
+=============================
+
+
+Ronald van Luijk
+
+Title:
+ Density of rational points on diagonal quartic surfaces
+
+ Abstract:
+ It is a wide open question whether the set of rational points
+ on a smooth quartic surface in projective three-space can be
+ nonempty, yet finite. In this talk I will treat the case of diagonal
+ quartics V, which are given by ax^4+by^4+cz^4+dw^4=0 for
+ some nonzero rational a,b,c,d. I will assume that the product
+ abcd is a square and that V contains at least one rational
+ point P. I will prove that if none of the coordinates of P is zero,
+ and P is not contained in one of the 48 lines on V, then the
+ set of rational points on V is dense. This is based on joint work
+ with Adam Logan and David McKinnon.
+
+===========================
+
+Tony Varilly
+
+weak approxiamtion on del Pezzos of degree 1
+
+===========================
+
+Cyril Demarche
+
+Descent obstruction and Brauer-Manin obstruction
+
+===========================
+
+Noam Elkies
+
+How many points can a genus-2 curve have?
+
+Abstract:
+http://www.math.harvard.edu/~casa/abstracts/elkiesabs.pdf
+
+==========================
+
+Minhyong Kim
+
+A non-abelian principle of Birch and Swinnerton-Dyer
+
+=========================
+
+Roger Heath-Brown
+
+Sums and differences of 3 k-th powers
+
+=========================
+
+Speaker: Bjorn Poonen, U. C. Berkeley
+
+Title: Insufficiency of the Brauer-Manin obstruction applied to \'etale
+ covers
+
+Abstract:
+Let $k$ be any global field of characteristic not~$2$.
+We construct a $k$-variety $X$ such that $X(k)$ is empty, 
+but for which the emptiness cannot be explained 
+by the Brauer-Manin obstruction
+or even by the Brauer-Manin obstruction applied to finite \'etale
+ covers.
+
+
+=========================
+
+Olivier Wittenberg
+
+"Fundamental groups and the elementary obstruction"
+
+========================
+
+Ambrus Pal
+
+"Constructing rational points on genus one curves over function fields"
+
+=======================
+
+Jan Steffen Müller (30 min talk)
+
+"Explicit Kummer surface theory in arbitrary characteristic"
+
+=======================
+
+Tom Fisher
+
+"Minimal models for genus one curves"
+
+======================
+
+Evis Ieronymou (30 min talk)
+
+''Transcendental elements of the Brauer group of
+diagonal quartic surfaces''
+
+=====================
+
+Tim Dokchitser 
+
+"The parity of ranks of elliptic curves"
+
+====================
+
+Victor Flynn
+
+Title. Sha and Degree 4 del Pezzo Surfaces.
+
+Abstract.
+It is known that, given a genus 2 curve C : y^2 = f(x), where
+f(x) is quintic and defined over a number field K,
+and given a homogeneous space H_delta for complete 2-descent
+on the Jacobian of of C, one can derive a related V_delta
+which is a degree 4 del Pezzo surface defined over K.
+We shall describe explicitly how, given V, to find C and delta
+such that V = V_delta, up to a linear change in variable defined
+over K. We shall also apply this relationship to Hurlimann's
+example of a degree 4 del Pezzo surface violating the Hasse principle,
+and derive an explicit parametrised infinite family of
+genus 2 curves, defined over Q, whose Jacobians have nontrivial
+members of the Shafarevich-Tate group. This example will differ from
+previous examples in the literature by having only two Q-rational
+Weierstrass points.
+
+======================
+
+Damiano Testa
+
+"The Rational Box Problem"
+
+======================
+
+Christian Wuthrich
+
+Title :
+ 'Computations about the Tate-Shafarevich group using Iwasawa theory'
+
+ Abstract :
+ 'I shall explain how to combine deep results from Iwasawa theory
+  (Kato, Perrin-Riou, Schneider,...) with explicit computation to
+  obtain information about $p$-primary parts of Tate-Shafarevich
+  groups of elliptic curves over $\QQ$.  This method provides a
+  practical way to compute $\#\Sha(E/\QQ)(p)$ in many cases when
+  traditional $p$-descent methods are completely impractical and
+  when the rank of $E(\QQ)$ is greater than 1.'
+
+=======================================
+
+Tim Browning
+
+"Manin's conjecture for a non-singular quartic del Pezzo surface"
+
+======================================
+
+Emmanuel Peyre.
+
+"Very free rational points"
+
+Abstract
+The analogy between number fields and function fields
+of curves is a truism of arithmetic geometry.
+It is therefore natural to look for links between the
+asymptotic behaviour of points of bounded height on a variety
+and the geometry of the moduli space of morphisms of high degree
+from a curve to this variety.
+
+On the geometric side, this study lead to new
+results about the curves on split flag varieties or
+toric varieties.
+
+On the arithmetic side,
+it has opened a trail towards a better understanding of
+the geometric obstructions for the Batyrev-Manin's principle
+which were first unearthed in the counter-example of Batyrev
+and Tschinkel:
+the natural objects for geometry are the very free curves,
+similarly one is lead in diophantine geometry to look
+for very free rational points.

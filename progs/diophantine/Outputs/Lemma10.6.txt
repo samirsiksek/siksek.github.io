@@ -1,0 +1,70 @@
+Magma V2.21-9     Fri Mar 11 2016 10:34:46 on atkin    [Seed = 531199494]
+Type ? for help.  Type <Ctrl>-D to quit.
+
+Loading startup file "/home/samir/.magmarc"
+
+We will be doing computations with certain modular curves over the field Number 
+Field with defining polynomial $.1^3 - 13*$.1^2 + 26*$.1 - 13 over the Rational 
+Field
+This is the unique cubic subfield of Q(zeta_{13})
+The modular curve X_0(14) is the elliptic curve Elliptic Curve defined by y^2 + 
+x*y + y = x^3 + 4*x - 6 over Rational Field
+with Cremona label 14a1
+Points on X_0(14) over K^prime are [ (0 : 1 : 0), (9 : 23 : 1), (2 : 2 : 1), (1 
+: -1 : 1), (2 : -5 : 1), (9 : -33 : 1) ]
+The cusps of X_0(14) are [
+    Place at (9 : 23 : 1),
+    Place at (2 : -5 : 1),
+    Place at (1 : -1 : 1),
+    Place at (0 : 1 : 0)
+]
+The non-cuspidal points on X_0(14) over K^prime are [ (2 : 2 : 1), (9 : -33 : 1)
+]
+These have j-invariants [
+    16581375,
+    -3375
+]
+The modular curve X_0(11) is the elliptic curve Elliptic Curve defined by y^2 + 
+y = x^3 - x^2 - 10*x - 20 over Rational Field
+with Cremona label 11a1
+Points on X_0(11) over K^prime are [ (0 : 1 : 0), (5 : -6 : 1), (16 : 60 : 1), 
+(16 : -61 : 1), (5 : 5 : 1) ]
+The cusps of X_0(11) are [
+    Place at (16 : 60 : 1),
+    Place at (0 : 1 : 0)
+]
+The non-cuspidal points on X_0(11) over K^prime are [ (5 : -6 : 1), (16 : -61 : 
+1), (5 : 5 : 1) ]
+These have j-invariants [
+    -32768,
+    -121,
+    -24729001
+]
+Now we check the claim made in the proof that
+every point on X_0(20) over Q(zeta_{13})^+
+is in fact defined over Q(sqrt{13})
+
+The modular curve X=X_0(20) is the elliptic curve Elliptic Curve defined by y^2 
+= x^3 + x^2 + 4*x + 4 over Rational Field
+with Cremona label 20a1
+Points on X_0(20) over K^prime are [ (0 : 1 : 0), (4 : 10 : 1), (0 : 2 : 1), (-1
+: 0 : 1), (0 : -2 : 1), (4 : -10 : 1) ]
+The quadratic twist of E by 13 is Elliptic Curve defined by y^2 = x^3 + 13*x^2 +
+676*x + 8788 over Kp
+The Mordell--Weil group of this twist over K^prime is 
+Abelian Group isomorphic to Z/2 + Z
+Defined on 2 generators
+Relations:
+    2*A.1 = 0
+The generators are (-13 : 0 : 1) (39 : -338 : 1)
+Thus if P belongs to X(K) then P+P^sigma and P-P^sigma
+        both belong to X(Q(sqrt{13}))
+Thus 2P belongs to X(Q(sqrt{13}})
+As the extension K/Q(sqrt{13}) is cubic, and the equation
+        2P=R has four solutions, it follows that 2P=2Q
+        where Q belongs to X(Q(sqrt{13}))
+To see that P belongs to X(Q(sqrt{13})), it is
+        enough to observe that X has full 2-torsion
+        already over the rationals.
+
+Total time: 13.929 seconds, Total memory usage: 56.06MB

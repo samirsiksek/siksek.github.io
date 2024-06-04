@@ -1,0 +1,42 @@
+
+
+This directory contains programs needed for the computational part
+of the paper
+"Explicit Chabauty over Number Fields" by  Samir Siksek
+
+
+g2-jac.m   contains many routines for genus 2 Jacobians over number fields
+	   including an implementation of Chabauty and the Mordell-Weil sieve
+	   as described in the paper
+
+add.m     routines for rigourous arithmetic on genus 2 Jacobians over p-Adic fields
+
+
+JSearch.m  routines for: 
+		(1) searching for points on genus 2 Jacobians over number fields 
+		(rather primitive at the moment)
+		(2) computing all rational points on genus 2 curves over Jacobians
+		by first computing the Mordell-Weil group (this might very well fail)
+		and then applying Chabauty and the Mordell-Weil sieve (this will
+		fail if the Chabauty criterion is not satisfied)
+
+FermatI.m  verifies the computations in the paper for $x^2+y^3=z^{10}$
+	   with $y$ odd
+
+FermatII.m verifies the computations in the paper for $x^2+y^3=z^{10}$
+	   with $y$ even
+
+FermatII.txt gives the output for FermatII.m 
+
+integrationChecks.m  checks that the v-adic integration techniques are giving
+		     the same answers as some other papers and that the results are plausible
+
+chabChecks.m        checks that our Chabauty program is working correctly
+		    by giving several instances where it fails whenever
+		    there is more than one rational point in the p-unit ball
+
+addChecks.m         several examples that check that our rigourous arithmetic
+                    over local fields is giving the same results as exact operations
+                    over number fields to within the chosen precision
+
+

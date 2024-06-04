@@ -1,0 +1,49 @@
+This directory contains Magma scripts (and their outputs) 
+for the verification of the computations described in the paper:
+
+
+"Modular elliptic curves over real abelian fields
+and the generalized Fermat equation $x^{2\ell}+y^{2m}=z^p".
+by Samuele Anni and Samir Siksek
+
+
+==========================================================
+
+Outputs			This is a directory that contains the outputs
+			of our Magma runs.
+
+==========================================================
+
+Corollary1.1.m		Script for the computations described 
+			in the proof of Corollary 1.1.
+
+==========================================================
+
+
+Lemma10.2.m		Script for the computations described
+			in the proof of Lemma 10.2.
+
+==========================================================
+
+
+Lemma10.4.m		Script for the computations described
+			in the proof of Lemma 10.4.
+
+==========================================================
+
+
+Lemma10.5.m		Script for the computations described
+			in the proof of Lemma 10.5.
+
+==========================================================
+
+
+Lemma10.6.m		Script for the computations described
+			in the proof of Lemma 10.6.
+
+==========================================================
+
+
+Section 11.m		Script for the computations described
+			in Section 11.
+

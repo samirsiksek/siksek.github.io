@@ -1,0 +1,116 @@
+// MAGMA script for the Mordell-Weil Sieve computations in the context of
+//  "Integral Points on Hyperelliptic Curves"
+// by Y. Bugeaud, M. Mignotte, S. Siksek, M. Stoll and Sz. Tengely
+//
+// Set up the curve and its Jacobian
+P<x> := PolynomialRing(Rationals());
+C := HyperellipticCurve(4*x^5-4*x+1);
+// y^2 - y = x^5 - x, transformed into y^2 = degree 5 in x
+J := Jacobian(C);
+// Generators of the Mordell-Weil group:
+bas := ReducedBasis(Points(J : Bound := 5));
+// Load the MW Sieve code
+load "MWdemo.magma";
+SetVerbose("GroupInfo", 1);
+SetVerbose("DeepInfo", 1);
+SetVerbose("MWSieve", 1);
+// Set up the list of prime powers for the local information
+deep := [<2, 8>, <3, 5>, <5, 4>, <7, 2>, <11, 3>]
+         cat [<p, 1>
+               : p in [13, 17, 19, 29, 37, 41, 59, 67, 71, 73, 109, 127, 131, 
+                       149, 151, 157, 181, 191, 211, 233, 269, 281, 397, 461, 
+                       479, 541, 593, 619, 643, 647, 709, 727, 787, 853, 857, 
+                       907, 1091, 1123, 1307, 1423, 1709, 1811, 2203, 2207,
+                       2459, 2551, 2579, 2609, 2801, 3019, 3169, 3889, 4357, 
+                       4493, 4951, 5261, 5323, 6397, 6521, 6607, 7019, //
+                       7109, 7207, 7507, 7753, 10009, 11113, 11161, 11411, 
+                       11503, 12161, 13463, 14411, 14593, 15241, 15607, 16223, 
+                       17749, 18287, 18593, 20753, 22691, 23753, 24407, 24907, 
+                       30203, 30757, 31687, 34939, 36353, 41593, 49031]];
+// The base point for the embedding of C into J:
+pt0 := Rep(PointsAtInfinity(C));
+// The following collects the local information for all relevant primes
+time GI := DeepGI(J, 1, bas, pt0
+                   : Deep := deep, PrimeBound := 150, SmoothBound := 500);
+// The sequence of primes to build B
+run := [ 2, 2, 2, 2, 3, 5, 13, 7, 37, 31, 5, 11, 43, 17, 19, 3, 7, 53, 23, 2, 
+         3, 47, 59, 127, 29, 67, 109, 79, 137, 41, 2, 113, 139, 97, 131, 101, 
+         11, 7, 5, 2, 3, 83, 73, 2, 103, 89, 31, 61, 13, 149, 71, 17 ];
+// Now do the sieve computation
+time r1, cands := BMCompute(GI, run);
+B := &*r1; B; Factorization(B);
+// Print the list of remaining points mod B
+#cands;
+rdB := func<a | 2*a gt B select a - B else a>;
+for c in cands do printf "(%o, %o, %o)\n", rdB(c[1]), rdB(c[2]), rdB(c[3]); 
+end for;
+// Set up for the second stage
+MW := FreeAbelianGroup(3); // J(Q) as abstract group
+L := sub<MW | [B*g : g in Generators(MW)]>; // the current lattice
+S := {MW![rdB(a) : a in c] : c in cands}; // known points as subset of MW
+// Find the points on the curve and check that they give the set S
+points := Points(C : Bound := 1000);
+pt0 := Rep(PointsAtInfinity(C)); // the base-point
+assert {pt-pt0 : pt in points} eq {&+[(ElementToSequence(c))[i]*bas[i] : i in [1..#bas]] : c in S};
+// This is the sequence of primes q used for the construction of a high-index
+//  subgroup L' of MW such that the image of C(Q) in MW/L' is given by the
+//  known points. Here, we get (MW : L') > 10^1200.
+primes := [
+120427, 82883, 154181, 90059, 96353, 111127, 24907, 63853, 23753, 151451,
+84737, 99839, 97429, 162493, 110183, 158293, 144013, 25759, 136397, 22013,
+109363, 13037, 164839, 7507, 127037, 104659, 138077, 111653, 172357, 87683,
+6367, 76777, 179497, 134207, 70571, 103049, 104549, 145463, 151651, 151643,
+185189, 90911, 73277, 50833, 68711, 70003, 51971, 60259, 150001, 23431, 108727,
+103079, 96847, 176089, 63311, 52957, 123863, 178567, 18049, 179989, 168253,
+99119, 154487, 183091, 104773, 179161, 150797, 54413, 55117, 164789, 104369,
+65951, 71059, 62791, 39443, 152599, 106649, 56509, 55717, 85469, 107123, 125863,
+83063, 36353, 120689, 24407, 138191, 86491, 115837, 126733, 93719, 68443, 32117,
+78569, 127031, 100129, 50891, 35897, 69427, 66733, 60343, 70423, 133543, 77929,
+134677, 64067, 119419, 77999, 108533, 108211, 41593, 108761, 150769, 146893,
+171803, 151429, 46751, 74093, 63803, 21107, 50159, 157433, 56249, 114601, 65393,
+108877, 120941, 39619, 13751, 74317, 124919, 69737, 141773, 37951, 84761, 17749,
+158371, 54709, 140677, 141539, 56767, 58567, 139987, 40813, 90617, 163351,
+42943, 27397, 14867, 103237, 137867, 163697, 139109, 40609, 85991, 86501,
+108803, 91373, 55411, 36209, 14629, 155119, 55903, 82483, 73043, 26573, 12739,
+132709, 115601, 15241, 68279, 165133, 25943, 102301, 20089, 138563, 179143,
+142907, 14533, 65293, 172759, 182929, 152837, 51673, 166147, 56311, 155027,
+108037, 47459, 44971, 165211, 125471, 130261, 141509, 120917, 97073, 75629,
+107227, 46447, 183089, 96323, 59753, 144071, 19427, 13163, 21283, 24971, 184993,
+42169, 148021, 18301, 25169, 76649, 86561, 60289, 102793, 105653, 52901, 131011,
+20149, 105953, 25127, 69431, 42989, 131009, 121631, 62819, 106531, 115079,
+25031, 67399, 81769, 98639, 13463, 133571, 102251, 26297, 46199, 29287, 115777,
+30509, 86171, 30977, 41453, 89567, 96671, 61927, 98731, 106621, 61981, 130483,
+14327, 49559, 131779, 80953, 142973, 67433, 155153, 172199, 109507, 169553,
+158113, 29077, 145471, 27689, 160201, 161741, 104149, 112223, 162649, 71881,
+131701, 47363, 21493, 54679, 18211, 179951, 134789, 167771, 109171, 50789,
+63997, 27127, 37889, 104953, 17401, 76369, 12073, 128287, 145069, 86857, 16651,
+118873, 58309, 124819, 79943, 117053, 44179, 130073, 95153, 101837, 142357,
+19087, 18787, 17539, 42821, 34273, 38791, 54673, 41047, 178169, 108343, 180239,
+55837, 14969, 9629, 33967, 69593, 17737, 48889, 3931, 157163, 164299, 135719,
+91967, 42571, 153511, 129121, 180361, 56081, 168499, 130127, 109537, 73943,
+131129, 9619, 3253, 5869, 137713, 148609, 32059, 172411, 169369, 179917, 118619,
+127583, 134053, 184823, 139871, 145807, 60631, 54949, 87421, 95791, 41233,
+101999, 14051, 19597, 10771, 63773, 27043, 10711, 74381, 49943, 62459, 104459,
+52009, 54323, 172673, 146543 ];
+// Now run the lattice index enlargement procedure
+time for q in primes do _, L := TestEnlarge(L, S, q, J, bas); end for;
+ChangePrecision(1.0*Index(MW, L), 6);
+// Convert L into a lattice
+LLat := Lattice(Matrix([Eltseq(MW!g) : g in Generators(L)]));
+// Find smallest length of a nonzero lattice vector
+mL := Sqrt(Minimum(LLat)); mL;
+// Determine mu_2 ...
+mu2 := Max([Sqrt(Height(&+[Eltseq(s)[i]*bas[i] : i in [1..#bas]])) : s in S]);
+// ... and mu_3
+mu3 := Min([Sqrt(l[1]) : l in Eigenvalues(HeightPairingMatrix(bas))]);
+mu2, mu3;
+// Determine mu_1
+mu1 := -c2 where _,c2 := HeightConstant(J);
+// Then a lower bound for the height of an unkown rational point is
+lb := (mu3*mL - mu2)^2+mu1;
+printf "Lower bound: %o\n", lb;
+// Now compute the upper bound from Baker's method:
+ub := logxBound(HyperellipticPolynomials(C), points);
+printf "Upper bound: %o\n", ub;
+assert lb gt ub;
+

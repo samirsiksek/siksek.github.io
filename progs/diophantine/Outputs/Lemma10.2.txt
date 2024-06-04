@@ -1,0 +1,43 @@
+Magma V2.21-9     Fri Mar 11 2016 15:34:34 on lehner   [Seed = 1173740746]
+Type ? for help.  Type <Ctrl>-D to quit.
+
+Loading startup file "/home/samir/.magmarc"
+
+++++++++++++++++++++++++++++++++
+Treating p= 5
+The following is our system of totally positive units [
+    th + 2
+]
+The set of B_{T^prime,D}(u_1,...,u_d) is  { 1 }
+The set of surviving primes ell is []
+++++++++++++++++++++++++++++++++
+Treating p= 7
+The following is our system of totally positive units [
+    th^2 - th,
+    th^2 + 2*th + 1
+]
+The set of B_{T^prime,D}(u_1,...,u_d) is  { 1 }
+The set of surviving primes ell is []
+++++++++++++++++++++++++++++++++
+Treating p= 11
+The following is our system of totally positive units [
+    -2*th^4 - 4*th^3 + 5*th^2 + 11*th + 3,
+    th^2,
+    th^4 + 2*th^3 - th^2 - 2*th + 1,
+    th^4 - 4*th^2 + 4
+]
+The set of B_{T^prime,D}(u_1,...,u_d) is  { 1, 23 }
+The set of surviving primes ell is [ 23 ]
+++++++++++++++++++++++++++++++++
+Treating p= 13
+The following is our system of totally positive units [
+    th + 2,
+    -th^5 - th^4 + 6*th^3 + 3*th^2 - 9*th + 2,
+    th^5 - 5*th^3 + 5*th + 2,
+    th^2,
+    -2*th^5 - 4*th^4 + 5*th^3 + 13*th^2 + 4*th - 1
+]
+The set of B_{T^prime,D}(u_1,...,u_d) is  { 1, 25, 729 }
+The set of surviving primes ell is [ 5 ]
+
+Total time: 0.750 seconds, Total memory usage: 32.09MB

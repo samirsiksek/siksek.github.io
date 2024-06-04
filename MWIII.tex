@@ -1,0 +1,929 @@
+\documentclass{beamer}
+
+\usepackage{xcolor,cancel}
+
+\newcommand\hcancel[2][black]{\setbox0=\hbox{$#2$}%
+\rlap{\raisebox{.45\ht0}{\textcolor{#1}{\rule{\wd0}{1pt}}}}#2} 
+
+
+\usepackage{beamerthemesplit}
+
+\usepackage{calligra}
+\usepackage{comment}
+\usepackage[normalem]{ulem}
+%\usetheme{AnnArbor}
+%\usetheme{default}
+%\usetheme{Warsaw}
+\usetheme{Boadilla} 
+%\setbeamersize{text margin left=1cm,text margin right=1cm}
+%\setbeamercolor{background canvas}{bg=lightgray}
+%\usecolortheme[RGB={1,1,1}]{structure}
+
+\makeatother
+\setbeamertemplate{footline}
+{
+  \leavevmode%
+  \hbox{%
+  \begin{beamercolorbox}[foregroundcolor=white,wd=.90\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
+    \usebeamerfont{author in head/foot}\insertshortauthor
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.10\paperwidth,ht=2.25ex,dp=1ex,right]{title in head/foot}%
+%    \usebeamerfont{title in head/foot}\insertshorttitle\hspace*{3em}
+    \insertframenumber{} / \inserttotalframenumber\hspace*{1ex}
+  \end{beamercolorbox}}%
+  \vskip0pt%
+}
+\makeatletter
+\setbeamertemplate{navigation symbols}{}
+
+
+%\usepackage{amssymb} 
+%\usepackage{amsmath} 
+%\usepackage{amscd}
+%\usepackage{amsbsy}
+%\usepackage{mathabx}
+%\usepackage{MnSymbol}
+\usepackage[all,cmtip]{xy}
+
+%\usepackage[matrix,arrow]{xy}
+%\usepackage[small,nohug,heads=vee]{diagrams}
+%\diagramstyle[labelstyle=\scriptstyle]
+\DeclareMathOperator{\Sym}{Sym}
+\DeclareMathOperator{\Chab}{Chab}
+\DeclareMathOperator{\disc}{disc}
+\DeclareMathOperator{\genus}{genus}
+\newcommand{\pdual}{\check{\mathbb{P}}^2}
+\DeclareMathOperator{\Char}{char}
+\DeclareMathOperator{\PGL}{PGL}
+\DeclareMathOperator{\Aut}{Aut}
+\DeclareMathOperator{\Cl}{Cl}
+\DeclareMathOperator{\Disc}{Disc}
+\DeclareMathOperator{\GL}{GL}
+\DeclareMathOperator{\SL}{SL}
+\DeclareMathOperator{\Sel}{Sel}
+\DeclareMathOperator{\Ker}{Ker}
+\DeclareMathOperator{\Img}{Im}
+\DeclareMathOperator{\Res}{Res}
+\DeclareMathOperator{\rank}{rank}
+\DeclareMathOperator{\Pic}{Pic}
+\DeclareMathOperator{\red}{red}
+\newcommand{\vv}{{\upsilon}}
+\DeclareMathOperator{\Div}{Div}
+\DeclareMathOperator{\Princ}{Princ}
+\DeclareMathOperator{\divisor}{div}
+\DeclareMathOperator{\Alb}{Alb}
+\DeclareMathOperator{\Gal}{Gal}
+\DeclareMathOperator{\norm}{Norm}
+\DeclareMathOperator{\trace}{Tr}
+\DeclareMathOperator{\ord}{ord}
+\DeclareMathOperator{\image}{im}
+\DeclareMathOperator{\lcm}{lcm}
+\DeclareMathOperator{\Reg}{Reg}
+\newcommand{\crt}{\sqrt[3]{2}}
+\newcommand{\bxi}{\boldsymbol{\xi}}
+%\newcommand{\SHA}[1]{{\cyr X}(#1)}
+%\newcommand{\p}{{\mathfrak P}}
+%\newcommand{\A}{{\mathbb A}}
+\newcommand{\mS}{\mathcal{S}}
+\newcommand{\Q}{{\mathbb Q}}
+\newcommand{\Z}{{\mathbb Z}}
+%\newcommand{\N}{{\mathbb N}}
+\newcommand{\C}{{\mathbb C}}
+\newcommand{\R}{{\mathbb R}}
+\newcommand{\F}{{\mathbb F}}
+%\newcommand{\D}{{\mathbb D}}
+\newcommand{\PP}{{\mathbb P}}
+%\newcommand{\LL}{{\mathbb L}}
+%\newcommand{\HH}{{G_{\LL}}}
+\newcommand{\cA}{\mathcal{A}}
+\newcommand{\cB}{\mathcal{B}}
+\newcommand{\cG}{\mathcal{G}}
+\newcommand{\cF}{\mathcal{F}}
+\newcommand{\cH}{\mathcal{H}}
+\newcommand{\cK}{\mathcal{K}}
+\newcommand{\cI}{\mathcal{I}}
+\newcommand{\cL}{\mathcal{L}}
+\newcommand{\cM}{\mathcal{M}}
+\newcommand{\cN}{\mathcal{N}}
+\newcommand{\cP}{\mathcal{P}}
+\newcommand{\cQ}{\mathcal{Q}}
+\newcommand{\cR}{\mathcal{R}}
+\newcommand{\cT}{\mathcal{T}}
+\newcommand{\cJ}{{\mathcal J}}
+\newcommand{\cC}{\mathcal C}
+\newcommand{\cX}{\mathcal X}
+\newcommand{\cV}{\mathcal V}
+\newcommand{\cW}{\mathcal W}
+\newcommand{\OO}{{\mathcal O}}
+\newcommand{\ga}{\mathfrak{a}}
+\newcommand{\gb}{{\mathfrak{b}}}
+\newcommand{\gc}{{\mathfrak{c}}}
+\newcommand{\cm}{\mathfrak{m}}
+\newcommand{\ff}{\mathfrak{f}}
+\newcommand{\gf}{\mathfrak{g}}
+\newcommand{\gN}{\mathfrak{N}}
+\newcommand{\pic}{{\rm Pic}^0(Y)}
+\newcommand{\fp}{\mathfrak{p}}
+\newcommand{\fq}{\mathfrak{q}}
+\newcommand{\mP}{\mathfrak{P}}     
+\newcommand{\xx}{\mathbf{x}}
+
+
+%\renewcommand{\baselinestretch}{1.5}
+
+\newtheorem{thm}{Theorem}
+\newtheorem{fac}{Fact}
+\newtheorem{conj}{Conjecture}
+\newtheorem{prop}{Proposition}
+\newtheorem{lem}{Lemma}
+\newtheorem{alg}{Algorithm}
+\newtheorem{cor}{Corollary}
+\newtheorem{conc}{Conclusion}
+\newtheorem{exercise}{Exercise}
+
+\theoremstyle{definition}
+\newtheorem{defn}{Definition}
+\newtheorem{ex}{Example}
+
+\theoremstyle{remark}
+
+\newtheorem{ack}{Acknowledgement}
+
+
+\begin{document}
+\title{Chabauty and the Mordell--Weil Sieve\\
+Episode 3} 
+\author{Samir Siksek}
+%\author{joint work with Nuno Freitas}
+\institute{\Large\calligra University of Warwick}
+\date{}
+
+%gets rid of bottom navigation bars
+\setbeamertemplate{footline}[page number]{}
+
+%gets rid of navigation symbols
+\setbeamertemplate{navigation symbols}{}
+
+\frame{\titlepage}
+
+\begin{comment}
+\begin{frame}
+Recall: given a curve $C$ over $\Q$, or over a number
+field $k$, we want a complete description of $C(k)$.
+For genus $\ge 1$, there is no known algorithm for giving this!
+But there is a bag of tricks that can be used to show
+that $C(k)$ is empty, or determine $C(k)$ if it is non-empty.
+These include:
+\begin{enumerate}
+\item Quotients (lecture 1);
+\item Descent (lecture 2);
+\item Chabauty (lecture 3);
+\item Mordell--Weil sieve (\textcolor{red}{today}).
+\end{enumerate}
+
+The purpose of these lectures is to get a feel for each of these
+methods and see it applied to a particular example.
+\end{frame}
+\end{comment}
+
+\begin{frame}
+\frametitle{Recap--Jacobians}
+Associated to a curve $C/k$ of genus $g\ge 1$ is a $g$-dimensional
+abelian variety $J/k$.
+\begin{enumerate}
+\item[(i)] For $k$ a number field, $J(k)$
+is a finitely generated abelian group (Mordell--Weil Theorem).
+\item[(ii)] If $C(k) \ne \emptyset$ then $J(k) \cong \Pic^0(C/k)$
+(the group of degree $0$ rational divisors on $C$ modulo principal divisors).
+\item[(iii)] If $P_0 \in C(k)$, there is an embedding
+\[
+\iota \; : \; C \hookrightarrow J, \qquad P \mapsto [P-P_0]
+\]
+that is called the Abel--Jacobi map. We have $\iota(C(k)) \subseteq J(k)$.
+\end{enumerate}
+\end{frame}
+\begin{frame}
+\frametitle{Recap--Chabauty}
+Let $C$ be a curve over $\Q_p$ ($p$ is a finite prime). Then there
+is a pairing
+\[
+\langle \, , \, \rangle \; : \;
+\Omega_{C} \times J_C(\Q_p) \rightarrow \Q_p,
+\]
+The pairing has the following properties:
+\begin{enumerate}
+\item it is $\Q_p$-linear on the left;
+\item it is $\Z$-linear on the right;
+\item the kernel on the right is $J(\Q_p)_{\mathrm{tors}}$ (the 
+torsion subgroup of $J(\Q_p)$.
+\end{enumerate}
+
+\begin{lem}
+Let $C$ be a curve over $\Q$ of genus $g$. Write 
+$r$ for the rank of $J(\Q)$. Suppose $r\le g-1$. Let $p$
+be a prime. Then there is some non-zero $\omega \in \Omega_{C/\Q_p}$
+such that
+\[
+\text{$\langle \omega , D\rangle=0$ for all $D \in J(\Q)$}.
+\]
+\end{lem}
+\begin{proof}
+$\dim(\Omega_{C/\Q_p})=g$. Apply linear algebra.
+\end{proof}
+We call such $\omega$ an \textbf{annihilating differential}.
+\end{frame}
+
+\begin{frame}
+If $P \in C(\Q_p)$ we define the \textbf{residue disk of $P$} by
+\[
+B_p(P) = \{ Q \in C(\Q_p) : Q \equiv P \pmod{p} \}.
+\]
+The number of residue disks is $\# C(\F_p)$.
+
+Suppose $r < g-1$. Let $\omega$ be an annihilating differential,
+and $P \in C(\Q)$. Chabauty's method gives a bound
+$\Chab_p(P)$
+for the number of points of rational points in the residue
+disc of $P$:
+\[
+\# C(\Q) \cap B_p(P) \le \Chab_p(P).
+\]
+Let $\cK$ be the \textcolor{blue}{\textbf{known}} rational points. If $\# \cK \cap B_p(P) =
+\Chab_p(P)$ then
+\[
+C(\Q) \cap B_p(P) =\cK \cap B_p(P). 
+\]
+I.e. we know all of the rational points in the residue disc of $P$.
+\end{frame}
+\begin{frame}
+For Chabauty to succeed in finding $C(\Q)$, we need:
+\begin{enumerate}
+\item $r\le g-1$;
+\item we need explicit generators for $J(\Q)$ (or some
+subgroup of $J(\Q)$ of finite index);
+\item we want some prime $p$ of good reduction so that
+the known rational points surject onto $C(\F_p)$; 
+\item  in each residue disc we want to find enough rational
+points to match the Chabauty bound!
+\end{enumerate}
+
+Even if we have (1) and (2), we find in most examples that
+(3) and (4) fail. 
+\end{frame}
+\begin{frame}
+Let
+\[
+C \; : \; y^2=2x^6-3x^2-2x+1.
+\]
+A short search reveals the following four points:
+\[
+\cK=\{ (0,1),\; (0,-1), \; (-2,11),\; (-2,-11) \}.
+\]
+Then 
+\[
+J(\Q) = \Z \cdot [ (-2,-11) - (0,1)] \, .
+\]
+Annhilating differential for $p=3$ is
+\[
+\omega=
+(66+O(3^5)) \frac{dx}{y} + \frac{x dx}{y} \, .\]
+%and for $p=5$ is
+%\[
+%\omega=(294+O(5^5)) \frac{dx}{y}+ \frac{x dx}{y}.
+%\]
+%\end{frame}
+%
+%\begin{frame}
+Applying Chabauty with $p=3$ we have
+
+\begin{tabular}{|c|c|c|}
+\hline
+$P$ & $\Chab_3(P)$ & $\cK \cap B_3(P)$ \\
+\hline
+$(0,1)$ & $2$ & $\{(0,1)\}$ \\
+$(0,-1)$ & $2$ & $\{(0,-1)\}$ \\
+$(-2,11)$ & $1$ & $\{(-2,11)\}$\\
+$(-2,-11)$ & $1$ & $ \{(-2,-11)\}$\\
+\hline
+\end{tabular}
+
+\end{frame}
+\begin{frame}
+\begin{tabular}{|c|c|c|}
+\hline
+$P$ & $\Chab_3(P)$ & $\cK \cap B_3(P)$ \\
+\hline
+$(0,1)$ & $2$ & $\{(0,1)\}$ \\
+$(0,-1)$ & $2$ & $\{(0,-1)\}$ \\
+$(-2,11)$ & $1$ & $\{(-2,11)\}$\\
+$(-2,-11)$ & $1$ & $ \{(-2,-11)\}$\\
+\hline
+\end{tabular}
+
+\medskip
+
+For $P=(-2,-11)$ and $(-2,11)$ there are no other rational 
+points in the same residue disc. For $P=(0,1)$ and $P=(0,-1)$
+we don't know.
+
+\bigskip
+Let
+\[
+B_9(P)=\{ Q \in C(\Q_3) : Q \equiv P \pmod{9} \}.
+\]
+
+\begin{tabular}{|c|c|c|}
+\hline
+$P$ & $\Chab_9(P)$ & $\cK \cap B_9(P)$ \\
+\hline
+$(0,1)$ & $1$ & $\{(0,1)\}$ \\
+$(0,-1)$ & $1$ & $\{(0,-1)\}$ \\
+\hline
+\end{tabular}
+
+\medskip
+
+For $P=(0,1)$ and $(0,-1)$ there are no other rational 
+points in the smaller residue disc $B_9(P)$. 
+\end{frame}
+
+\begin{frame}
+
+Note
+\[
+C(\F_3)=\{ 
+(\bar{0},\bar{1}) \, , \,
+(\bar{0},\bar{2}) \, , \,
+(\bar{1},\bar{1}) \, , \,
+(\bar{1},\bar{2}) 
+\}
+\]
+
+We know all the rational points in
+\[
+B_9(0,1) \cup B_9(0,-1) \cup B_3(-2,11) \cup B_3(-2,-11).
+\]
+This does not fill up $C(\Q_3)$.
+
+To show that $\cK=\{(0,1),(0,-1),(-2,11),(-2,-11)\}$ is
+all of the rational points, we need to show that every rational
+point belongs to one of these four neighbourhoods. 
+This is what  the {\bf Mordell--Weil} sieve will achieve.
+
+
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Mordell--Weil Sieve}
+Let $P_0=(0,1)$. 
+Let 
+\[
+\iota \; : \; C \hookrightarrow J, \qquad Q \mapsto [Q-P_0]
+\]
+be the associated Abel-Jacobi map.
+Recall
+\[
+J(\Q)=\Z \cdot D, \qquad D=[(-2,-11)-(0,1)].
+\]
+
+Note that
+\[
+\iota(0,1)=0,\quad
+\iota(0,-1)=-2D, \quad
+\iota(-2,11)=-3D, \quad
+\iota(-2,-11)=D.
+\]
+
+Suppose $Q \in C(\Q)$. Then $\iota(Q)=nD$ with $n \in \Z$.
+We will use reduction mod $p$ for lots of primes $p$
+to \lq predict\rq $n$.
+\end{frame}
+
+\begin{frame}
+Suppose $Q \in C(\Q)$. Then $\iota(Q)=nD$ with $n \in \Z$.
+We will use reduction mod $p$ for lots of primes $p$
+to \lq predict\rq $n$.
+
+\bigskip
+
+Let $p$ be a prime of
+of good reduction. Let 
+\[
+N=\text{order of $\bar{D} \in J(\F_p)$}. 
+\]
+
+Consider the commutative diagram
+\[
+\xymatrixcolsep{5pc}
+\xymatrix{
+C(\Q) \ar^{\iota}[r] \ar^{\mathrm{red}}[d]  & J(\Q) 
+\ar[d]^{\mathrm{red}} & \Z \ar^{\eta}[l]    \ar[d]\\
+C(\F_p) \ar^{\iota}[r] & J(\F_p)   & \Z/N\Z \ar^{\eta}[l] \\
+}
+\]
+Here $\eta(m)=mD$.
+By diagram chasing
+\[
+n \, \mathrm{mod} \, N \in \{ m \in \Z/N\Z : m \cdot \bar{D} \in \iota(C(\F_p)) \}.
+\]
+\end{frame}
+
+\begin{comment}
+
+\begin{frame}
+Suppose $Q \in C(\Q)$. Then $\iota(Q)=nD$ with $n \in \Z$.
+We will use reduction mod $p$ for lots of primes $p$
+to \lq predict\rq $n$.
+
+For every prime $p$ of good reduction, the Mordell--Weil sieve
+gives an integer $N_p$ and a set $W_p$ such
+that $n \, \mathrm{mod} \, N_p \in W_p$.
+
+\bigskip
+
+\begin{tabular}{|l|l|l|}
+\hline
+$p$ & $N_p$ & $W_p$\\
+\hline
+$3$ & $13$ & $\{ 0, 1, 10, 11 \}$ \\
+$5$ & $21$ & $\{ 0, 1, 18, 19 \} $ \\
+$7$ & $ 65$ & $\{  0, 1, 13, 19, 27, 36, 44, 50, 62, 63 \}$\\
+$23$ & $16$ & $\{  0, 1, 7, 13, 14 \}$\\
+$61$ & $208$ & $\{  0, 1, 24, 53, 153, 182, 205, 206\}$\\ 
+\hline
+\end{tabular}
+
+\bigskip
+
+Note that $16 \mid 208$.
+
+\end{frame}
+
+
+\begin{frame}
+Suppose $Q \in C(\Q)$. Then $\iota(Q)=nD$ with $n \in \Z$.
+We will use reduction mod $p$ for lots of primes $p$
+to \lq predict\rq $n$.
+
+For every prime $p$ of good reduction, the Mordell--Weil sieve
+gives an integer $N_p$ and a set $W_p$ such
+that $n \, \mathrm{mod} \, N_p \in W_p$.
+
+\bigskip
+
+\begin{tabular}{|l|l|l|}
+\hline
+$p$ & $N_p$ & $W_p$\\
+\hline
+$3$ & $13$ & $\{ 0, 1, 10, 11 \}$ \\
+$5$ & $21$ & $\{ 0, 1, 18, 19 \} $ \\
+$7$ & $ 65$ & $\{  0, 1, 13, 19, 27, 36, 44, 50, 62, 63 \}$\\
+$23$ & $16$ & $\{  0, 1, 7, 13, 14 \}$\\
+$61$ & $208$ & $\{  0, 1, \hcancel[red]{24}, 53, 153, 182, 205, 206\}$\\ 
+\hline
+\end{tabular}
+
+\bigskip
+
+Note that $16 \mid 208$.
+
+\end{frame}
+
+\begin{frame}
+Suppose $Q \in C(\Q)$. Then $\iota(Q)=nD$ with $n \in \Z$.
+We will use reduction mod $p$ for lots of primes $p$
+to \lq predict\rq $n$.
+
+For every prime $p$ of good reduction, the Mordell--Weil sieve
+gives an integer $N_p$ and a set $W_p$ such
+that $n \, \mathrm{mod} \, N_p \in W_p$.
+
+\bigskip
+
+\begin{tabular}{|l|l|l|}
+\hline
+$p$ & $N_p$ & $W_p$\\
+\hline
+$3$ & $13$ & $\{ 0, 1, 10, 11 \}$ \\
+$5$ & $21$ & $\{ 0, 1, 18, 19 \} $ \\
+$7$ & $ 65$ & $\{  0, 1, 13, 19, 27, 36, 44, 50, 62, 63 \}$\\
+$23$ & $16$ & $\{  0, 1, 7, 13, 14 \}$\\
+$61$ & $208$ & $\{  0, 1, \hcancel[red]{24, 53, 153, 182,} 205, 206\}$\\ 
+\hline
+\end{tabular}
+
+\bigskip
+
+Note that $13 \mid 65$.
+
+\end{frame}
+
+\begin{frame}
+Suppose $Q \in C(\Q)$. Then $\iota(Q)=nD$ with $n \in \Z$.
+We will use reduction mod $p$ for lots of primes $p$
+to \lq predict\rq $n$.
+
+For every prime $p$ of good reduction, the Mordell--Weil sieve
+gives an integer $N_p$ and a set $W_p$ such
+that $n \, \mathrm{mod} \, N_p \in W_p$.
+
+\bigskip
+
+\begin{tabular}{|l|l|l|}
+\hline
+$p$ & $N_p$ & $W_p$\\
+\hline
+$3$ & $13$ & $\{ 0, 1, 10, 11 \}$ \\
+$5$ & $21$ & $\{ 0, 1, 18, 19 \} $ \\
+$7$ & $ 65$ & $\{  0, 1, 13, \hcancel[red]{19}, 27, 36, \hcancel[red]{44}, 50, 62, 63 \}$\\
+$61$ & $208$ & $\{  0, 1, \hcancel[red]{24, 53, 153, 182,} 205, 206\}$\\ 
+\hline
+\end{tabular}
+
+\bigskip
+
+Need more data.
+\end{frame}
+\end{comment}
+
+\begin{frame}
+Suppose $Q \in C(\Q)$. Then $\iota(Q)=nD$ with $n \in \Z$.
+We will use reduction mod $p$ for lots of primes $p$
+to \lq predict\rq $n$.
+
+For every prime $p$ of good reduction, the Mordell--Weil sieve
+gives an integer $N_p$ and a set $W_p$ such
+that $n \, \mathrm{mod} \, N_p \in W_p$.
+
+\bigskip
+
+\begin{tabular}{|l|l|l|}
+\hline
+$p$ & $N_p$ & $W_p$\\
+\hline
+$3$ & $13$ & $\{ 0, 1, 10, 11 \}$ \\
+$5$ & $21$ & $\{ 0, 1, 18, 19 \} $ \\
+$7$ & $ 65$ & $\{  0, 1, 13, 19, 27, 36, 44, 50, 62, 63 \}$\\
+$17$ & $ 39$ & $\{  0, 1, 36, 37 \}$\\ 
+$19$ & $234$ & $\{0, 1, 42, 67, 72, 82, 100, 132, 150, 160, 165, 190, 231, 232\}$\\ 
+$61$ & $208$ & $\{  0, 1, 24, 53, 153, 182, 205, 206\}$\\ 
+\hline
+\end{tabular}
+
+\bigskip
+
+Note that $39 \mid 234$.
+
+\end{frame}
+
+
+\begin{frame}
+Suppose $Q \in C(\Q)$. Then $\iota(Q)=nD$ with $n \in \Z$.
+We will use reduction mod $p$ for lots of primes $p$
+to \lq predict\rq $n$.
+
+For every prime $p$ of good reduction, the Mordell--Weil sieve
+gives an integer $N_p$ and a set $W_p$ such
+that $n \, \mathrm{mod} \, N_p \in W_p$.
+
+\bigskip
+
+\begin{tabular}{|l|l|l|}
+\hline
+$p$ & $N_p$ & $W_p$\\
+\hline
+$3$ & $13$ & $\{ 0, 1, 10, 11 \}$ \\
+$5$ & $21$ & $\{ 0, 1, 18, 19 \} $ \\
+$7$ & $ 65$ & $\{  0, 1, 13, 19, 27, 36, 44, 50, 62, 63 \}$\\
+$17$ & $ 39$ & $\{  0, 1, 36, 37 \}$\\ 
+$19$ & $234$ & $\{0, 1, \hcancel[red]{42, 67, 72, 82, 100, 132, 150, 160, 165, 190,} 231, 232\}$\\ 
+$61$ & $208$ & $\{  0, 1, 24, 53, 153, 182, 205, 206\}$\\ 
+\hline
+\end{tabular}
+
+\bigskip
+
+Note that $39 \mid 234$.
+
+\end{frame}
+\begin{frame}
+If $Q \in C(\Q)$ then $\iota(Q)=n D$
+where $n \equiv 0,1,-3,-2 \pmod{234}$.
+
+\bigskip
+
+But
+\[
+\iota(0,1)=0,\quad
+\iota(0,-1)=-2D, \quad
+\iota(-2,11)=-3D, \quad
+\iota(-2,-11)=D.
+\]
+
+Take $n \equiv -3 \pmod{234}$. So $n=-3+234m$. Then
+\[
+\begin{split}
+[Q-P_0] &=\iota(Q)=nD\\
+& =-3D+m(234\cdot D)\\
+&=\iota(-2,11)+m(234 \cdot D)\\
+& = [(-2,11)-P_0] + m (234 \cdot D).
+\end{split}
+\]
+Hence $[Q-(-2,11)] = m(234 \cdot D)$.
+
+\bigskip
+
+\textbf{Conclusion:} if $Q \in C(\Q)$ then $\exists P
+\in \cK$ such that
+\[
+[Q-P] \in \Z\cdot (234\cdot D) .
+\]
+
+\end{frame}
+
+\begin{frame}
+\frametitle{$p$-adic Filtration}
+Let $p$ be a prime of good reduction. Let
+\[
+J^{m} (\Q_p)=\{ D \in J(\Q_p) : D \equiv 0 \pmod{p^m} \}.
+\]
+We have
+\[
+J(\Q_p) \supset J^{1}(\Q_p) \supset J^2(\Q_p) \supset J^3(\Q_p) \supset \cdots
+\]
+is a system of decreasing neighbourhoods of the origin.
+Also
+\[
+J(\Q_p)/J^1(\Q_p) \cong J(\F_p), \qquad
+J^{m}(\Q_p)/J^{m+1}(\Q_p) \cong (\Z/p\Z)^g \; \text{for $m \ge 1$}.
+\]
+
+\bigskip
+For our example,
+\[
+\#J(\F_3)=13, \qquad 234=2 \cdot 3^2 \cdot 13.
+\]
+Hence $234 D \in J^{3}(\Q_3)$.
+I.e. $234 D \equiv 0 \pmod{3^3}$.
+\end{frame}
+
+\begin{frame}
+\frametitle{End of Example}
+We have two important pieces of information:
+\begin{enumerate}
+\item If $Q \in C(\Q)$ then $\exists P
+\in \cK$ such that
+\[
+[Q-P] \in\Z \cdot (234\cdot D) .
+\]
+\item $234 D \equiv 0 \pmod{3^3}$.
+\end{enumerate}
+Thus 
+\[
+Q \equiv P \pmod{3^3}, \qquad P \in \cK=
+\{(0,1),(0,-1),(-2,11),(-2,-11)\}.
+\]
+
+
+So $Q$ belongs to
+\begin{multline*}
+B_{27}(0,1) \cup B_{27}(0,-1) \cup B_{27}(-2,11) \cup B_{27}(-2,-11)
+\\
+\subset
+B_9(0,1) \cup B_9(0,-1) \cup B_3(-2,11) \cup B_3(-2,-11).
+\end{multline*}
+
+\pause
+
+Thus (Chabauty and the Mordell--Weil sieve)
+\[
+C(\Q)=\{ (0,1), \; (0,-1), \; ( -2,11), \; (-2,-11) \}.
+\]
+\end{frame}
+
+
+\begin{frame}
+\frametitle{The Mordell--Weil Sieve}
+
+Let $C/\Q$ be a curve, $J$ its Jacobian. Fix $P_0 \in J(\Q)$.  Let
+\[
+\iota \; : \; C \hookrightarrow J, \qquad P \mapsto [P-P_0]
+\] 
+be the Abel--Jacobi map. 
+We assume that we know $J(\Q)$ (in other words,
+we know a basis for $J(\Q)$). The {\bf Mordell--Weil Sieve}
+is a strategy for producing a \lq small\rq\ finite set $W \subset
+J(\Q)$, and a subgroup $L \subset J(\Q)$ of \lq huge\rq\ index
+such that 
+\[
+\iota(C(\Q))=\bigcup_{D \in W} D+L
+\pause
+=:W+L.
+\]
+\end{frame}
+
+\begin{frame}
+\frametitle{Inductive Definition}
+Let $C/\Q$ be a curve, $J$ its Jacobian. Fix $P_0 \in J(\Q)$.  Let
+\[
+\iota \; : \; C \hookrightarrow J, \qquad P \mapsto [P-P_0]
+\] 
+be the Abel--Jacobi map. 
+We define inductively subgroups of finite index 
+$L_i \subset J(\Q)$, and finite subsets
+$W_i \subset J(\Q)$, such that
+\[
+L_0 \supseteq L_1 \supseteq L_2 \supseteq L_3 \supset \cdots
+\]
+and 
+\[
+\iota(C(\Q)) \subset W_i+L_i. 
+\]
+Start:
+\[
+L_0:=J(\Q), \qquad W_0:={0}.
+\]
+\end{frame}
+\begin{frame}
+Inductive Step: choose a prime $p$ of good reduction. Let
+\[
+L_{i+1}=\Ker\left(L_i \hookrightarrow J(\Q) \rightarrow J(\F_p) \right).
+\]
+Let
+\[
+W_{i+1}^\prime=W_i+ \left(L_i/L_{i+1} \right).
+\]
+Clearly $W_{i+1}^\prime+L_{i+1}=W_i+L_i$. So $\iota(C(\Q)) \subset W_{i+1}^\prime+L_{i+1}$.
+
+\bigskip
+
+Consider the commutative diagram
+\[
+\xymatrixcolsep{5pc}
+\xymatrix{
+C(\Q) \ar^{\iota}[r] \ar^{\mathrm{red}}[d]  & J(\Q) 
+\ar[d]^{\mathrm{red}} \\
+C(\F_p) \ar^{\iota}[r] & J(\F_p)   \\
+}
+\]
+\end{frame}
+\begin{frame}
+Inductive Step: choose a prime $p$ of good reduction. Let
+\[
+L_{i+1}=\Ker\left(L_i \hookrightarrow J(\Q) \rightarrow J(\F_p) \right).
+\]
+Let
+\[
+W_{i+1}^\prime=W_i+ \left(L_i/L_{i+1} \right).
+\]
+Clearly $W_{i+1}^\prime+L_{i+1}=W_i+L_i$. So $\iota(C(\Q)) \subset W_{i+1}^\prime+L_{i+1}$.
+
+\bigskip
+
+Consider the commutative diagram
+\[
+\xymatrixcolsep{5pc}
+\xymatrix{
+C(\Q) \ar^{\iota}[r] \ar^{\mathrm{red}}[d]  & W_{i+1}^\prime+L_{i+1} 
+\ar[d]^{\mathrm{red}} \\
+C(\F_p) \ar^{\iota}[r] & J(\F_p)   \\
+}
+\]
+\end{frame}
+\begin{frame}
+Inductive Step: choose a prime $p$ of good reduction. Let
+\[
+L_{i+1}=\Ker\left(L_i \hookrightarrow J(\Q) \rightarrow J(\F_p) \right).
+\]
+Let
+\[
+W_{i+1}^\prime=W_i+ \left(L_i/L_{i+1} \right).
+\]
+Clearly $W_{i+1}^\prime+L_{i+1}=W_i+L_i$. So $\iota(C(\Q)) \subset W_{i+1}^\prime+L_{i+1}$.
+
+\bigskip
+
+Consider the commutative diagram
+\[
+\xymatrixcolsep{5pc}
+\xymatrix{
+C(\Q) \ar^{\iota}[r] \ar^{\mathrm{red}}[d]  & W_{i+1}^\prime+L_{i+1} 
+\ar[d]^{\mathrm{red}} \ar[rd] & \\
+C(\F_p) \ar^{\iota}[r] & J(\F_p) & W_{i+1}^\prime \ar^{\red}[l]   \\
+}
+\]
+\pause
+Let
+\[
+W_{i+1}=\{w \in W_{i+1}^\prime \; : \; \red(w) \in \iota ( C(\F_p))\}.
+\]
+
+Then $\iota(C(\Q)) \subset W_{i+1}+L_{i+1}$.
+\end{frame}
+\begin{frame}
+Choice of $p$:
+\begin{enumerate}
+\item $[L_i : L_{i+1}]$ is small;
+\item $\# J(\F_p)$ is smooth.
+\end{enumerate}
+
+In practice, we usually find, \textbf{with a good strategy for choosing the $p$},
+\[
+W_i=\iota(\cK)\qquad \text{($\cK \subset C(\Q)$ are the known points)}
+\]
+for large, and the index $[J(\Q):L_i]$ is growing slowly.
+
+\bigskip
+
+The $L_i$ are decreasing neighbourhoods of the origin in the profinite topology.
+When the Mordell--Weil sieve works, it tells us that every rational point on 
+$C$ is close, in the profinite topology on $J(\Q)$, to one of the known ones.
+\end{frame}
+
+\begin{frame}
+\begin{example}[Bugeaud, Mignotte, S., Stoll, Tengely]
+\[
+C \; : \; y^2-y=x^5-x,\qquad \iota:C \hookrightarrow J, \; P\mapsto [P-\infty].
+\]
+\[
+J(\Q)=\Z \cdot D_1\oplus \Z \cdot D_2 \oplus \Z \cdot D_3,
+\]
+\[
+D_1=[(0,1) -\infty], \qquad D_2=[(1,1)-\infty],
+\qquad D_3=[(-1,1)-\infty]\, .
+\]
+The known rational points are
+\begin{align*}
+&\cK = \{\infty, \; (-1,0),\; (-1,1), \; (0,0),\; (0,1),\; (1,0),\; (1,1),\;(2,-5),\\
+     & (2,6),\; (3,-15),\; (3,16),\; (30,-4929),\; (30,4930), \;
+ (1/4, 15/32),\\
+&  (1/4, 17/32),\;
+ (-15/16, -185/1024),\;
+(-15/16, 1209/1024) \}.
+\end{align*}
+Using $922$ prime $p <10^6$ it can be shown that
+\[
+\iota(C(\Q)) \subset \iota(\cK) +L
+\]
+where
+\[
+[J(\Q):L] \sim 3.32 \times 10^{3240}.
+\]
+\end{example}
+\end{frame}
+\begin{frame}
+\begin{example}
+\[
+C \; : \; y^2-y=x^5-x,\qquad \iota:C \hookrightarrow J, \; P\mapsto [P-\infty].
+\]
+The known rational points are
+\begin{align*}
+&\cK = \{\infty, \; (-1,0),\; (-1,1), \; (0,0),\; (0,1),\; (1,0),\; (1,1),\;(2,-5),\\
+     & (2,6),\; (3,-15),\; (3,16),\; (30,-4929),\; (30,4930), \;
+ (1/4, 15/32),\\
+&  (1/4, 17/32),\;
+ (-15/16, -185/1024),\;
+(-15/16, 1209/1024) \}.
+\end{align*}
+Using $922$ prime $p <10^6$ it can be shown that
+\[
+\iota(C(\Q)) \subset \iota(\cK) +L
+\]
+where
+\[
+[J(\Q):L] \sim 3.32 \times 10^{3240}.
+\]
+The shortest non-zero vector in $L$ has length $\sim 1.156 \times 10^{1080}$.
+So if $P \in C(\Q) \backslash \cK$ then
+\[
+H(P) \ge \exp(10^{2160}).
+\]
+\end{example}
+\end{frame}
+\begin{frame}
+\frametitle{Baker's Bounds}
+Baker's theory tells us that if $P$ is an \textbf{integral point} then
+\[
+H(P) \le \exp(10^{565}).
+\]
+So we know all the integral points:
+\begin{align*}
+&C(\Z) = \{(-1,0),\; (-1,1), \; (0,0),\; (0,1),\; (1,0),\; (1,1),\;(2,-5),\\
+     & (2,6),\; (3,-15),\; (3,16),\; (30,-4929),\; (30,4930) \}.
+\end{align*}
+
+How do you find the rational points on $C$?
+
+\pause
+
+\bigskip
+
+\begin{center}
+\Large{\textcolor{blue}{Thank you for your attention!}} \newline
+\Huge{\textcolor{blue}{Huge thank you to the organizers!!}}
+\end{center}
+
+\end{frame}
+\end{document}
+

@@ -1,0 +1,15 @@
+
+
+"Perfect Powers Expressible as Sums of Two Cubes"
+by S. Siksek 
+
+
+In this directory there are MAGMA and gp programs for verifying
+the computations in the above paper:
+
+thm1.m   : "magma program checking the 
+		computational details of Theorem 1,
+		and generating Table 1."
+
+thm2.gp :  "gp program for proving Theorem 2."
+

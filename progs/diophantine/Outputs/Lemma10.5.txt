@@ -1,0 +1,58 @@
+Magma V2.21-9     Fri Mar 11 2016 08:17:38 on lehner   [Seed = 647087714]
+Type ? for help.  Type <Ctrl>-D to quit.
+
+Loading startup file "/home/samir/.magmarc"
+
+The modular curve X_0(20) is the elliptic curve Elliptic Curve defined by y^2 = 
+x^3 + x^2 + 4*x + 4 over Rational Field
+with Cremona label 20a1
+Points on X_0(20) over Q(zeta_{11})^+ are [ (0 : 1 : 0), (4 : 10 : 1), (0 : 2 : 
+1), (-1 : 0 : 1), (0 : -2 : 1), (4 : -10 : 1) ]
+The cusps of X_0(20) are [
+    Place at (4 : 10 : 1),
+    Place at (4 : -10 : 1),
+    Place at (-1 : 0 : 1),
+    Place at (0 : -2 : 1),
+    Place at (0 : 2 : 1),
+    Place at (0 : 1 : 0)
+]
+Thus every Q(zeta_{11})^+ point on X_0(20) is a cusp.
+The modular curve X_0(14) is the elliptic curve Elliptic Curve defined by y^2 + 
+x*y + y = x^3 + 4*x - 6 over Rational Field
+with Cremona label 14a1
+Points on X_0(14) over Q(zeta_{11})^+ are [ (0 : 1 : 0), (9 : 23 : 1), (2 : 2 : 
+1), (1 : -1 : 1), (2 : -5 : 1), (9 : -33 : 1) ]
+The cusps of X_0(14) are [
+    Place at (9 : 23 : 1),
+    Place at (2 : -5 : 1),
+    Place at (1 : -1 : 1),
+    Place at (0 : 1 : 0)
+]
+The non-cuspidal points on X_0(14) over Q(zeta_{11})^+ are [ (2 : 2 : 1), (9 : 
+    -33 : 1) ]
+These have j-invariants [
+    16581375,
+    -3375
+]
+The modular curve X_0(19) is the elliptic curve Elliptic Curve defined by y^2 + 
+y = x^3 + x^2 - 9*x - 15 over Rational Field
+with Cremona label 19a1
+
+WARNING
+Class group unconditional proof is expensive.
+Hint: to obtain class group proven under GRH, input
+> SetClassGroupBounds("GRH");
+before starting the current calculation.
+
+Points on X_0(19) over Q(zeta_{11})^+ are [ (0 : 1 : 0), (5 : -10 : 1), (5 : 9 :
+1) ]
+The cusps of X_0(19) are [
+    Place at (5 : 9 : 1),
+    Place at (0 : 1 : 0)
+]
+The non-cuspidal points on X_0(19) over Q(zeta_{11})^+ are [ (5 : -10 : 1) ]
+These have j-invariants [
+    -884736
+]
+
+Total time: 1082.170 seconds, Total memory usage: 98.22MB

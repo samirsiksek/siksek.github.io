@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head><title> Johan Bosman's home page</title>
+</head>
+<body>
+<h1> Johan Bosman's home page</h1>
+
+<!--img src="J.jpg" width="170" heigth="254" alt="Johan"-->
+<ul><img src="J2.jpg" width="100"></ul>
+
+<b>Contact information</b><br>
+<ul>
+Dr. Johan Bosman<br>
+<a href="http://www2.warwick.ac.uk/fac/sci/maths/">Mathematics 
+Institute</a><br>
+<a href="http://www2.warwick.ac.uk/">University of Warwick</a><br>
+Coventry CV4 7AL<br> 
+United Kingdom<br>
+E-mail: johandotgdotbosmanatgmaildotcom (with occurences of 'dot' and 'at' replaced appropriately).
+<br>
+Phone: +442476574831<br>
+Office: C2.02
+</ul>
+<br>
+<h3>Teaching</h3>
+<b>Current</b>
+<ul>
+<li><a href="http://www2.warwick.ac.uk/fac/sci/maths/undergrad/ughandbook/lecturers/ma3a6">Algebraic Number Theory</a>
+</ul>
+<b>Past</b>
+<ul>
+<li><a href="http://www.warwick.ac.uk/~masjam/ANT2011/">
+Algebraic Number Theory</a> (Spring 2011)
+<li><a href="http://www.uni-due.de/~hx0037/teaching/AnZT-0910/">
+Seminar analytische Zahlentheorie</a> (Winter 2009/10)
+<li><a href="http://www.math.leidenuniv.nl/~dassen/Algebra1/Algebra1.html">
+Algebra 1</a> (TA, Spring 2008)
+<li><a href="http://www.math.leidenuniv.nl/~rdejong/olderteaching/topics2007/">Topics in Geometry</a> (TA, Autumn 2007)
+<li><a href="AGSpring2007/index.html">Algebraic Geometry</a> (TA, Spring 2007)</li>
+<li><a href="http://www.math.leidenuniv.nl/~rdejong/olderteaching/topics2006/">Topics in Geometry</a> (TA, Autumn 2006)</li>
+<li><a href="http://www.math.leidenuniv.nl/~edix/meetk2006/tig2.html">Topics in Geometry 2</a> (TA, Spring 2006)</li>
+<li>Topics in Geometry 1 (TA, autumn 2005)</li>
+<li>Analyse 4 (TA, Spring 2005)</li>
+<li>Wiskunde 1A (TA, autumn 2004)</li>
+</ul>
+<br>
+<h3>Research</h3>
+I started in July 2010 as a Marie Curie postdoc in the <a 
+href="http://www2.warwick.ac.uk/fac/sci/maths/research/interests/number_theory/">
+Number Theory</a> research group.
+<p>
+<b>Papers</b>
+<ul>
+<li>(With P. Bruin, A. Dujella, and F. Najman) 
+<i>Ranks of elliptic curves with prescribed torsion over number fields</i>, 
+prerpint, <a href="http://arxiv.org/abs/1201.0252">arXiv link</a>
+<li><i>Modular forms applied to the computational inverse Galois problem</i>, 
+preprint, submitted, <a href="papers/polynomials.pdf">pdf</a>
+<li><i>Computations with modular forms and Galois representations</i>, 
+in: Computational aspects of modular forms and Galois representations 
+(J-M. Couveignes, S.J. Edixhoven eds.), Ann. Math. Stud. <b>176</b> (2011) 129-157,
+ <a href=http://arxiv.org/abs/math/0605244>arXiv link</a>
+<li><i>Polynomials for projective representations of level one forms</i>, 
+in loc.&#8201;cit., 159-172.
+<li><i>Explicit computations with modular Galois representations</i>, 
+PhD thesis, Universiteit Leiden, 2008,
+<a href=http://hdl.handle.net/1887/13364>link</a>
+<li><i>A polynomial with Galois group SL<sub>2</sub>(F<sub>16</sub>)</i>, 
+LMS J. Comput. Math. 10 (2007) 378-388, 
+<a href="papers/sl2f16.pdf">pdf</a>
+<li><i>Boyd's conjecture for a family of genus 2 curves</i>, 
+Master's thesis, Universiteit Utrecht, 2004, 
+<a href="papers/scriptie.pdf">pdf</a>
+<li>(With L. Taelman) <i>On sums of sums of values of Dirichlet characters</i>, 
+Nieuw Arch. Wiskd. (5) 2 (2001)  no. 2,  133-134,
+<a href="papers/bosman.pdf">pdf</a>
+</ul>
+<p>
+<b>Code</b>
+<ul>
+Some Magma code that I wrote to compute polynomials and that I included as an appendix to my 
+SL<sub>2</sub>(F<sub>16</sub>)-paper can be found <a href="modrep.m">here</a>.  I've made a <a href="poster.pdf">poster</a> that
+explains how the code should be used.  I also wrote some <a href="modular_representation.sage">Sage code</a>
+that does similar things.
+</ul>
+<p>
+<b>Selected Talks</b>
+<ul>
+<li><i>Implementation presentation: Computing with Galois representations of modular forms</i>, 
+Workshop "Computations with modular forms", Heidelberg, Septemper 2011, <a href="talks/HeidelbergTalk.sws">Sage worksheet</a>
+<li><i>Explicit computation of Galois representations associated to modular forms</i>, Number theory lunch seminar, Bonn, November 2009
+<li><i>Computing polynomials attached to modular Galois representations</i>, Workshop "Computations with modular forms", Bristol, August 2008, <a href=talks/polslides.pdf>slides</a>
+<li><i>Galois representations of modular forms</i> (short course consisting of four lectures), Warwick, April 2008
+<li><i>Computation of Galois representations associated to modular forms: some explicit results</i>, Workshop arithmetic geometry, Essen, January 2008
+<li><i>A polynomial with Galois group SL<sub>2</sub>(F<sub>16</sub>)</i>, Intercity seminar number theory, Leiden, May 2007</li>
+<li><i>Computations in inverse Galois theory</i>, Nederlands mathematisch congres, Leiden, April 2007, <a href=talks/nmc.pdf>slides</a></li>
+<li><i>Construction of non-solvable polynomials over Q</i>, Diamant symposium, Vught, December 2006</li>
+<li><i>Galois representations associated to modular forms</i>, Intercity seminar number theory, Leiden, September 2005,
+<a href="talks/bosman1.pdf">notes</a></li>
+<li><i>Finding good ABC triples, part II</i>, Intercity seminar number theory, Leiden, September 2005,
+<a href="talks/abc.pdf">notes (in Dutch)</a></li>
+<li><i>On the computation of coefficients of modular forms, part II: explicit calculations</i>, 
+Workshop "Explicit methods in number theory", Oberwolfach, July 2005,
+<a href="talks/ow2005.pdf">notes</a></li>
+<li><i>The first practical calculations: congruences for Ramanujan's tau function mod 13</i>,
+S&eacute;minaire de Cryptographie, Rennes, April 2005</li>
+</ul>
+<p>
+<b>Seminars</b>
+<ul>
+<li><a href="http://www.warwick.ac.uk/~marean/galois_defs/main.html">Galois deformations</a></li>
+<li><a href="http://www.math.leidenuniv.nl/~desmit/ic/current.html">Intercity number theory seminar</a>
+<li><a href="http://www2.warwick.ac.uk/fac/sci/maths/research/events/seminars/areas/number_theory/">Warwick number theory seminar</a>
+<li><a href="http://www.esaga.uni-due.de/ulrich.goertz/ws1011/iem-ag/">
+Arbeitsgemeinschaft des IEM</a> (Summer 2010)
+<li><a href="http://www.uni-due.de/~hx0050/ss10/seminar_langlands_gl2.html">Cohomology of modular curves and local Langlands for GL<sub>2</sub></a> (Summer 2010)
+<li><a href="http://www.uni-due.de/~hx0037/Eigencurve/">The eigencurve</a> (Winter 2009/2010)
+<li><a href="http://maths.pratum.net/pAdicLF/index.html">p-adic L-functions</a> (Summer 2009)
+<li><a href="http://www.math.leidenuniv.nl/~pbruin/rationalpoints.html">Rational points on curves over finite fields</a> (Spring 2008)
+<li><a href="http://www.math.leidenuniv.nl/~streng/modular/index.html">Moduli spaces and modular forms</a> (Autumn 2007)
+<li><a href="http://www.math.leidenuniv.nl/~pbruin/neron.html">N&eacute;ron models</a> (Spring 2007)
+</ul>
+<br>
+<h3>Links</h3>
+<ul>
+<li><a href="http://www.numbertheory.org/">Number theory web</a>
+<li><a href="http://oeis.org/">The on-line encyclopaedia of integer sequences</a>
+<li><a href="http://www.emani.org">Emani: electronic mathematical archiving network initiative</a></li>
+<li><a href="http://www.nieuwarchief.nl/homeitems.php?onderwerp=6&taal=1">Problem section of Nieuw Archief voor Wiskunde</a> 
+<li><a href="http://www.sagemath.org/">Sage mathematics software</a>
+<li><a href="http://www.wiskundemeisjes.nl/">Wiskundemeisjes</a> (in Dutch)
+</ul>
+<p>
+<hr>
+<i>Last modification: 12 January 2012</i>
+</body></html>
